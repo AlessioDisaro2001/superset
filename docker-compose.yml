@@ -39,6 +39,8 @@ services:
       - "host.docker.internal:host-gateway"
     volumes:
       - ./docker/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    networks:
+      - dymo-net
   redis:
     image: redis:7
     container_name: superset_cache
@@ -47,6 +49,8 @@ services:
       - "127.0.0.1:6379:6379"
     volumes:
       - redis:/data
+    networks:
+      - dymo-net
 
   db:
     env_file: docker/.env
@@ -58,6 +62,8 @@ services:
     volumes:
       - db_home:/var/lib/postgresql/data
       - ./docker/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
+    networks:
+      - dymo-net
 
   superset:
     env_file: docker/.env
@@ -74,6 +80,8 @@ services:
     volumes: *superset-volumes
     environment:
       CYPRESS_CONFIG: "${CYPRESS_CONFIG}"
+    networks:
+      - dymo-net
 
   superset-websocket:
     container_name: superset_websocket
@@ -99,11 +107,14 @@ services:
       - ./superset-websocket:/home/superset-websocket
       - /home/superset-websocket/node_modules
       - /home/superset-websocket/dist
+      - ./docker/superset-websocket/config.json:/home/superset-websocket/config.json
     environment:
       - PORT=8080
       - REDIS_HOST=redis
       - REDIS_PORT=6379
       - REDIS_SSL=false
+    networks:
+      - dymo-net
 
   superset-init:
     image: *superset-image
@@ -117,6 +128,8 @@ services:
       CYPRESS_CONFIG: "${CYPRESS_CONFIG}"
     healthcheck:
       disable: true
+    networks:
+      - dymo-net
 
   superset-node:
     image: node:16
@@ -127,6 +140,8 @@ services:
     environment:
       SCARF_ANALYTICS: "${SCARF_ANALYTICS}"
     volumes: *superset-volumes
+    networks:
+      - dymo-net
 
   superset-worker:
     image: *superset-image
@@ -144,6 +159,8 @@ services:
     # Bump memory limit if processing selenium / thumbnails on superset-worker
     # mem_limit: 2038m
     # mem_reservation: 128M
+    networks:
+      - dymo-net
 
   superset-worker-beat:
     image: *superset-image
@@ -156,6 +173,8 @@ services:
     volumes: *superset-volumes
     healthcheck:
       disable: true
+    networks:
+      - dymo-net
 
   superset-tests-worker:
     image: *superset-image
@@ -163,17 +182,18 @@ services:
     command: ["/app/docker/docker-bootstrap.sh", "worker"]
     env_file: docker/.env
     environment:
-      DATABASE_HOST: localhost
+      DATABASE_HOST: db
       DATABASE_DB: test
       REDIS_CELERY_DB: 2
       REDIS_RESULTS_DB: 3
-      REDIS_HOST: localhost
-    network_mode: host
+      REDIS_HOST: redis
     depends_on: *superset-depends-on
     user: *superset-user
     volumes: *superset-volumes
     healthcheck:
       test: ["CMD-SHELL", "celery inspect ping -A superset.tasks.celery_app:app -d celery@$$HOSTNAME"]
+    networks:
+      - dymo-net
 
 volumes:
   superset_home:
@@ -182,3 +202,7 @@ volumes:
     external: false
   redis:
     external: false
+  
+networks:
+  dymo-net:
+    external: true
