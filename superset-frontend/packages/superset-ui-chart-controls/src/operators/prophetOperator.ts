@@ -29,6 +29,7 @@ export const prophetOperator: PostProcessingFactory<PostProcessingProphet> = (
     return {
       operation: 'prophet',
       options: {
+        model_filepath: formData.forecastModelFilepath,
         time_grain: formData.time_grain_sqla,
         periods: parseInt(formData.forecastPeriods, 10),
         confidence_interval: parseFloat(formData.forecastInterval),

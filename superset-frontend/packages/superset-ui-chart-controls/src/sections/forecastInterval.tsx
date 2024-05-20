@@ -26,6 +26,7 @@ import { displayTimeRelatedControls } from '../utils';
 
 export const FORECAST_DEFAULT_DATA = {
   forecastEnabled: false,
+  forecastModelFilepath: null,
   forecastInterval: 0.8,
   forecastPeriods: 10,
   forecastSeasonalityDaily: null,
@@ -47,6 +48,18 @@ export const forecastIntervalControls: ControlPanelSectionConfig = {
           renderTrigger: false,
           default: FORECAST_DEFAULT_DATA.forecastEnabled,
           description: t('Enable forecasting'),
+        },
+      },
+    ],
+    [
+      {
+        name: 'forecastModelFilepath',
+        config: {
+          type: 'TextControl',
+          label: t('Model filepath'),
+          renderTrigger: false,
+          default: FORECAST_DEFAULT_DATA.forecastModelFilepath,
+          description: t('Path to model file'),
         },
       },
     ],

@@ -48,6 +48,7 @@ def _prophet_fit_and_predict(  # pylint: disable=too-many-arguments
     daily_seasonality: Union[bool, str, int],
     periods: int,
     freq: str,
+    model_filepath: str,
 ) -> DataFrame:
     """
     Fit a prophet model and return a DataFrame with predicted results.
@@ -71,7 +72,19 @@ def _prophet_fit_and_predict(  # pylint: disable=too-many-arguments
     )
     if df["ds"].dt.tz:
         df["ds"] = df["ds"].dt.tz_convert(None)
-    model.fit(df)
+    df["ds"] = df["ds"].astype("datetime64[ns]")
+    if model_filepath:
+        try:
+            with open(model_filepath, "r") as fin:
+                from prophet.serialize import model_from_json
+
+                model = model_from_json(fin.read())  # Load model
+        except Exception as ex:
+            raise InvalidPostProcessingError(
+                _("`prophet` model not found at specified path")
+            ) from ex
+    else:
+        model.fit(df)
     future = model.make_future_dataframe(periods=periods, freq=freq)
     forecast = model.predict(future)[["ds", "yhat", "yhat_lower", "yhat_upper"]]
     return forecast.join(df.set_index("ds"), on="ds").set_index(["ds"])
@@ -86,6 +99,7 @@ def prophet(  # pylint: disable=too-many-arguments
     weekly_seasonality: Optional[Union[bool, int]] = None,
     daily_seasonality: Optional[Union[bool, int]] = None,
     index: Optional[str] = None,
+    model_filepath: Optional[str] = None,
 ) -> DataFrame:
     """
     Add forecasts to each series in a timeseries dataframe, along with confidence
@@ -153,6 +167,7 @@ def prophet(  # pylint: disable=too-many-arguments
             daily_seasonality=_prophet_parse_seasonality(daily_seasonality),
             periods=periods,
             freq=freq,
+            model_filepath=model_filepath,
         )
         new_columns = [
             f"{column}__yhat",
