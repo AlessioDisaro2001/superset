@@ -17,6 +17,8 @@
 import logging
 from typing import Optional, Union
 
+import datetime
+
 import pandas as pd
 from flask_babel import gettext as _
 from pandas import DataFrame
@@ -87,7 +89,10 @@ def _prophet_fit_and_predict(  # pylint: disable=too-many-arguments
         model.fit(df)
     future = model.make_future_dataframe(periods=periods, freq=freq)
     forecast = model.predict(future)[["ds", "yhat", "yhat_lower", "yhat_upper"]]
-    return forecast.join(df.set_index("ds"), on="ds").set_index(["ds"])
+    forecast_join = forecast.join(df.set_index("ds"), on="ds").set_index(["ds"])
+    filter = df["ds"].min()
+    date = datetime.datetime(filter.year, filter.month, filter.day, 0, 0, 0)
+    return forecast_join.truncate(before=date)
 
 
 def prophet(  # pylint: disable=too-many-arguments
