@@ -28,6 +28,7 @@ version: "3.7"
 services:
   redis:
     image: redis:7
+    profiles: [ dymo ]
     container_name: superset_cache
     restart: unless-stopped
     volumes:
@@ -38,6 +39,7 @@ services:
   db:
     env_file: docker/.env-non-dev
     image: postgres:15
+    profiles: [ dymo ]
     container_name: superset_db
     restart: unless-stopped
     volumes:
@@ -49,6 +51,7 @@ services:
   superset:
     env_file: docker/.env-non-dev
     image: *superset-image
+    profiles: [ dymo ]
     container_name: superset_app
     command: ["/app/docker/docker-bootstrap.sh", "app-gunicorn"]
     user: "root"
@@ -63,8 +66,9 @@ services:
 
   superset-init:
     image: *superset-image
+    profiles: [ dymo ]
     container_name: superset_init
-    command: ["/app/docker/docker-init-non-dev.sh"]
+    command: ["/app/docker/docker-init.sh"]
     env_file: docker/.env-non-dev
     depends_on: *superset-depends-on
     user: "root"
@@ -76,6 +80,7 @@ services:
 
   superset-worker:
     image: *superset-image
+    profiles: [ dymo ]
     container_name: superset_worker
     command: ["/app/docker/docker-bootstrap.sh", "worker"]
     env_file: docker/.env-non-dev
@@ -94,6 +99,7 @@ services:
 
   superset-worker-beat:
     image: *superset-image
+    profiles: [ dymo ]
     container_name: superset_worker_beat
     command: ["/app/docker/docker-bootstrap.sh", "beat"]
     env_file: docker/.env-non-dev
@@ -113,8 +119,3 @@ volumes:
     external: false
   redis:
     external: false
-
-
-networks:
-  dymo-net:
-    external: true

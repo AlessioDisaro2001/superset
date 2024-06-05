@@ -76,3 +76,21 @@ if [ "$SUPERSET_LOAD_EXAMPLES" = "yes" ]; then
     fi
     echo_step "4" "Complete" "Loading examples"
 fi
+
+sleep 10
+
+superset fab create-admin \
+              --username dymodev \
+              --firstname dymo \
+              --lastname dymo \
+              --email admin@admin.it \
+              --password syncdymo24
+
+apt update && apt install -y zip
+
+zip -2 -r dashboards.zip ./dashboard
+
+chown superset:superset dashboards.zip
+#chmod 544 /tmp/dashboards.zip
+
+superset import-dashboards -p dashboards.zip -u dymodev
