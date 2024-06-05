@@ -1,0 +1,270 @@
+dashboard_title: Dataset Analysis
+description: null
+css: ''
+slug: null
+certified_by: ''
+certification_details: ''
+published: false
+uuid: 69e7fea6-19df-4763-bab6-f1b7492dd068
+position:
+  CHART-explore-57-1:
+    children: []
+    id: CHART-explore-57-1
+    meta:
+      chartId: 4
+      height: 59
+      sliceName: Occupancy Analysis
+      uuid: a48e9f65-ea9a-49f8-8492-191828139c09
+      width: 10
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-YMimlu5MOI
+    - COLUMN-eCvdN2yOUy
+    - ROW-8SE1sbROph
+    type: CHART
+  CHART-explore-58-1:
+    children: []
+    id: CHART-explore-58-1
+    meta:
+      chartId: 5
+      height: 60
+      sliceName: Payment Analysis
+      uuid: ad865f2c-f54d-40d4-ae19-9a90ff911f96
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-YMimlu5MOI
+    - COLUMN-eCvdN2yOUy
+    - ROW-ykpQxkFJ3S
+    type: CHART
+  CHART-explore-59-1:
+    children: []
+    id: CHART-explore-59-1
+    meta:
+      chartId: 1
+      height: 60
+      sliceName: Events Analysis
+      uuid: 715522c8-0e48-49b6-988a-b3af71547a70
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-YMimlu5MOI
+    - COLUMN-eCvdN2yOUy
+    - ROW-ykpQxkFJ3S
+    type: CHART
+  CHART-explore-61-1:
+    children: []
+    id: CHART-explore-61-1
+    meta:
+      chartId: 3
+      height: 31
+      sliceName: Involved Spaces
+      uuid: 3e8aa052-19ea-47bf-99f9-28348bc2fc7e
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-YMimlu5MOI
+    - COLUMN-eCvdN2yOUy
+    - ROW-8SE1sbROph
+    - COLUMN-XYCv0SCk06
+    type: CHART
+  CHART-explore-62-1:
+    children: []
+    id: CHART-explore-62-1
+    meta:
+      chartId: 2
+      height: 19
+      sliceName: Total by type
+      uuid: 9dc22dbf-3f14-4bc7-9916-6821e9eed4ba
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-RdfCtxcVs1
+    type: CHART
+  CHART-mG2a6K1xaC:
+    children: []
+    id: CHART-mG2a6K1xaC
+    meta:
+      chartId: 6
+      height: 26
+      sliceName: Total Events
+      uuid: 220e6b12-2758-48b9-b3e3-f1a677cc805a
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-YMimlu5MOI
+    - COLUMN-eCvdN2yOUy
+    - ROW-8SE1sbROph
+    - COLUMN-XYCv0SCk06
+    type: CHART
+  COLUMN-XYCv0SCk06:
+    children:
+    - CHART-mG2a6K1xaC
+    - CHART-explore-61-1
+    id: COLUMN-XYCv0SCk06
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-YMimlu5MOI
+    - COLUMN-eCvdN2yOUy
+    - ROW-8SE1sbROph
+    type: COLUMN
+  COLUMN-eCvdN2yOUy:
+    children:
+    - ROW-8SE1sbROph
+    - ROW-ykpQxkFJ3S
+    id: COLUMN-eCvdN2yOUy
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-YMimlu5MOI
+    type: COLUMN
+  DASHBOARD_VERSION_KEY: v2
+  GRID_ID:
+    children:
+    - ROW-YMimlu5MOI
+    - ROW-RdfCtxcVs1
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: Dataset Analysis
+    type: HEADER
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-8SE1sbROph:
+    children:
+    - CHART-explore-57-1
+    - COLUMN-XYCv0SCk06
+    id: ROW-8SE1sbROph
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-YMimlu5MOI
+    - COLUMN-eCvdN2yOUy
+    type: ROW
+  ROW-RdfCtxcVs1:
+    children:
+    - CHART-explore-62-1
+    id: ROW-RdfCtxcVs1
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-YMimlu5MOI:
+    children:
+    - COLUMN-eCvdN2yOUy
+    id: ROW-YMimlu5MOI
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-ykpQxkFJ3S:
+    children:
+    - CHART-explore-58-1
+    - CHART-explore-59-1
+    id: ROW-ykpQxkFJ3S
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-YMimlu5MOI
+    - COLUMN-eCvdN2yOUy
+    type: ROW
+metadata:
+  chart_configuration:
+    '62':
+      id: 62
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 4
+        - 51
+        - 54
+        - 57
+        - 60
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope:
+    - 4
+    - 51
+    - 54
+    - 57
+    - 60
+    - 62
+  color_scheme: echarts5Colors
+  refresh_frequency: 0
+  expanded_slices: {}
+  label_colors: {}
+  timed_refresh_immune_slices: []
+  cross_filters_enabled: true
+  shared_label_colors: {}
+  color_scheme_domain:
+  - '#5470C6'
+  - '#91CC75'
+  - '#FAC858'
+  - '#EE6666'
+  - '#73C0DE'
+  - '#3BA272'
+  - '#FC8452'
+  - '#9A60B4'
+  - '#EA7CCC'
+  native_filter_configuration:
+  - id: NATIVE_FILTER-jtXtb9pyF
+    controlValues:
+      enableEmptyFilter: true
+    name: Time Range
+    filterType: filter_time
+    targets:
+    - {}
+    defaultDataMask:
+      extraFormData:
+        time_range: previous calendar year
+      filterState:
+        value: previous calendar year
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded:
+      - 3
+      - 6
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 4
+    - 51
+    - 54
+    - 57
+    - 60
+    tabsInScope: []
+version: 1.0.0

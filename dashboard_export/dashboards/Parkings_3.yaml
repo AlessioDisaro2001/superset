@@ -1,0 +1,672 @@
+dashboard_title: Parkings
+description: null
+css: ''
+slug: null
+certified_by: ''
+certification_details: ''
+published: true
+uuid: c77bad4d-cd40-47fb-9d46-5a4341952c4c
+position:
+  CHART-CL7PbcMtyl:
+    children: []
+    id: CHART-CL7PbcMtyl
+    meta:
+      chartId: 63
+      height: 37
+      sliceName: Occupancy Status Recap
+      uuid: fded56e1-6067-4e16-93fd-ceb391dc2f14
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-uGQkZjOF7B
+    - TAB-XuzHyPNiNH
+    - ROW-GrQ5_Btw-f
+    - COLUMN-Wtrv5lR_34
+    type: CHART
+  CHART-TIdUfGLJFT:
+    children: []
+    id: CHART-TIdUfGLJFT
+    meta:
+      chartId: 61
+      height: 50
+      sliceName: Events Trend Over Time
+      uuid: 143dd056-9e09-42c4-beb4-0e679ddeda1c
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-uGQkZjOF7B
+    - TAB-c6mO5Wihg
+    - ROW-ik-xL1ZwHQ
+    type: CHART
+  CHART-dq0U1uaNEj:
+    children: []
+    id: CHART-dq0U1uaNEj
+    meta:
+      chartId: 56
+      height: 50
+      sliceName: Amount by Payment Method
+      uuid: 4ce0b025-2dac-4ebd-b649-39333a545316
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-uGQkZjOF7B
+    - TAB-2cvxjyazY
+    - ROW-XooOvnA3iz
+    - COLUMN-oSzRIdkK3I
+    type: CHART
+  CHART-explore-41-1:
+    children: []
+    id: CHART-explore-41-1
+    meta:
+      chartId: 55
+      height: 50
+      sliceName: Cities Parking Status Recap
+      uuid: a5d96bad-fa4f-4e44-9af9-16611548d32f
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-uGQkZjOF7B
+    - TAB-XuzHyPNiNH
+    - ROW-L9aTDZJ8Sc
+    - COLUMN-bmgGlYVmdC
+    type: CHART
+  CHART-explore-43-1:
+    children: []
+    id: CHART-explore-43-1
+    meta:
+      chartId: 58
+      height: 50
+      sliceName: Number of Events
+      uuid: b3a67288-bf34-48b0-85f5-0a294241a5e0
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-uGQkZjOF7B
+    - TAB-c6mO5Wihg
+    - ROW-F3J4y6KcUF
+    - COLUMN-FcGvTOyWad
+    type: CHART
+  CHART-explore-63-1:
+    children: []
+    id: CHART-explore-63-1
+    meta:
+      chartId: 62
+      height: 50
+      sliceName: Total Amount by Payment Method
+      uuid: 133d95fb-5772-44e4-a42f-a2577534d14a
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-oR7fs4ESXk
+    type: CHART
+  CHART-kZEWzQi_FM:
+    children: []
+    id: CHART-kZEWzQi_FM
+    meta:
+      chartId: 59
+      height: 47
+      sliceName: Parking Status Recap
+      uuid: 15f89240-8074-497e-848b-d5be3111ffad
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-uGQkZjOF7B
+    - TAB-XuzHyPNiNH
+    - ROW-GrQ5_Btw-f
+    - COLUMN-Wtrv5lR_34
+    type: CHART
+  CHART-nt-ScWyKAK:
+    children: []
+    id: CHART-nt-ScWyKAK
+    meta:
+      chartId: 54
+      height: 50
+      sliceName: Cities Occupancy Status Recap
+      uuid: 076c0723-308d-4cd2-903d-88696d44d329
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-uGQkZjOF7B
+    - TAB-XuzHyPNiNH
+    - ROW-L9aTDZJ8Sc
+    - COLUMN--vMmIzQeo_
+    type: CHART
+  CHART-vtk50v8z76:
+    children: []
+    id: CHART-vtk50v8z76
+    meta:
+      chartId: 57
+      height: 88
+      sliceName: Last Parking Events Map
+      uuid: 6186e656-1ca5-4c0e-8ace-def115105ace
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-uGQkZjOF7B
+    - TAB-XuzHyPNiNH
+    - ROW-GrQ5_Btw-f
+    - COLUMN-XaNsoSidvu
+    type: CHART
+  CHART-wK7m_2mCO5:
+    children: []
+    id: CHART-wK7m_2mCO5
+    meta:
+      chartId: 60
+      height: 50
+      sliceName: Payment Trends Over Time
+      uuid: 465f69d6-019c-429e-8018-f514e26924d5
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-uGQkZjOF7B
+    - TAB-2cvxjyazY
+    - ROW-6Ogzr6k6Ar
+    type: CHART
+  COLUMN--vMmIzQeo_:
+    children:
+    - CHART-nt-ScWyKAK
+    id: COLUMN--vMmIzQeo_
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-uGQkZjOF7B
+    - TAB-XuzHyPNiNH
+    - ROW-L9aTDZJ8Sc
+    type: COLUMN
+  COLUMN-FcGvTOyWad:
+    children:
+    - CHART-explore-43-1
+    id: COLUMN-FcGvTOyWad
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 5
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-uGQkZjOF7B
+    - TAB-c6mO5Wihg
+    - ROW-F3J4y6KcUF
+    type: COLUMN
+  COLUMN-Wtrv5lR_34:
+    children:
+    - CHART-CL7PbcMtyl
+    - CHART-kZEWzQi_FM
+    id: COLUMN-Wtrv5lR_34
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-uGQkZjOF7B
+    - TAB-XuzHyPNiNH
+    - ROW-GrQ5_Btw-f
+    type: COLUMN
+  COLUMN-XaNsoSidvu:
+    children:
+    - CHART-vtk50v8z76
+    id: COLUMN-XaNsoSidvu
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 8
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-uGQkZjOF7B
+    - TAB-XuzHyPNiNH
+    - ROW-GrQ5_Btw-f
+    type: COLUMN
+  COLUMN-a7Yj6g6g_N:
+    children:
+    - CHART-explore-63-1
+    id: COLUMN-a7Yj6g6g_N
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 5
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-uGQkZjOF7B
+    - TAB-2cvxjyazY
+    - ROW-XooOvnA3iz
+    type: COLUMN
+  COLUMN-bmgGlYVmdC:
+    children:
+    - CHART-explore-41-1
+    id: COLUMN-bmgGlYVmdC
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-uGQkZjOF7B
+    - TAB-XuzHyPNiNH
+    - ROW-L9aTDZJ8Sc
+    type: COLUMN
+  COLUMN-eq_rLdc-0B:
+    children: []
+    id: COLUMN-eq_rLdc-0B
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 7
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-uGQkZjOF7B
+    - TAB-c6mO5Wihg
+    - ROW-F3J4y6KcUF
+    type: COLUMN
+  COLUMN-oSzRIdkK3I:
+    children:
+    - CHART-dq0U1uaNEj
+    id: COLUMN-oSzRIdkK3I
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 7
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-uGQkZjOF7B
+    - TAB-2cvxjyazY
+    - ROW-XooOvnA3iz
+    type: COLUMN
+  DASHBOARD_VERSION_KEY: v2
+  GRID_ID:
+    children:
+    - TABS-uGQkZjOF7B
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: Parkings
+    type: HEADER
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-6Ogzr6k6Ar:
+    children:
+    - CHART-wK7m_2mCO5
+    id: ROW-6Ogzr6k6Ar
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-uGQkZjOF7B
+    - TAB-2cvxjyazY
+    type: ROW
+  ROW-F3J4y6KcUF:
+    children:
+    - COLUMN-FcGvTOyWad
+    - COLUMN-eq_rLdc-0B
+    id: ROW-F3J4y6KcUF
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-uGQkZjOF7B
+    - TAB-c6mO5Wihg
+    type: ROW
+  ROW-GrQ5_Btw-f:
+    children:
+    - COLUMN-XaNsoSidvu
+    - COLUMN-Wtrv5lR_34
+    id: ROW-GrQ5_Btw-f
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-uGQkZjOF7B
+    - TAB-XuzHyPNiNH
+    type: ROW
+  ROW-L9aTDZJ8Sc:
+    children:
+    - COLUMN--vMmIzQeo_
+    - COLUMN-bmgGlYVmdC
+    id: ROW-L9aTDZJ8Sc
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-uGQkZjOF7B
+    - TAB-XuzHyPNiNH
+    type: ROW
+  ROW-XooOvnA3iz:
+    children:
+    - COLUMN-oSzRIdkK3I
+    - COLUMN-a7Yj6g6g_N
+    id: ROW-XooOvnA3iz
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-uGQkZjOF7B
+    - TAB-2cvxjyazY
+    type: ROW
+  ROW-ik-xL1ZwHQ:
+    children:
+    - CHART-TIdUfGLJFT
+    id: ROW-ik-xL1ZwHQ
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-uGQkZjOF7B
+    - TAB-c6mO5Wihg
+    type: ROW
+  TAB-2cvxjyazY:
+    children:
+    - ROW-XooOvnA3iz
+    - ROW-6Ogzr6k6Ar
+    id: TAB-2cvxjyazY
+    meta:
+      defaultText: Tab title
+      placeholder: Tab title
+      text: Transactions
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-uGQkZjOF7B
+    type: TAB
+  TAB-XuzHyPNiNH:
+    children:
+    - ROW-GrQ5_Btw-f
+    - ROW-L9aTDZJ8Sc
+    id: TAB-XuzHyPNiNH
+    meta:
+      defaultText: Tab title
+      placeholder: Tab title
+      text: Occupancy
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-uGQkZjOF7B
+    type: TAB
+  TAB-c6mO5Wihg:
+    children:
+    - ROW-F3J4y6KcUF
+    - ROW-ik-xL1ZwHQ
+    id: TAB-c6mO5Wihg
+    meta:
+      defaultText: Tab title
+      placeholder: Tab title
+      text: Events
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-uGQkZjOF7B
+    type: TAB
+  TABS-uGQkZjOF7B:
+    children:
+    - TAB-XuzHyPNiNH
+    - TAB-c6mO5Wihg
+    - TAB-2cvxjyazY
+    id: TABS-uGQkZjOF7B
+    meta: {}
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: TABS
+metadata:
+  chart_configuration:
+    '54':
+      id: 54
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 55
+        - 56
+        - 57
+        - 58
+        - 59
+        - 60
+        - 61
+        - 62
+        - 63
+    '55':
+      id: 55
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 54
+        - 56
+        - 57
+        - 58
+        - 59
+        - 60
+        - 61
+        - 62
+        - 63
+    '56':
+      id: 56
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 54
+        - 55
+        - 57
+        - 58
+        - 59
+        - 60
+        - 61
+        - 62
+        - 63
+    '57':
+      id: 57
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 54
+        - 55
+        - 56
+        - 58
+        - 59
+        - 60
+        - 61
+        - 62
+        - 63
+    '59':
+      id: 59
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 54
+        - 55
+        - 56
+        - 57
+        - 58
+        - 60
+        - 61
+        - 62
+        - 63
+    '60':
+      id: 60
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 54
+        - 55
+        - 56
+        - 57
+        - 58
+        - 59
+        - 61
+        - 62
+        - 63
+    '61':
+      id: 61
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 54
+        - 55
+        - 56
+        - 57
+        - 58
+        - 59
+        - 60
+        - 62
+        - 63
+    '62':
+      id: 62
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 54
+        - 55
+        - 56
+        - 57
+        - 58
+        - 59
+        - 60
+        - 61
+        - 63
+    '63':
+      id: 63
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 54
+        - 55
+        - 56
+        - 57
+        - 58
+        - 59
+        - 60
+        - 61
+        - 62
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope:
+    - 54
+    - 55
+    - 56
+    - 57
+    - 58
+    - 59
+    - 60
+    - 61
+    - 62
+    - 63
+  color_scheme: presetColors
+  refresh_frequency: 0
+  expanded_slices: {}
+  label_colors: {}
+  timed_refresh_immune_slices: []
+  cross_filters_enabled: true
+  native_filter_configuration:
+  - id: NATIVE_FILTER-YMqlBMs_l
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: Event Code
+    filterType: filter_select
+    targets:
+    - column:
+        name: eventCode
+      datasetUuid: ac82ea6f-bce2-417c-871f-874f87d570f1
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - TAB-c6mO5Wihg
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 57
+    - 59
+    tabsInScope:
+    - TAB-c6mO5Wihg
+  - id: NATIVE_FILTER-T7zj5uRnv
+    controlValues:
+      enableEmptyFilter: false
+    name: Time
+    filterType: filter_time
+    targets:
+    - {}
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - TAB-XuzHyPNiNH
+      - TAB-c6mO5Wihg
+      - TAB-2cvxjyazY
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 55
+    - 56
+    - 58
+    - 60
+    - 61
+    tabsInScope:
+    - TAB-XuzHyPNiNH
+  shared_label_colors:
+    LOW_BATTERY: '#B17BAA'
+    BATTERY_REPLACEMENT_REQUIRED: '#484E5A'
+    paymentCreditCard: '#6BD3B3'
+    cashCoinsAndBills: '#66CBE2'
+    payByPhone: '#FF874E'
+    paymentDebitCard: '#B5E9D9'
+    PAYMENT_SUCCESSFUL: '#FCC550'
+    PAYMENT_SUCCESSFUL__yhat: '#EE5960'
+  color_scheme_domain:
+  - '#6BD3B3'
+  - '#FCC550'
+  - '#408184'
+  - '#66CBE2'
+  - '#EE5960'
+  - '#484E5A'
+  - '#FF874E'
+  - '#03748E'
+  - '#C9BBAB'
+  - '#B17BAA'
+  - '#B5E9D9'
+  - '#FDE2A7'
+  - '#9FC0C1'
+  - '#B2E5F0'
+  - '#F6ACAF'
+  - '#A4A6AC'
+  - '#FFC3A6'
+  - '#81B9C6'
+  - '#E4DDD5'
+  - '#D9BDD5'
+version: 1.0.0

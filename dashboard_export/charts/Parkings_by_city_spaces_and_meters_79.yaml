@@ -1,0 +1,99 @@
+slice_name: Parkings by city, spaces and meters
+description: null
+certified_by: null
+certification_details: null
+viz_type: bubble_v2
+params:
+  datasource: 4__table
+  viz_type: bubble_v2
+  slice_id: 79
+  series: campus.name.string
+  entity: campus.id
+  x:
+    expressionType: SIMPLE
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: space.sensor.id
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 49
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: STRING
+      type_generic: 1
+      verbose_name: null
+      warning_markdown: null
+    aggregate: COUNT_DISTINCT
+    sqlExpression: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: COUNT_DISTINCT(space.sensor.id)
+    optionName: metric_dvor8kpvhn_gk65eqj86um
+  y:
+    expressionType: SIMPLE
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: supplementalEquipment.id
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 39
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: NULLABLE(STRING)
+      type_generic: 1
+      verbose_name: null
+      warning_markdown: null
+    aggregate: COUNT_DISTINCT
+    sqlExpression: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: COUNT_DISTINCT(supplementalEquipment.id)
+    optionName: metric_gscr0im5cka_3wq1j6ozh8s
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: timestamp
+  size: count
+  order_desc: true
+  row_limit: 10000
+  color_scheme: bnbColors
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  max_bubble_size: '25'
+  tooltipSizeFormat: SMART_NUMBER
+  opacity: 0.6
+  x_axis_label: Number of Spaces
+  x_axis_title_margin: 30
+  xAxisFormat: SMART_NUMBER
+  y_axis_label: Number of Meters
+  y_axis_title_margin: 30
+  y_axis_format: SMART_NUMBER
+  truncateXAxis: true
+  y_axis_bounds:
+  - null
+  - null
+  extra_form_data: {}
+  dashboards:
+  - 6
+query_context: '{"datasource":{"id":4,"type":"table"},"force":false,"queries":[{"filters":[{"col":"timestamp","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["campus.id","campus.name.string"],"metrics":[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"space.sensor.id","description":null,"expression":null,"filterable":true,"groupby":true,"id":49,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"STRING","type_generic":1,"verbose_name":null,"warning_markdown":null},"aggregate":"COUNT_DISTINCT","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"COUNT_DISTINCT(space.sensor.id)","optionName":"metric_dvor8kpvhn_gk65eqj86um"},{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"supplementalEquipment.id","description":null,"expression":null,"filterable":true,"groupby":true,"id":39,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"NULLABLE(STRING)","type_generic":1,"verbose_name":null,"warning_markdown":null},"aggregate":"COUNT_DISTINCT","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"COUNT_DISTINCT(supplementalEquipment.id)","optionName":"metric_gscr0im5cka_3wq1j6ozh8s"},"count"],"annotation_layers":[],"row_limit":10000,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"4__table","viz_type":"bubble_v2","slice_id":79,"series":"campus.name.string","entity":"campus.id","x":{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"space.sensor.id","description":null,"expression":null,"filterable":true,"groupby":true,"id":49,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"STRING","type_generic":1,"verbose_name":null,"warning_markdown":null},"aggregate":"COUNT_DISTINCT","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"COUNT_DISTINCT(space.sensor.id)","optionName":"metric_dvor8kpvhn_gk65eqj86um"},"y":{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"supplementalEquipment.id","description":null,"expression":null,"filterable":true,"groupby":true,"id":39,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"NULLABLE(STRING)","type_generic":1,"verbose_name":null,"warning_markdown":null},"aggregate":"COUNT_DISTINCT","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"COUNT_DISTINCT(supplementalEquipment.id)","optionName":"metric_gscr0im5cka_3wq1j6ozh8s"},"adhoc_filters":[{"clause":"WHERE","comparator":"No
+  filter","expressionType":"SIMPLE","operator":"TEMPORAL_RANGE","subject":"timestamp"}],"size":"count","order_desc":true,"row_limit":10000,"color_scheme":"bnbColors","show_legend":true,"legendType":"scroll","legendOrientation":"top","max_bubble_size":"25","tooltipSizeFormat":"SMART_NUMBER","opacity":0.6,"x_axis_label":"Number
+  of Spaces","x_axis_title_margin":30,"xAxisFormat":"SMART_NUMBER","y_axis_label":"Number
+  of Meters","y_axis_title_margin":30,"y_axis_format":"SMART_NUMBER","truncateXAxis":true,"y_axis_bounds":[null,null],"extra_form_data":{},"dashboards":[6],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: b8a36a70-835a-4c54-9a64-ab2a4c808e11
+version: 1.0.0
+dataset_uuid: 01d0fd88-20f7-4b77-a22d-46c7a98bfff8

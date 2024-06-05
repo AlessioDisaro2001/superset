@@ -1,0 +1,35 @@
+slice_name: Occupancy Analysis
+description: null
+certified_by: null
+certification_details: null
+viz_type: cal_heatmap
+params:
+  datasource: 4__table
+  viz_type: cal_heatmap
+  slice_id: 54
+  granularity_sqla: timestamp
+  time_range: previous calendar month
+  domain_granularity: month
+  subdomain_granularity: day
+  metrics:
+  - count
+  adhoc_filters: []
+  linear_color_scheme: blue_white_yellow
+  cell_size: 30
+  cell_padding: 2
+  cell_radius: ''
+  steps: 10
+  y_axis_format: SMART_NUMBER
+  x_axis_time_format: smart_date
+  show_legend: true
+  show_values: true
+  show_metric_name: true
+  extra_form_data: {}
+  dashboards:
+  - 1
+  annotation_layers: []
+query_context: null
+cache_timeout: null
+uuid: a48e9f65-ea9a-49f8-8492-191828139c09
+version: 1.0.0
+dataset_uuid: 01d0fd88-20f7-4b77-a22d-46c7a98bfff8

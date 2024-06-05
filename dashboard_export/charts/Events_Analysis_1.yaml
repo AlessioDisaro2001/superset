@@ -1,0 +1,34 @@
+slice_name: Events Analysis
+description: null
+certified_by: null
+certification_details: null
+viz_type: cal_heatmap
+params:
+  datasource: 1__table
+  viz_type: cal_heatmap
+  slice_id: 4
+  granularity_sqla: timestamp
+  time_range: No filter
+  domain_granularity: month
+  subdomain_granularity: day
+  metrics:
+  - count
+  adhoc_filters: []
+  linear_color_scheme: blue_white_yellow
+  cell_size: 30
+  cell_padding: 2
+  steps: 10
+  y_axis_format: SMART_NUMBER
+  x_axis_time_format: smart_date
+  show_legend: false
+  show_values: true
+  show_metric_name: false
+  extra_form_data: {}
+  dashboards:
+  - 1
+  annotation_layers: []
+query_context: null
+cache_timeout: null
+uuid: 715522c8-0e48-49b6-988a-b3af71547a70
+version: 1.0.0
+dataset_uuid: 781c0a1a-f9a9-430d-b0fa-6c74e15df9bd

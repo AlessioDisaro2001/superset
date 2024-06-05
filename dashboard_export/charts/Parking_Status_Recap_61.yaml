@@ -1,0 +1,71 @@
+slice_name: Parking Status Recap
+description: null
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 6__table
+  viz_type: table
+  slice_id: 56
+  query_mode: aggregate
+  groupby:
+  - demandTable.demandSpaceType.occupancyLevel.occupancyIndicator
+  time_grain_sqla: P1D
+  temporal_columns_lookup:
+    demandTable.demandSpaceType.actualEnd: true
+    demandTable.demandSpaceType.actualStart: true
+    demandTable.demandSpaceType.detectionUpdateTime: true
+  metrics:
+  - count
+  all_columns: []
+  percent_metrics:
+  - count
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: demandTable.demandSpaceType.detectionUpdateTime
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_0w7au4xi4b6b_x5cj256kx9j
+  - expressionType: SQL
+    sqlExpression: demandTable.demandSpaceType.occupancyLevel.occupancyIndicator IN
+      ('unregulated', 'non-compliant', 'compliant')
+    clause: WHERE
+    subject: null
+    operator: null
+    comparator: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_80aj1b4dmk_krj7cv3hmw
+  order_by_cols: []
+  row_limit: 1000
+  server_page_length: 10
+  order_desc: true
+  show_totals: true
+  table_timestamp_format: smart_date
+  show_cell_bars: false
+  color_pn: true
+  column_config:
+    '%count':
+      d3SmallNumberFormat: .2%
+  conditional_formatting: []
+  extra_form_data: {}
+  dashboards:
+  - 3
+  annotation_layers: []
+query_context: '{"datasource":{"id":6,"type":"table"},"force":false,"queries":[{"filters":[{"col":"demandTable.demandSpaceType.detectionUpdateTime","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"time_grain_sqla":"P1D","having":"","where":"(demandTable.demandSpaceType.occupancyLevel.occupancyIndicator
+  IN (''unregulated'', ''non-compliant'', ''compliant''))"},"applied_time_extras":{},"columns":["demandTable.demandSpaceType.occupancyLevel.occupancyIndicator"],"metrics":["count"],"orderby":[["count",false]],"annotation_layers":[],"row_limit":1000,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[{"operation":"contribution","options":{"columns":["count"],"rename_columns":["%count"]}}]},{"filters":[{"col":"demandTable.demandSpaceType.detectionUpdateTime","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"time_grain_sqla":"P1D","having":"","where":"(demandTable.demandSpaceType.occupancyLevel.occupancyIndicator
+  IN (''unregulated'', ''non-compliant'', ''compliant''))"},"applied_time_extras":{},"columns":[],"metrics":["count"],"annotation_layers":[],"row_limit":0,"row_offset":0,"series_limit":0,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[]}],"form_data":{"adhoc_filters":[{"clause":"WHERE","comparator":"No
+  filter","datasourceWarning":false,"expressionType":"SIMPLE","filterOptionName":"filter_0w7au4xi4b6b_x5cj256kx9j","isExtra":false,"isNew":false,"operator":"TEMPORAL_RANGE","sqlExpression":null,"subject":"demandTable.demandSpaceType.detectionUpdateTime"},{"clause":"WHERE","comparator":null,"datasourceWarning":false,"expressionType":"SQL","filterOptionName":"filter_80aj1b4dmk_krj7cv3hmw","isExtra":false,"isNew":false,"operator":null,"sqlExpression":"demandTable.demandSpaceType.occupancyLevel.occupancyIndicator
+  IN (''unregulated'', ''non-compliant'', ''compliant'')","subject":null}],"all_columns":[],"annotation_layers":[],"color_pn":true,"column_config":{"%count":{"d3SmallNumberFormat":".2%"}},"conditional_formatting":[],"dashboards":[3],"datasource":"6__table","extra_form_data":{},"groupby":["demandTable.demandSpaceType.occupancyLevel.occupancyIndicator"],"metrics":["count"],"order_by_cols":[],"order_desc":true,"percent_metrics":["count"],"query_mode":"aggregate","row_limit":1000,"server_page_length":10,"show_cell_bars":false,"show_totals":true,"slice_id":61,"table_timestamp_format":"smart_date","temporal_columns_lookup":{"demandTable.demandSpaceType.actualEnd":true,"demandTable.demandSpaceType.actualStart":true,"demandTable.demandSpaceType.detectionUpdateTime":true},"time_grain_sqla":"P1D","viz_type":"table","force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 15f89240-8074-497e-848b-d5be3111ffad
+version: 1.0.0
+dataset_uuid: e69f1633-5540-4ae7-8808-33bc38ba4541

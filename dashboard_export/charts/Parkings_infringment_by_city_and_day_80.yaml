@@ -1,0 +1,67 @@
+slice_name: Parkings  infringment by city and day
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_bar
+params:
+  datasource: 12__table
+  viz_type: echarts_timeseries_bar
+  x_axis:
+    label: demandTable.demandSpaceType.detectionUpdateTime
+    sqlExpression: toStartOfDay(demandTable.demandSpaceType.detectionUpdateTime)
+    expressionType: SQL
+  metrics:
+  - count
+  groupby:
+  - label: My column
+    sqlExpression: toStartOfDay(demandTable.demandSpaceType.detectionUpdateTime)
+    expressionType: SQL
+  - campus.id
+  - occupancyIndicator
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: demandTable.demandSpaceType.detectionUpdateTime
+    operator: TEMPORAL_RANGE
+    comparator: '1 dec 2023 : 4 dec 2023'
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_vpe7pwn7l0s_c4359msxxog
+  row_limit: 10000
+  truncate_metric: true
+  show_empty_columns: true
+  annotation_layers: []
+  orientation: vertical
+  x_axis_title_margin: 15
+  y_axis_title_margin: 15
+  y_axis_title_position: Left
+  sort_series_type: sum
+  color_scheme: supersetColors
+  only_total: true
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  y_axis_format: SMART_NUMBER
+  truncateXAxis: true
+  y_axis_bounds:
+  - null
+  - null
+  rich_tooltip: true
+  tooltipTimeFormat: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 4
+query_context: '{"datasource":{"id":12,"type":"table"},"force":false,"queries":[{"filters":[{"col":"demandTable.demandSpaceType.detectionUpdateTime","op":"TEMPORAL_RANGE","val":"1
+  dec 2023 : 4 dec 2023"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[{"columnType":"BASE_AXIS","label":"demandTable.demandSpaceType.detectionUpdateTime","sqlExpression":"toStartOfDay(demandTable.demandSpaceType.detectionUpdateTime)","expressionType":"SQL"},{"label":"My
+  column","sqlExpression":"toStartOfDay(demandTable.demandSpaceType.detectionUpdateTime)","expressionType":"SQL"},"campus.id","occupancyIndicator"],"metrics":["count"],"orderby":[["count",false]],"annotation_layers":[],"row_limit":10000,"series_columns":[{"label":"My
+  column","sqlExpression":"toStartOfDay(demandTable.demandSpaceType.detectionUpdateTime)","expressionType":"SQL"},"campus.id","occupancyIndicator"],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"time_offsets":[],"post_processing":[{"operation":"pivot","options":{"index":["demandTable.demandSpaceType.detectionUpdateTime"],"columns":["My
+  column","campus.id","occupancyIndicator"],"aggregates":{"count":{"operator":"mean"}},"drop_missing_columns":false}},{"operation":"rename","options":{"columns":{"count":null},"level":0,"inplace":true}},{"operation":"flatten"}]}],"form_data":{"datasource":"12__table","viz_type":"echarts_timeseries_bar","x_axis":{"label":"demandTable.demandSpaceType.detectionUpdateTime","sqlExpression":"toStartOfDay(demandTable.demandSpaceType.detectionUpdateTime)","expressionType":"SQL"},"metrics":["count"],"groupby":[{"label":"My
+  column","sqlExpression":"toStartOfDay(demandTable.demandSpaceType.detectionUpdateTime)","expressionType":"SQL"},"campus.id","occupancyIndicator"],"adhoc_filters":[{"expressionType":"SIMPLE","subject":"demandTable.demandSpaceType.detectionUpdateTime","operator":"TEMPORAL_RANGE","comparator":"1
+  dec 2023 : 4 dec 2023","clause":"WHERE","sqlExpression":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_vpe7pwn7l0s_c4359msxxog"}],"row_limit":10000,"truncate_metric":true,"show_empty_columns":true,"annotation_layers":[],"orientation":"vertical","x_axis_title_margin":15,"y_axis_title_margin":15,"y_axis_title_position":"Left","sort_series_type":"sum","color_scheme":"supersetColors","only_total":true,"show_legend":true,"legendType":"scroll","legendOrientation":"top","x_axis_time_format":"smart_date","y_axis_format":"SMART_NUMBER","truncateXAxis":true,"y_axis_bounds":[null,null],"rich_tooltip":true,"tooltipTimeFormat":"smart_date","extra_form_data":{},"dashboards":[4],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 8c4be1a4-778f-466b-a2ce-1b23bdf9be9a
+version: 1.0.0
+dataset_uuid: a0341a26-8dc4-4d64-af4f-4e95a0a77487

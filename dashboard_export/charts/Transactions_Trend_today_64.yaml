@@ -1,0 +1,60 @@
+slice_name: Transactions Trend today
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_area
+params:
+  datasource: 5__table
+  viz_type: echarts_area
+  slice_id: 69
+  x_axis: timestamp
+  time_grain_sqla: PT10M
+  metrics:
+  - count(transaction)
+  groupby: []
+  adhoc_filters:
+  - clause: WHERE
+    comparator: 'last year : next day one year ago'
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_g9ja14iyi6s_zn6p50dpa1
+    isExtra: false
+    isNew: false
+    operator: TEMPORAL_RANGE
+    sqlExpression: null
+    subject: timestamp
+  row_limit: 10000
+  truncate_metric: true
+  show_empty_columns: true
+  comparison_type: values
+  annotation_layers: []
+  forecastPeriods: 10
+  forecastInterval: 0.8
+  x_axis_title_margin: 15
+  y_axis_title_margin: 15
+  y_axis_title_position: Left
+  sort_series_type: sum
+  color_scheme: supersetColors
+  seriesType: line
+  opacity: 0.2
+  only_total: true
+  markerSize: 6
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  rich_tooltip: true
+  tooltipTimeFormat: smart_date
+  y_axis_format: SMART_NUMBER
+  truncateXAxis: true
+  y_axis_bounds:
+  - null
+  - null
+  extra_form_data: {}
+  dashboards:
+  - 5
+query_context: null
+cache_timeout: null
+uuid: e8450b09-51bb-4867-b685-be60510cca90
+version: 1.0.0
+dataset_uuid: fd6c9db1-391c-4ddc-9684-b4e7870ca167

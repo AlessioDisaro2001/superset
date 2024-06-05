@@ -1,0 +1,44 @@
+slice_name: Grafico 16.0.2
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number
+params:
+  datasource: 5__table
+  viz_type: big_number
+  x_axis: timestamp
+  time_grain_sqla: PT15M
+  metric: sum(amount)
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: timestamp
+  compare_lag: 10
+  compare_suffix: ''
+  show_timestamp: true
+  show_trend_line: false
+  start_y_axis_at_zero: true
+  color_picker:
+    a: 1
+    b: 135
+    g: 122
+    r: 0
+  header_font_size: 0.4
+  subheader_font_size: 0.15
+  y_axis_format: SMART_NUMBER
+  currency_format:
+    symbol: USD
+    symbolPosition: prefix
+  time_format: '%b %y'
+  rolling_type: None
+  extra_form_data: {}
+  dashboards:
+  - 1
+  annotation_layers: []
+query_context: null
+cache_timeout: null
+uuid: d34bf5d1-0858-43f6-8e38-65bace884caa
+version: 1.0.0
+dataset_uuid: fd6c9db1-391c-4ddc-9684-b4e7870ca167

@@ -1,0 +1,303 @@
+table_name: Dataset 7.0
+main_dttm_col: demandTable.demandSpaceType.detectionUpdateTime
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+schema: default
+sql: 'SELECT
+
+  "campus.name.string" AS province,
+
+  "parent.name.string" AS city,
+
+  "space.sensor.name.string" AS asset_name,
+
+  "space.sensor.id" AS asset_id,
+
+  ''sensor'' AS type,
+
+  if("demandTable.demandSpaceType.detectionUpdateTime" IS NULL, ''No Comm'', ''Comm'')
+  AS comm_status, "demandTable.demandSpaceType.detectionUpdateTime",
+
+  if("payment.id" IS NULL, ''No Transaction'', ''Transaction'') AS trans_status, "payment.id",
+
+  ''No Event'' AS event_status,
+
+  NULL AS last_event,
+
+  ''No Alarm'' AS alarm_status,
+
+  NULL AS last_alarm
+
+  FROM apds_demandspacetype
+
+  WHERE ("demandTable.demandSpaceType.detectionUpdateTime", "demandTable.demandSpaceType.elementId")
+
+  IN (SELECT MAX("demandTable.demandSpaceType.detectionUpdateTime"), "demandTable.demandSpaceType.elementId"
+
+  FROM apds_demandspacetype
+
+  GROUP BY 2)
+
+
+  UNION ALL
+
+
+  SELECT a.*,
+
+  if(b.eventCode <> '''', ''Event'', ''No Event'') AS event_status,
+
+  if(b.eventCode <> '''', b.eventCode, NULL) AS last_event,
+
+  if(c.eventCode <> '''', ''Alarm'', ''No Alarm'') AS alarm_status,
+
+  if(c.eventCode <> '''', c.eventCode, NULL) AS last_alarm
+
+  FROM
+
+  (SELECT
+
+  "campus.name.string" AS province,
+
+  "parent.name.string" AS city,
+
+  "supplementalEquipment.name.string" AS asset_name,
+
+  "supplementalEquipment.id" AS asset_id,
+
+  ''meter'' AS type,
+
+  if("demandTable.demandSpaceType.detectionUpdateTime" IS NULL, ''No Comm'', ''Comm'')
+  AS comm_status, "demandTable.demandSpaceType.detectionUpdateTime",
+
+  if("payment.id" IS NULL, ''No Transaction'', ''Transaction'') AS trans_status, "payment.id"
+
+  FROM apds_demandspacetype
+
+  WHERE ("demandTable.demandSpaceType.detectionUpdateTime", "demandTable.demandSpaceType.elementId")
+
+  IN (SELECT MAX("demandTable.demandSpaceType.detectionUpdateTime"), "demandTable.demandSpaceType.elementId"
+
+  FROM apds_demandspacetype
+
+  GROUP BY 2)) AS a
+
+  LEFT JOIN
+
+  (SELECT eventCode, elementId
+
+  FROM events_enriched
+
+  WHERE (elementId, timestamp)
+
+  IN (SELECT elementId, MAX(timestamp)
+
+  FROM events_enriched
+
+  GROUP BY 1)) AS b ON (a."asset_id" = b."elementId")
+
+  LEFT JOIN
+
+  (SELECT eventCode, elementId
+
+  FROM alarms
+
+  WHERE (elementId, timestamp)
+
+  IN (SELECT elementId, MAX(timestamp)
+
+  FROM alarms
+
+  GROUP BY 1)) AS c ON (a."asset_id" = c."elementId")'
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+uuid: d1267dd7-4fd1-46ad-9265-5f909aefbe1e
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra:
+    warning_markdown: ''
+  warning_text: null
+columns:
+- column_name: demandTable.demandSpaceType.detectionUpdateTime
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: Nullable(DateTime64(6))
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: payment.id
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: Nullable(String)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: last_alarm
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: Nullable(String)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: asset_name
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: Nullable(String)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: asset_id
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: Nullable(String)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: last_event
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: Nullable(String)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: province
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: Nullable(String)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: city
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: Nullable(String)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: alarm_status
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: String
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: trans_status
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: String
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: comm_status
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: String
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: event_status
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: String
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: type
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: String
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+version: 1.0.0
+database_uuid: b766e254-dee3-457b-b5c5-cd24f90651ce

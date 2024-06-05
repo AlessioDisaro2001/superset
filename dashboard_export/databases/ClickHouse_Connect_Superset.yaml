@@ -1,0 +1,16 @@
+database_name: ClickHouse Connect (Superset)
+sqlalchemy_uri: clickhousedb://clickhouse/default
+cache_timeout: null
+expose_in_sqllab: true
+allow_run_async: false
+allow_ctas: false
+allow_cvas: false
+allow_dml: false
+allow_file_upload: false
+extra:
+  metadata_params: {}
+  engine_params: {}
+  metadata_cache_timeout: {}
+  schemas_allowed_for_file_upload: []
+uuid: b766e254-dee3-457b-b5c5-cd24f90651ce
+version: 1.0.0

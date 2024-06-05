@@ -1,0 +1,219 @@
+table_name: apds_demandspacetype dy elementId
+main_dttm_col: demandTable.demandSpaceType.actualStart
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+schema: default
+sql: "SELECT \"demandTable.demandSpaceType.elementId\", \"demandTable.demandSpaceType.actualStart\"\
+  , \"demandTable.demandSpaceType.actualEnd\", \n  \"demandTable.demandSpaceType.detectionUpdateTime\"\
+  , \"space.indicativePlacePointLocation.geoJSON\", \"demandTable.demandSpaceType.occupancyLevel.occupancyIndicator\"\
+  ,\n  \"parent.id\", \"parent.name.string\", \"campus.id\", \"campus.name.string\"\
+  ,\n  if(\"demandTable.demandSpaceType.occupancyLevel.occupancyIndicator\" LIKE 'undefined',\
+  \ 'undefined', if(isNull(\"session.actualEnd\"), 'occupied', 'vacant')) AS isOccupied,\n\
+  \  JSONExtract(\"space.indicativePlacePointLocation.geoJSON\", 'geometry', 'coordinates',\
+  \ 'Array(Float64)')[2] AS longitude,\n  JSONExtract(\"space.indicativePlacePointLocation.geoJSON\"\
+  , 'geometry', 'coordinates', 'Array(Float64)')[1] AS latitude\nFROM apds_demandspacetype\n\
+  GROUP BY 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, \"session.actualEnd\""
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+uuid: a0341a26-8dc4-4d64-af4f-4e95a0a77487
+metrics:
+- metric_name: avg
+  verbose_name: AVG()
+  metric_type: null
+  expression: AVG(date_diff('hour', demandTable.demandSpaceType.actualEnd, demandTable.demandSpaceType.actualStart))
+  description: null
+  d3format: null
+  currency: null
+  extra:
+    warning_markdown: ''
+  warning_text: null
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra:
+    warning_markdown: ''
+  warning_text: null
+columns:
+- column_name: occupancyIndicator
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: null
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: 'if(isOccupied LIKE ''vacant'', ''vacant'', demandTable.demandSpaceType.occupancyLevel.occupancyIndicator
+
+    )'
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: demandTable.demandSpaceType.actualEnd
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: Nullable(DateTime64(6))
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: demandTable.demandSpaceType.actualStart
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: Nullable(DateTime64(6))
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: demandTable.demandSpaceType.detectionUpdateTime
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: Nullable(DateTime64(6))
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: campus.name.string
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: Nullable(String)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: parent.name.string
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: Nullable(String)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: campus.id
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: Nullable(String)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: parent.id
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: Nullable(String)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: demandTable.demandSpaceType.occupancyLevel.occupancyIndicator
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: String
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: demandTable.demandSpaceType.elementId
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: String
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: space.indicativePlacePointLocation.geoJSON
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: String
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: latitude
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: Float64
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: longitude
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: Float64
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: isOccupied
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: String
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+version: 1.0.0
+database_uuid: b766e254-dee3-457b-b5c5-cd24f90651ce

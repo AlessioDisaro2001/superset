@@ -1,0 +1,73 @@
+slice_name: Grafico 10.4
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_area
+params:
+  datasource: 5__table
+  viz_type: echarts_area
+  slice_id: 34
+  x_axis: timestamp
+  time_grain_sqla: P1D
+  x_axis_sort_asc: true
+  x_axis_sort_series: name
+  x_axis_sort_series_ascending: true
+  metrics:
+  - sum(amount)
+  groupby:
+  - payment.paymentMethod
+  adhoc_filters:
+  - clause: WHERE
+    comparator: '6 days ago : tomorrow'
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_k7mcv6otud_c0f4a5y9f0u
+    isExtra: false
+    isNew: false
+    operator: TEMPORAL_RANGE
+    sqlExpression: null
+    subject: timestamp
+  order_desc: true
+  row_limit: 10000
+  truncate_metric: true
+  show_empty_columns: true
+  comparison_type: values
+  annotation_layers: []
+  forecastPeriods: 10
+  forecastInterval: 0.8
+  x_axis_title: Date
+  x_axis_title_margin: 30
+  y_axis_title_margin: 15
+  y_axis_title_position: Left
+  sort_series_type: sum
+  sort_series_ascending: false
+  color_scheme: supersetColors
+  seriesType: line
+  opacity: 0.2
+  show_value: false
+  only_total: true
+  markerEnabled: false
+  markerSize: 6
+  zoomable: false
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: '%d/%m/%Y'
+  rich_tooltip: true
+  tooltipSortByMetric: true
+  tooltipTimeFormat: smart_date
+  y_axis_format: SMART_NUMBER
+  currency_format:
+    symbol: USD
+    symbolPosition: prefix
+  y_axis_bounds:
+  - null
+  - null
+  extra_form_data: {}
+  dashboards:
+  - 5
+query_context: null
+cache_timeout: null
+uuid: 5eadc016-d8f4-4f9b-92ad-8501558de127
+version: 1.0.0
+dataset_uuid: fd6c9db1-391c-4ddc-9684-b4e7870ca167

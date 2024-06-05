@@ -1,0 +1,56 @@
+slice_name: Grafico 7.0
+description: null
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 7__table
+  viz_type: table
+  slice_id: 48
+  query_mode: raw
+  groupby: []
+  time_grain_sqla: P1D
+  temporal_columns_lookup:
+    demandTable.demandSpaceType.detectionUpdateTime: true
+  all_columns:
+  - province
+  - city
+  - asset_name
+  - asset_id
+  - type
+  - comm_status
+  - demandTable.demandSpaceType.detectionUpdateTime
+  - trans_status
+  - payment.id
+  - event_status
+  - last_event
+  - alarm_status
+  - last_alarm
+  percent_metrics: []
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: demandTable.demandSpaceType.detectionUpdateTime
+  order_by_cols:
+  - '["demandTable.demandSpaceType.detectionUpdateTime", false]'
+  row_limit: 1000
+  server_page_length: 10
+  order_desc: true
+  table_timestamp_format: smart_date
+  show_cell_bars: true
+  color_pn: true
+  column_config:
+    demandTable.demandSpaceType.detectionUpdateTime:
+      d3TimeFormat: '%d-%m-%Y %H:%M:%S'
+  conditional_formatting: []
+  extra_form_data: {}
+  dashboards:
+  - 1
+  annotation_layers: []
+query_context: null
+cache_timeout: null
+uuid: 711e5428-501f-49a1-9c7d-f28ede0273dc
+version: 1.0.0
+dataset_uuid: d1267dd7-4fd1-46ad-9265-5f909aefbe1e
