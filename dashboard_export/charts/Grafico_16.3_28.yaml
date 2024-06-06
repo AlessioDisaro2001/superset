@@ -1,4 +1,4 @@
-slice_name: Grafico 17.5
+slice_name: Grafico 16.3
 description: null
 certified_by: null
 certification_details: null
@@ -6,24 +6,26 @@ viz_type: echarts_timeseries_bar
 params:
   datasource: 10__table
   viz_type: echarts_timeseries_bar
-  slice_id: 24
-  x_axis: payment.cardReader
-  time_grain_sqla: P1D
+  slice_id: 29
+  x_axis: timestamp
+  time_grain_sqla: P1M
   x_axis_sort_asc: true
   x_axis_sort_series: name
   x_axis_sort_series_ascending: true
   metrics:
-  - count
-  groupby: []
+  - time paid
+  groupby:
+  - payment.paymentMethod
   adhoc_filters:
   - clause: WHERE
-    comparator: 'today : tomorrow'
+    comparator: 'a year ago : tomorrow'
     datasourceWarning: false
     expressionType: SIMPLE
-    filterOptionName: filter_h66uv4rstm4_noftztaq1i
+    filterOptionName: filter_g4n2jbsz0c_9z2e5brmrza
     isExtra: false
     isNew: false
     operator: TEMPORAL_RANGE
+    operatorId: TEMPORAL_RANGE
     sqlExpression: null
     subject: timestamp
   order_desc: true
@@ -34,27 +36,21 @@ params:
   annotation_layers: []
   forecastPeriods: 10
   forecastInterval: 0.8
-  orientation: horizontal
-  x_axis_title: ''
-  x_axis_title_margin: 15
-  y_axis_title: ''
-  y_axis_title_margin: 15
+  orientation: vertical
+  x_axis_title: Month
+  x_axis_title_margin: 30
+  y_axis_title: Total Minutes
+  y_axis_title_margin: '40'
   y_axis_title_position: Left
   sort_series_type: sum
   color_scheme: supersetColors
-  show_value: true
+  stack: Stack
   only_total: true
   show_legend: true
   legendType: scroll
   legendOrientation: top
-  x_axis_time_format: smart_date
-  xAxisLabelRotation: 0
+  x_axis_time_format: '%b %y'
   y_axis_format: SMART_NUMBER
-  currency_format: {}
-  logAxis: false
-  minorSplitLine: false
-  truncateXAxis: true
-  truncateYAxis: false
   y_axis_bounds:
   - null
   - null
@@ -65,6 +61,6 @@ params:
   - 1
 query_context: null
 cache_timeout: null
-uuid: b7333028-5ebe-499a-a7a5-595c36f32233
+uuid: 172b7658-9e24-4161-a845-6cc1d8ba3ee7
 version: 1.0.0
 dataset_uuid: fd6c9db1-391c-4ddc-9684-b4e7870ca167

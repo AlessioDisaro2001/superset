@@ -1,14 +1,13 @@
-slice_name: Grafico 17.5
+slice_name: Parking comparison with previous year
 description: null
 certified_by: null
 certification_details: null
 viz_type: echarts_timeseries_bar
 params:
-  datasource: 10__table
+  datasource: 8__table
   viz_type: echarts_timeseries_bar
-  slice_id: 24
-  x_axis: payment.cardReader
-  time_grain_sqla: P1D
+  x_axis: timestamp
+  time_grain_sqla: P1M
   x_axis_sort_asc: true
   x_axis_sort_series: name
   x_axis_sort_series_ascending: true
@@ -16,45 +15,40 @@ params:
   - count
   groupby: []
   adhoc_filters:
-  - clause: WHERE
-    comparator: 'today : tomorrow'
-    datasourceWarning: false
-    expressionType: SIMPLE
-    filterOptionName: filter_h66uv4rstm4_noftztaq1i
+  - expressionType: SIMPLE
+    subject: timestamp
+    operator: TEMPORAL_RANGE
+    comparator: '1 jan 2023 : 1 jan 2024'
+    clause: WHERE
+    sqlExpression: null
     isExtra: false
     isNew: false
-    operator: TEMPORAL_RANGE
-    sqlExpression: null
-    subject: timestamp
+    datasourceWarning: false
+    filterOptionName: filter_ogipsktfdz_7frlbspnt3q
   order_desc: true
   row_limit: 10000
   truncate_metric: true
   show_empty_columns: true
+  time_compare:
+  - 1 year ago
   comparison_type: values
+  resample_rule: 1MS
   annotation_layers: []
   forecastPeriods: 10
   forecastInterval: 0.8
-  orientation: horizontal
-  x_axis_title: ''
+  orientation: vertical
   x_axis_title_margin: 15
-  y_axis_title: ''
   y_axis_title_margin: 15
   y_axis_title_position: Left
   sort_series_type: sum
   color_scheme: supersetColors
-  show_value: true
   only_total: true
   show_legend: true
   legendType: scroll
   legendOrientation: top
   x_axis_time_format: smart_date
-  xAxisLabelRotation: 0
   y_axis_format: SMART_NUMBER
-  currency_format: {}
-  logAxis: false
-  minorSplitLine: false
   truncateXAxis: true
-  truncateYAxis: false
   y_axis_bounds:
   - null
   - null
@@ -62,9 +56,9 @@ params:
   tooltipTimeFormat: smart_date
   extra_form_data: {}
   dashboards:
-  - 1
+  - 4
 query_context: null
 cache_timeout: null
-uuid: b7333028-5ebe-499a-a7a5-595c36f32233
+uuid: 3eca4b33-d628-4a7a-b199-20b5cd1dae2a
 version: 1.0.0
-dataset_uuid: fd6c9db1-391c-4ddc-9684-b4e7870ca167
+dataset_uuid: 01d0fd88-20f7-4b77-a22d-46c7a98bfff8

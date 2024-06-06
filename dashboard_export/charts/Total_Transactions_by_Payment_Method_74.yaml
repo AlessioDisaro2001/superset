@@ -1,4 +1,4 @@
-slice_name: Grafico 15.2
+slice_name: Total Transactions by Payment Method
 description: null
 certified_by: null
 certification_details: null
@@ -6,21 +6,15 @@ viz_type: pie
 params:
   datasource: 10__table
   viz_type: pie
-  slice_id: 53
   groupby:
-  - payment.paymentAssignment.assignedRight.rightSpecification.issuer.name
+  - payment.paymentMethod
   metric: sum(amount)
   adhoc_filters:
   - clause: WHERE
-    comparator: 'this monday : this sunday'
-    datasourceWarning: false
-    expressionType: SIMPLE
-    filterOptionName: filter_j7dkj1hhfz_ld8yxaqd09n
-    isExtra: false
-    isNew: false
-    operator: TEMPORAL_RANGE
-    sqlExpression: null
     subject: timestamp
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    expressionType: SIMPLE
   row_limit: 100
   sort_by_metric: true
   color_scheme: supersetColors
@@ -29,24 +23,23 @@ params:
   legendType: scroll
   legendOrientation: top
   label_type: key_percent
-  number_format: ',.2f'
+  number_format: SMART_NUMBER
   currency_format:
-    symbol: USD
     symbolPosition: prefix
+    symbol: USD
   date_format: smart_date
   show_labels: true
   labels_outside: true
   label_line: true
   show_total: false
   outerRadius: 70
-  donut: true
   innerRadius: 30
   extra_form_data: {}
   dashboards:
-  - 1
+  - 5
   annotation_layers: []
 query_context: null
 cache_timeout: null
-uuid: 37088ada-2b65-4479-96c1-d0db7cc6e411
+uuid: f68f2c78-bd75-4400-90b9-8b331e41da42
 version: 1.0.0
 dataset_uuid: fd6c9db1-391c-4ddc-9684-b4e7870ca167

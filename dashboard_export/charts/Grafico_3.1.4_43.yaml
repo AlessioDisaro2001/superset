@@ -1,15 +1,17 @@
-slice_name: Parking Status Recap
+slice_name: Grafico 3.1.4
 description: null
 certified_by: null
 certification_details: null
-viz_type: table
+viz_type: pivot_table_v2
 params:
   datasource: 2__table
-  viz_type: table
-  slice_id: 56
-  query_mode: aggregate
-  groupby:
+  viz_type: pivot_table_v2
+  slice_id: 29
+  groupbyColumns:
   - demandTable.demandSpaceType.occupancyLevel.occupancyIndicator
+  groupbyRows:
+  - campus.name.string
+  - parent.name.string
   time_grain_sqla: P1D
   temporal_columns_lookup:
     demandTable.demandSpaceType.actualEnd: true
@@ -17,49 +19,46 @@ params:
     demandTable.demandSpaceType.detectionUpdateTime: true
   metrics:
   - count
-  all_columns: []
-  percent_metrics:
-  - count
+  metricsLayout: COLUMNS
   adhoc_filters:
-  - expressionType: SIMPLE
-    subject: demandTable.demandSpaceType.detectionUpdateTime
-    operator: TEMPORAL_RANGE
+  - clause: WHERE
     comparator: No filter
-    clause: WHERE
-    sqlExpression: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_1qnbg22y8gk_qgxqjvl23u
     isExtra: false
     isNew: false
+    operator: TEMPORAL_RANGE
+    sqlExpression: null
+    subject: demandTable.demandSpaceType.detectionUpdateTime
+  - clause: WHERE
+    comparator: null
     datasourceWarning: false
-    filterOptionName: filter_0w7au4xi4b6b_x5cj256kx9j
-  - expressionType: SQL
+    expressionType: SQL
+    filterOptionName: filter_kkn4uuqdq0e_tp9iq77ucy
+    isExtra: false
+    isNew: false
+    operator: null
     sqlExpression: demandTable.demandSpaceType.occupancyLevel.occupancyIndicator IN
       ('unregulated', 'non-compliant', 'compliant')
-    clause: WHERE
     subject: null
-    operator: null
-    comparator: null
-    isExtra: false
-    isNew: false
-    datasourceWarning: false
-    filterOptionName: filter_80aj1b4dmk_krj7cv3hmw
-  order_by_cols: []
   row_limit: 1000
-  server_page_length: 10
   order_desc: true
-  show_totals: true
-  table_timestamp_format: smart_date
-  show_cell_bars: false
-  color_pn: true
-  column_config:
-    '%count':
-      d3SmallNumberFormat: .2%
+  aggregateFunction: Sum as Fraction of Rows
+  colTotals: true
+  combineMetric: false
+  valueFormat: .2%
+  date_format: smart_date
+  rowOrder: key_a_to_z
+  colOrder: key_a_to_z
   conditional_formatting: []
   extra_form_data: {}
   dashboards:
-  - 3
+  - 1
+  - 2
   annotation_layers: []
 query_context: null
 cache_timeout: null
-uuid: 15f89240-8074-497e-848b-d5be3111ffad
+uuid: ac3e4f6c-533d-4c2d-b0bc-076dc4cd98b8
 version: 1.0.0
 dataset_uuid: e69f1633-5540-4ae7-8808-33bc38ba4541

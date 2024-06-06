@@ -1,0 +1,39 @@
+slice_name: Today
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 10__table
+  viz_type: big_number_total
+  slice_id: 30
+  metric:
+    expressionType: SQL
+    sqlExpression: today()
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: today()
+    optionName: metric_h16ji8yki4p_7o91fdwgnxm
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: timestamp
+  header_font_size: 0.4
+  subheader_font_size: 0.15
+  y_axis_format: SMART_NUMBER
+  time_format: '%d %b'
+  force_timestamp_formatting: false
+  conditional_formatting: []
+  extra_form_data: {}
+  dashboards:
+  - 5
+  annotation_layers: []
+query_context: null
+cache_timeout: null
+uuid: 6ae8f59a-16c3-48a1-b5bb-337e98d374e0
+version: 1.0.0
+dataset_uuid: fd6c9db1-391c-4ddc-9684-b4e7870ca167

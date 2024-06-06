@@ -1,4 +1,4 @@
-slice_name: Grafico 17.5
+slice_name: Grafico 17.4
 description: null
 certified_by: null
 certification_details: null
@@ -6,14 +6,14 @@ viz_type: echarts_timeseries_bar
 params:
   datasource: 10__table
   viz_type: echarts_timeseries_bar
-  slice_id: 24
+  slice_id: 39
   x_axis: payment.cardReader
   time_grain_sqla: P1D
   x_axis_sort_asc: true
   x_axis_sort_series: name
   x_axis_sort_series_ascending: true
   metrics:
-  - count
+  - sum(amount)
   groupby: []
   adhoc_filters:
   - clause: WHERE
@@ -49,11 +49,12 @@ params:
   legendOrientation: top
   x_axis_time_format: smart_date
   xAxisLabelRotation: 0
-  y_axis_format: SMART_NUMBER
-  currency_format: {}
+  y_axis_format: $,.2f
+  currency_format:
+    symbol: USD
+    symbolPosition: prefix
   logAxis: false
   minorSplitLine: false
-  truncateXAxis: true
   truncateYAxis: false
   y_axis_bounds:
   - null
@@ -62,9 +63,9 @@ params:
   tooltipTimeFormat: smart_date
   extra_form_data: {}
   dashboards:
-  - 1
+  - 5
 query_context: null
 cache_timeout: null
-uuid: b7333028-5ebe-499a-a7a5-595c36f32233
+uuid: e8e57114-111e-4752-ac79-ed94510e6db9
 version: 1.0.0
 dataset_uuid: fd6c9db1-391c-4ddc-9684-b4e7870ca167

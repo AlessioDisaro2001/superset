@@ -1,4 +1,4 @@
-slice_name: Parking Status Recap
+slice_name: Grafico 3.1.2
 description: null
 certified_by: null
 certification_details: null
@@ -6,14 +6,14 @@ viz_type: table
 params:
   datasource: 2__table
   viz_type: table
-  slice_id: 56
+  slice_id: 23
   query_mode: aggregate
   groupby:
   - demandTable.demandSpaceType.occupancyLevel.occupancyIndicator
   time_grain_sqla: P1D
   temporal_columns_lookup:
-    demandTable.demandSpaceType.actualEnd: true
     demandTable.demandSpaceType.actualStart: true
+    demandTable.demandSpaceType.actualEnd: true
     demandTable.demandSpaceType.detectionUpdateTime: true
   metrics:
   - count
@@ -21,27 +21,27 @@ params:
   percent_metrics:
   - count
   adhoc_filters:
-  - expressionType: SIMPLE
-    subject: demandTable.demandSpaceType.detectionUpdateTime
-    operator: TEMPORAL_RANGE
+  - clause: WHERE
     comparator: No filter
-    clause: WHERE
-    sqlExpression: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_0w7au4xi4b6b_x5cj256kx9j
     isExtra: false
     isNew: false
+    operator: TEMPORAL_RANGE
+    sqlExpression: null
+    subject: demandTable.demandSpaceType.detectionUpdateTime
+  - clause: WHERE
+    comparator: null
     datasourceWarning: false
-    filterOptionName: filter_0w7au4xi4b6b_x5cj256kx9j
-  - expressionType: SQL
+    expressionType: SQL
+    filterOptionName: filter_80aj1b4dmk_krj7cv3hmw
+    isExtra: false
+    isNew: false
+    operator: null
     sqlExpression: demandTable.demandSpaceType.occupancyLevel.occupancyIndicator IN
       ('unregulated', 'non-compliant', 'compliant')
-    clause: WHERE
     subject: null
-    operator: null
-    comparator: null
-    isExtra: false
-    isNew: false
-    datasourceWarning: false
-    filterOptionName: filter_80aj1b4dmk_krj7cv3hmw
   order_by_cols: []
   row_limit: 1000
   server_page_length: 10
@@ -56,10 +56,10 @@ params:
   conditional_formatting: []
   extra_form_data: {}
   dashboards:
-  - 3
+  - 5
   annotation_layers: []
 query_context: null
 cache_timeout: null
-uuid: 15f89240-8074-497e-848b-d5be3111ffad
+uuid: 83ab0a52-3f73-4173-ad74-26260e1dc2b7
 version: 1.0.0
 dataset_uuid: e69f1633-5540-4ae7-8808-33bc38ba4541

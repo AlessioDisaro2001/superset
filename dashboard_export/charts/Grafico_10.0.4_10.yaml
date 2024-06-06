@@ -1,4 +1,4 @@
-slice_name: Grafico 16.0.1
+slice_name: Grafico 10.0.4
 description: null
 certified_by: null
 certification_details: null
@@ -6,20 +6,24 @@ viz_type: big_number_total
 params:
   datasource: 10__table
   viz_type: big_number_total
-  metric: sum(amount)
+  slice_id: 8
+  metric: count
   adhoc_filters:
-  - clause: WHERE
+  - expressionType: SIMPLE
     subject: timestamp
     operator: TEMPORAL_RANGE
-    comparator: No filter
-    expressionType: SIMPLE
-  subheader: Total Amount
-  header_font_size: 0.3
-  subheader_font_size: 0.125
-  y_axis_format: ',.3f'
-  currency_format:
-    symbolPosition: prefix
-    symbol: USD
+    comparator: 'today : tomorrow'
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_4j1cyre8duk_gxij1jqxg49
+  subheader: Count
+  header_font_size: 0.4
+  subheader_font_size: 0.15
+  y_axis_format: SMART_NUMBER
+  currency_format: {}
   time_format: smart_date
   conditional_formatting: []
   extra_form_data: {}
@@ -28,6 +32,6 @@ params:
   annotation_layers: []
 query_context: null
 cache_timeout: null
-uuid: 0dac0aba-fad4-4e9d-ad8f-ee42b31a2231
+uuid: e7c016ae-29a3-490b-8312-c023029e4cb0
 version: 1.0.0
 dataset_uuid: fd6c9db1-391c-4ddc-9684-b4e7870ca167

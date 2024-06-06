@@ -4,7 +4,7 @@ certified_by: null
 certification_details: null
 viz_type: pivot_table_v2
 params:
-  datasource: 5__table
+  datasource: 10__table
   viz_type: pivot_table_v2
   slice_id: 55
   groupbyColumns:

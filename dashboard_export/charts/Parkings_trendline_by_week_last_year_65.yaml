@@ -1,0 +1,46 @@
+slice_name: Parkings trendline by week last year
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number
+params:
+  datasource: 8__table
+  viz_type: big_number
+  slice_id: 68
+  x_axis: timestamp
+  time_grain_sqla: P1W
+  metric: count
+  adhoc_filters:
+  - clause: WHERE
+    comparator: 'last year first day : last year next year'
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_1txobfmcox1j_sb9klw0juas
+    isExtra: false
+    isNew: false
+    operator: TEMPORAL_RANGE
+    sqlExpression: null
+    subject: timestamp
+  compare_lag: ''
+  show_timestamp: true
+  show_trend_line: true
+  start_y_axis_at_zero: true
+  color_picker:
+    a: 1
+    b: 135
+    g: 122
+    r: 0
+  header_font_size: 0.4
+  subheader_font_size: 0.15
+  y_axis_format: SMART_NUMBER
+  time_format: smart_date
+  rolling_type: None
+  extra_form_data: {}
+  dashboards:
+  - 4
+  annotation_layers: []
+query_context: null
+cache_timeout: null
+uuid: 4d317319-9747-4561-b165-7aa2a37eddf9
+version: 1.0.0
+dataset_uuid: 01d0fd88-20f7-4b77-a22d-46c7a98bfff8

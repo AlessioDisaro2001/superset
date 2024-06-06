@@ -1,4 +1,4 @@
-slice_name: Grafico 15.3
+slice_name: This Year and Last Year Transactions Amount
 description: null
 certified_by: null
 certification_details: null
@@ -6,64 +6,51 @@ viz_type: echarts_timeseries_bar
 params:
   datasource: 10__table
   viz_type: echarts_timeseries_bar
-  slice_id: 54
   x_axis: timestamp
-  time_grain_sqla: P1D
-  x_axis_sort_asc: true
-  x_axis_sort_series: name
-  x_axis_sort_series_ascending: true
+  time_grain_sqla: P1M
   metrics:
   - sum(amount)
   groupby:
-  - payment.paymentAssignment.assignedRight.rightSpecification.issuer.name
+  - payment.paymentMethod
   adhoc_filters:
-  - clause: WHERE
-    comparator: 'this monday : this sunday'
-    datasourceWarning: false
-    expressionType: SIMPLE
-    filterOptionName: filter_i0t0aey6xft_09n30yia9utj
+  - expressionType: SIMPLE
+    subject: timestamp
+    operator: TEMPORAL_RANGE
+    comparator: 'last year end next year : this year next year'
+    clause: WHERE
+    sqlExpression: null
     isExtra: false
     isNew: false
-    operator: TEMPORAL_RANGE
-    sqlExpression: null
-    subject: timestamp
-  order_desc: true
+    datasourceWarning: false
+    filterOptionName: filter_1vimsdkfwcp_1jk7kpb47dz
   row_limit: 10000
   truncate_metric: true
   show_empty_columns: true
+  time_compare:
+  - 1 year ago
   comparison_type: values
   annotation_layers: []
   forecastPeriods: 10
   forecastInterval: 0.8
   orientation: vertical
-  x_axis_title_margin: 15
-  y_axis_title_margin: 15
-  y_axis_title_position: Left
   sort_series_type: sum
   color_scheme: supersetColors
-  only_total: true
+  stack: null
+  minorTicks: true
   show_legend: true
   legendType: scroll
   legendOrientation: top
-  x_axis_time_format: '%d/%m/%Y'
-  y_axis_format: SMART_NUMBER
   currency_format:
-    symbol: USD
     symbolPosition: prefix
+    symbol: USD
   truncateXAxis: true
-  xAxisBounds:
-  - null
-  - null
-  y_axis_bounds:
-  - null
-  - null
   rich_tooltip: true
   tooltipTimeFormat: smart_date
   extra_form_data: {}
   dashboards:
-  - 1
+  - 5
 query_context: null
 cache_timeout: null
-uuid: 397068ad-6cdd-4830-b73a-bee4004a1aab
+uuid: b1162e04-8c53-49f9-953c-64c3a8c9851e
 version: 1.0.0
 dataset_uuid: fd6c9db1-391c-4ddc-9684-b4e7870ca167

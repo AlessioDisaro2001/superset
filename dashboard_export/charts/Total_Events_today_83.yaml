@@ -1,0 +1,46 @@
+slice_name: Total Events today
+description: null
+certified_by: null
+certification_details: null
+viz_type: pie
+params:
+  datasource: 6__table
+  viz_type: pie
+  groupby:
+  - eventCode
+  metric: count
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: timestamp
+    operator: TEMPORAL_RANGE
+    comparator: 'today : tomorrow'
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_uj2aimt7wap_fxwxlrq8i2i
+  row_limit: 100
+  sort_by_metric: true
+  color_scheme: supersetColors
+  show_labels_threshold: 5
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  label_type: key
+  number_format: SMART_NUMBER
+  date_format: smart_date
+  show_labels: true
+  labels_outside: true
+  outerRadius: 70
+  innerRadius: 30
+  extra_form_data: {}
+  dashboards:
+  - 7
+query_context: '{"datasource":{"id":6,"type":"table"},"force":false,"queries":[{"filters":[{"col":"timestamp","op":"TEMPORAL_RANGE","val":"today
+  : tomorrow"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["eventCode"],"metrics":["count"],"orderby":[["count",false]],"annotation_layers":[],"row_limit":100,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"6__table","viz_type":"pie","groupby":["eventCode"],"metric":"count","adhoc_filters":[{"expressionType":"SIMPLE","subject":"timestamp","operator":"TEMPORAL_RANGE","comparator":"today
+  : tomorrow","clause":"WHERE","sqlExpression":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_uj2aimt7wap_fxwxlrq8i2i"}],"row_limit":100,"sort_by_metric":true,"color_scheme":"supersetColors","show_labels_threshold":5,"show_legend":true,"legendType":"scroll","legendOrientation":"top","label_type":"key","number_format":"SMART_NUMBER","date_format":"smart_date","show_labels":true,"labels_outside":true,"outerRadius":70,"innerRadius":30,"extra_form_data":{},"dashboards":[7],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 8af2a008-437a-4def-8df4-0e44722c7ce3
+version: 1.0.0
+dataset_uuid: 44817376-4bdc-46e5-8cf0-08040043cfd7

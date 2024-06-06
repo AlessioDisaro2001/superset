@@ -1,4 +1,4 @@
-slice_name: Grafico 15.2
+slice_name: Grafico 15.0
 description: null
 certified_by: null
 certification_details: null
@@ -6,21 +6,21 @@ viz_type: pie
 params:
   datasource: 10__table
   viz_type: pie
-  slice_id: 53
+  slice_id: 51
   groupby:
-  - payment.paymentAssignment.assignedRight.rightSpecification.issuer.name
+  - payment.paymentMethod
   metric: sum(amount)
   adhoc_filters:
-  - clause: WHERE
+  - expressionType: SIMPLE
+    subject: timestamp
+    operator: TEMPORAL_RANGE
     comparator: 'this monday : this sunday'
-    datasourceWarning: false
-    expressionType: SIMPLE
-    filterOptionName: filter_j7dkj1hhfz_ld8yxaqd09n
+    clause: WHERE
+    sqlExpression: null
     isExtra: false
     isNew: false
-    operator: TEMPORAL_RANGE
-    sqlExpression: null
-    subject: timestamp
+    datasourceWarning: false
+    filterOptionName: filter_j7dkj1hhfz_ld8yxaqd09n
   row_limit: 100
   sort_by_metric: true
   color_scheme: supersetColors
@@ -31,8 +31,8 @@ params:
   label_type: key_percent
   number_format: ',.2f'
   currency_format:
-    symbol: USD
     symbolPosition: prefix
+    symbol: USD
   date_format: smart_date
   show_labels: true
   labels_outside: true
@@ -47,6 +47,6 @@ params:
   annotation_layers: []
 query_context: null
 cache_timeout: null
-uuid: 37088ada-2b65-4479-96c1-d0db7cc6e411
+uuid: a6e5ae42-ffd4-4136-9955-7e0ab29cfb8f
 version: 1.0.0
 dataset_uuid: fd6c9db1-391c-4ddc-9684-b4e7870ca167

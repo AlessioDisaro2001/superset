@@ -1,30 +1,20 @@
-slice_name: Parking Status Recap
+slice_name: Parking Status Realtime
 description: null
 certified_by: null
 certification_details: null
-viz_type: table
+viz_type: pie
 params:
   datasource: 2__table
-  viz_type: table
-  slice_id: 56
-  query_mode: aggregate
+  viz_type: pie
+  slice_id: 74
   groupby:
   - demandTable.demandSpaceType.occupancyLevel.occupancyIndicator
-  time_grain_sqla: P1D
-  temporal_columns_lookup:
-    demandTable.demandSpaceType.actualEnd: true
-    demandTable.demandSpaceType.actualStart: true
-    demandTable.demandSpaceType.detectionUpdateTime: true
-  metrics:
-  - count
-  all_columns: []
-  percent_metrics:
-  - count
+  metric: count
   adhoc_filters:
   - expressionType: SIMPLE
     subject: demandTable.demandSpaceType.detectionUpdateTime
     operator: TEMPORAL_RANGE
-    comparator: No filter
+    comparator: 'today : tomorrow'
     clause: WHERE
     sqlExpression: null
     isExtra: false
@@ -42,24 +32,29 @@ params:
     isNew: false
     datasourceWarning: false
     filterOptionName: filter_80aj1b4dmk_krj7cv3hmw
-  order_by_cols: []
-  row_limit: 1000
-  server_page_length: 10
-  order_desc: true
-  show_totals: true
-  table_timestamp_format: smart_date
-  show_cell_bars: false
-  color_pn: true
-  column_config:
-    '%count':
-      d3SmallNumberFormat: .2%
-  conditional_formatting: []
+  row_limit: 100
+  sort_by_metric: true
+  color_scheme: bnbColors
+  show_labels_threshold: 5
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  label_type: key_percent
+  number_format: SMART_NUMBER
+  date_format: smart_date
+  show_labels: true
+  labels_outside: true
+  label_line: true
+  show_total: true
+  outerRadius: 51
+  donut: true
+  innerRadius: 30
   extra_form_data: {}
   dashboards:
-  - 3
+  - 6
   annotation_layers: []
 query_context: null
 cache_timeout: null
-uuid: 15f89240-8074-497e-848b-d5be3111ffad
+uuid: 34d8349c-3659-4ae1-b9f6-fde40f5ce61d
 version: 1.0.0
 dataset_uuid: e69f1633-5540-4ae7-8808-33bc38ba4541

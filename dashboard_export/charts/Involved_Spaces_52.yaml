@@ -1,0 +1,51 @@
+slice_name: Involved Spaces
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 5__table
+  viz_type: big_number_total
+  slice_id: 61
+  metric:
+    expressionType: SIMPLE
+    column:
+      advanced_data_type: null
+      changed_on: '2024-04-17T13:36:26.482037'
+      column_name: uniqExact(space.sensor.id)
+      created_on: '2024-04-17T13:36:26.482020'
+      description: null
+      expression: null
+      extra: '{}'
+      filterable: true
+      groupby: true
+      id: 129
+      is_active: true
+      is_dttm: false
+      python_date_format: null
+      type: UInt64
+      type_generic: 0
+      uuid: 00879abb-1ffd-44cf-8eb6-5ca5f3cc7447
+      verbose_name: null
+    aggregate: SUM
+    sqlExpression: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: SUM(uniqExact(space.sensor.id))
+    optionName: metric_ufg0oxd3zsp_96hny46vts9
+  adhoc_filters: []
+  header_font_size: 0.4
+  subheader_font_size: 0.15
+  y_axis_format: SMART_NUMBER
+  currency_format: {}
+  time_format: smart_date
+  conditional_formatting: []
+  extra_form_data: {}
+  dashboards:
+  - 1
+  annotation_layers: []
+query_context: null
+cache_timeout: null
+uuid: 3e8aa052-19ea-47bf-99f9-28348bc2fc7e
+version: 1.0.0
+dataset_uuid: 27335a07-acc2-444b-9876-84ed9da2d99a

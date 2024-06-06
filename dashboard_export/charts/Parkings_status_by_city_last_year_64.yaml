@@ -1,31 +1,31 @@
-slice_name: Grafico 17.5
+slice_name: Parkings status by city last year
 description: null
 certified_by: null
 certification_details: null
 viz_type: echarts_timeseries_bar
 params:
-  datasource: 10__table
+  datasource: 9__table
   viz_type: echarts_timeseries_bar
-  slice_id: 24
-  x_axis: payment.cardReader
-  time_grain_sqla: P1D
+  slice_id: 80
+  x_axis: campus.name.string
   x_axis_sort_asc: true
   x_axis_sort_series: name
   x_axis_sort_series_ascending: true
   metrics:
   - count
-  groupby: []
+  groupby:
+  - demandTable.demandSpaceType.occupancyLevel.occupancyIndicator
   adhoc_filters:
   - clause: WHERE
-    comparator: 'today : tomorrow'
+    comparator: 'last year first day : last year next year'
     datasourceWarning: false
     expressionType: SIMPLE
-    filterOptionName: filter_h66uv4rstm4_noftztaq1i
+    filterOptionName: filter_vpe7pwn7l0s_c4359msxxog
     isExtra: false
     isNew: false
     operator: TEMPORAL_RANGE
     sqlExpression: null
-    subject: timestamp
+    subject: demandTable.demandSpaceType.detectionUpdateTime
   order_desc: true
   row_limit: 10000
   truncate_metric: true
@@ -34,27 +34,20 @@ params:
   annotation_layers: []
   forecastPeriods: 10
   forecastInterval: 0.8
-  orientation: horizontal
-  x_axis_title: ''
+  orientation: vertical
   x_axis_title_margin: 15
-  y_axis_title: ''
   y_axis_title_margin: 15
   y_axis_title_position: Left
   sort_series_type: sum
-  color_scheme: supersetColors
-  show_value: true
+  color_scheme: bnbColors
+  stack: Stack
   only_total: true
   show_legend: true
   legendType: scroll
   legendOrientation: top
   x_axis_time_format: smart_date
-  xAxisLabelRotation: 0
   y_axis_format: SMART_NUMBER
-  currency_format: {}
-  logAxis: false
-  minorSplitLine: false
   truncateXAxis: true
-  truncateYAxis: false
   y_axis_bounds:
   - null
   - null
@@ -62,9 +55,9 @@ params:
   tooltipTimeFormat: smart_date
   extra_form_data: {}
   dashboards:
-  - 1
+  - 6
 query_context: null
 cache_timeout: null
-uuid: b7333028-5ebe-499a-a7a5-595c36f32233
+uuid: 8c4be1a4-778f-466b-a2ce-1b23bdf9be9a
 version: 1.0.0
-dataset_uuid: fd6c9db1-391c-4ddc-9684-b4e7870ca167
+dataset_uuid: a0341a26-8dc4-4d64-af4f-4e95a0a77487

@@ -1,0 +1,48 @@
+slice_name: Grafico 14.0
+description: null
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 12__table
+  viz_type: table
+  slice_id: 50
+  query_mode: raw
+  groupby: []
+  time_grain_sqla: P1D
+  temporal_columns_lookup:
+    timestamp: true
+  all_columns:
+  - timestamp
+  - id
+  - elementId
+  - meterName
+  - eventCode
+  - eventClass
+  - eventSource
+  - province
+  - city
+  - street
+  percent_metrics: []
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: timestamp
+  order_by_cols: []
+  row_limit: 1000
+  server_page_length: 10
+  order_desc: true
+  table_timestamp_format: smart_date
+  show_cell_bars: true
+  color_pn: true
+  extra_form_data: {}
+  dashboards:
+  - 1
+  annotation_layers: []
+query_context: null
+cache_timeout: null
+uuid: 65d4ac3b-6948-4e6f-8261-c5aaaf40a5ef
+version: 1.0.0
+dataset_uuid: 781c0a1a-f9a9-430d-b0fa-6c74e15df9bd

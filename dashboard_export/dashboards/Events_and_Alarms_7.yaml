@@ -1,46 +1,62 @@
-dashboard_title: Predictive Analisys
+dashboard_title: Events and Alarms
 description: null
 css: ''
 slug: null
 certified_by: ''
 certification_details: ''
 published: false
-uuid: 3399cd62-801a-4c7c-b9f5-9433dc66e56a
+uuid: 07b2497d-2fcb-4189-adb3-5c1563fd83fc
 position:
-  CHART-95V-Rva3w_:
+  CHART-94xHUM4BLD:
     children: []
-    id: CHART-95V-Rva3w_
+    id: CHART-94xHUM4BLD
     meta:
-      chartId: 71
-      height: 79
-      sliceName: Total Amount by Payment Method
-      uuid: 133d95fb-5772-44e4-a42f-a2577534d14a
-      width: 12
+      chartId: 82
+      height: 50
+      sliceName: Number of alarms still open
+      uuid: da6c8b7b-681b-4214-b824-8046d39b4bba
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - TABS-5XkCG_WBwA
-    - TAB-cr7Wj0xWv_
-    - ROW-MNvRqkBZDL
+    - TABS-iNQvK_9VgE
+    - TAB-LyuAfZPC7A
+    - ROW-p17oxSPI9x
     type: CHART
-  CHART-explore-78-1:
+  CHART-explore-83-1:
     children: []
-    id: CHART-explore-78-1
+    id: CHART-explore-83-1
     meta:
-      chartId: 63
-      height: 79
-      sliceName: Parkings over time
-      uuid: a712063f-a06b-4fa6-a93e-0d63a2772770
-      width: 12
+      chartId: 83
+      height: 50
+      sliceName: Total Events today
+      uuid: 8af2a008-437a-4def-8df4-0e44722c7ce3
+      width: 4
     parents:
     - ROOT_ID
     - GRID_ID
-    - ROW-1LKWbGvTT6
+    - ROW-UqQt7kZylm
+    type: CHART
+  CHART-xGvyVT44N_:
+    children: []
+    id: CHART-xGvyVT44N_
+    meta:
+      chartId: 81
+      height: 50
+      sliceName: Alarms by hour today
+      uuid: fb2cc8b5-d61b-49a0-a530-41b4839e4c56
+      width: 8
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-iNQvK_9VgE
+    - TAB-LyuAfZPC7A
+    - ROW-p17oxSPI9x
     type: CHART
   DASHBOARD_VERSION_KEY: v2
   GRID_ID:
     children:
-    - TABS-5XkCG_WBwA
+    - TABS-iNQvK_9VgE
     id: GRID_ID
     parents:
     - ROOT_ID
@@ -48,68 +64,69 @@ position:
   HEADER_ID:
     id: HEADER_ID
     meta:
-      text: Predictive Analisys
+      text: Events and Alarms
     type: HEADER
   ROOT_ID:
     children:
     - GRID_ID
     id: ROOT_ID
     type: ROOT
-  ROW-1XbUCKjau:
+  ROW-Xak6C48-2:
     children:
-    - CHART-explore-78-1
-    id: ROW-1XbUCKjau
+    - CHART-explore-83-1
+    id: ROW-Xak6C48-2
     meta:
       background: BACKGROUND_TRANSPARENT
     parents:
     - ROOT_ID
     - GRID_ID
-    - TABS-5XkCG_WBwA
-    - TAB-i5cCJCXFG
+    - TABS-iNQvK_9VgE
+    - TAB-LyuAfZPC7A
     type: ROW
-  ROW-MNvRqkBZDL:
+  ROW-p17oxSPI9x:
     children:
-    - CHART-95V-Rva3w_
-    id: ROW-MNvRqkBZDL
+    - CHART-xGvyVT44N_
+    - CHART-94xHUM4BLD
+    id: ROW-p17oxSPI9x
     meta:
       background: BACKGROUND_TRANSPARENT
     parents:
     - ROOT_ID
     - GRID_ID
-    - TABS-5XkCG_WBwA
-    - TAB-cr7Wj0xWv_
+    - TABS-iNQvK_9VgE
+    - TAB-LyuAfZPC7A
     type: ROW
-  TAB-cr7Wj0xWv_:
+  TAB-LyuAfZPC7A:
     children:
-    - ROW-MNvRqkBZDL
-    id: TAB-cr7Wj0xWv_
+    - ROW-p17oxSPI9x
+    - ROW-Xak6C48-2
+    id: TAB-LyuAfZPC7A
     meta:
       defaultText: Tab title
       placeholder: Tab title
-      text: Payment
+      text: Realtime
     parents:
     - ROOT_ID
     - GRID_ID
-    - TABS-5XkCG_WBwA
+    - TABS-iNQvK_9VgE
     type: TAB
-  TAB-i5cCJCXFG:
-    children:
-    - ROW-1XbUCKjau
-    id: TAB-i5cCJCXFG
+  TAB-TMYUL-SZZ:
+    children: []
+    id: TAB-TMYUL-SZZ
     meta:
       defaultText: Tab title
       placeholder: Tab title
-      text: Occupancy
+      text: Historical
     parents:
     - ROOT_ID
     - GRID_ID
-    - TABS-5XkCG_WBwA
+    - TABS-iNQvK_9VgE
     type: TAB
-  TABS-5XkCG_WBwA:
+  TABS-iNQvK_9VgE:
     children:
-    - TAB-cr7Wj0xWv_
-    - TAB-i5cCJCXFG
-    id: TABS-5XkCG_WBwA
+    - TAB-LyuAfZPC7A
+    - TAB-TMYUL-SZZ
+    id: TABS-iNQvK_9VgE
     meta: {}
     parents:
     - ROOT_ID
@@ -117,37 +134,32 @@ position:
     type: TABS
 metadata:
   chart_configuration:
-    '63':
-      id: 63
+    '81':
+      id: 81
       crossFilters:
         scope: global
         chartsInScope:
-        - 78
-    '78':
-      id: 78
+        - 82
+        - 83
+    '83':
+      id: 83
       crossFilters:
         scope: global
         chartsInScope:
-        - 63
+        - 81
+        - 82
   global_chart_configuration:
     scope:
       rootPath:
       - ROOT_ID
       excluded: []
     chartsInScope:
-    - 63
-    - 78
+    - 81
+    - 82
+    - 83
   color_scheme: ''
   refresh_frequency: 0
-  shared_label_colors:
-    COUNT(*)__yhat_upper: '#1FA8C9'
-    COUNT(*)__yhat: '#5AC189'
-    count: '#666666'
-    COUNT(*)__yhat_lower: '#FCC700'
-    Total Amount__yhat_upper: '#6BD3B3'
-    Total Amount__yhat: '#408184'
-    sum(amount): '#EE5960'
-    Total Amount__yhat_lower: '#FF874E'
+  shared_label_colors: {}
   color_scheme_domain: []
   expanded_slices: {}
   label_colors: {}
@@ -155,10 +167,10 @@ metadata:
   cross_filters_enabled: true
   default_filters: '{}'
   native_filter_configuration:
-  - id: NATIVE_FILTER-1DY2G1eNB
+  - id: NATIVE_FILTER-foPVI9XS0
     controlValues:
       enableEmptyFilter: false
-    name: Time Range
+    name: Time
     filterType: filter_time
     targets:
     - {}
@@ -170,10 +182,13 @@ metadata:
     scope:
       rootPath:
       - ROOT_ID
-      excluded: []
+      excluded:
+      - 82
     type: NATIVE_FILTER
     description: ''
     chartsInScope:
-    - 63
-    tabsInScope: []
+    - 81
+    - 83
+    tabsInScope:
+    - TAB-LyuAfZPC7A
 version: 1.0.0

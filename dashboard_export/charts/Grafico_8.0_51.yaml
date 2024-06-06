@@ -1,0 +1,49 @@
+slice_name: Grafico 8.0
+description: null
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 7__table
+  viz_type: table
+  query_mode: aggregate
+  groupby:
+  - elementId
+  - meterName
+  - eventSource
+  - province
+  - city
+  - street
+  - parentEventId
+  - parentEventTimestamp
+  - eventCode
+  - timestamp
+  - alarmCode
+  time_grain_sqla: P1D
+  temporal_columns_lookup:
+    timestamp: true
+    parentEventTimestamp: true
+  all_columns: []
+  percent_metrics: []
+  adhoc_filters:
+  - clause: WHERE
+    subject: timestamp
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    expressionType: SIMPLE
+  order_by_cols: []
+  row_limit: 1000
+  server_page_length: 10
+  order_desc: true
+  table_timestamp_format: smart_date
+  show_cell_bars: true
+  color_pn: true
+  extra_form_data: {}
+  dashboards:
+  - 1
+  annotation_layers: []
+query_context: null
+cache_timeout: null
+uuid: 68055e62-ac86-42aa-b57c-4ab491c0fe15
+version: 1.0.0
+dataset_uuid: 6c10ee80-0576-4b5e-a173-44858c067229

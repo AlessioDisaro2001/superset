@@ -1,0 +1,52 @@
+slice_name: Grafico 3.1.3
+description: null
+certified_by: null
+certification_details: null
+viz_type: pivot_table_v2
+params:
+  datasource: 2__table
+  viz_type: pivot_table_v2
+  slice_id: 26
+  groupbyColumns:
+  - isOccupied
+  groupbyRows:
+  - campus.name.string
+  - parent.name.string
+  time_grain_sqla: P1D
+  temporal_columns_lookup:
+    demandTable.demandSpaceType.actualStart: true
+    demandTable.demandSpaceType.actualEnd: true
+    demandTable.demandSpaceType.detectionUpdateTime: true
+  metrics:
+  - count
+  metricsLayout: COLUMNS
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: demandTable.demandSpaceType.detectionUpdateTime
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_1qnbg22y8gk_qgxqjvl23u
+  row_limit: 1000
+  order_desc: true
+  aggregateFunction: Sum as Fraction of Rows
+  colTotals: true
+  combineMetric: false
+  valueFormat: .2%
+  date_format: smart_date
+  rowOrder: key_a_to_z
+  colOrder: key_a_to_z
+  conditional_formatting: []
+  extra_form_data: {}
+  dashboards:
+  - 6
+  annotation_layers: []
+query_context: null
+cache_timeout: null
+uuid: 7952dde1-bc18-4291-8625-7375a3f8a68e
+version: 1.0.0
+dataset_uuid: e69f1633-5540-4ae7-8808-33bc38ba4541
