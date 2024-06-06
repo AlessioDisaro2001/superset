@@ -202,7 +202,7 @@ volumes:
     external: false
   redis:
     external: false
-  
+
 networks:
   dymo-net:
     external: true
