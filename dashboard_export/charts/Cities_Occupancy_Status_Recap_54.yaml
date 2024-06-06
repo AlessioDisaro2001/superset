@@ -6,7 +6,7 @@ viz_type: pivot_table_v2
 params:
   datasource: 6__table
   viz_type: pivot_table_v2
-  slice_id: 40
+  slice_id: 54
   groupbyColumns:
   - isOccupied
   groupbyRows:
@@ -21,16 +21,16 @@ params:
   - count
   metricsLayout: COLUMNS
   adhoc_filters:
-  - clause: WHERE
-    comparator: No filter
-    datasourceWarning: false
-    expressionType: SIMPLE
-    filterOptionName: filter_1qnbg22y8gk_qgxqjvl23u
+  - expressionType: SIMPLE
+    subject: demandTable.demandSpaceType.detectionUpdateTime
+    operator: TEMPORAL_RANGE
+    comparator: 'today : tomorrow'
+    clause: WHERE
+    sqlExpression: null
     isExtra: false
     isNew: false
-    operator: TEMPORAL_RANGE
-    sqlExpression: null
-    subject: demandTable.demandSpaceType.detectionUpdateTime
+    datasourceWarning: false
+    filterOptionName: filter_1qnbg22y8gk_qgxqjvl23u
   row_limit: 1000
   order_desc: true
   aggregateFunction: Sum as Fraction of Rows
@@ -43,9 +43,12 @@ params:
   conditional_formatting: []
   extra_form_data: {}
   dashboards:
-  - 2
-  annotation_layers: []
-query_context: null
+  - 3
+  - 6
+query_context: '{"datasource":{"id":6,"type":"table"},"force":false,"queries":[{"filters":[{"col":"demandTable.demandSpaceType.detectionUpdateTime","op":"TEMPORAL_RANGE","val":"today
+  : tomorrow"}],"extras":{"time_grain_sqla":"P1D","having":"","where":""},"applied_time_extras":{},"columns":["isOccupied","campus.name.string","parent.name.string"],"metrics":["count"],"orderby":[["count",false]],"annotation_layers":[],"row_limit":1000,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"6__table","viz_type":"pivot_table_v2","slice_id":54,"groupbyColumns":["isOccupied"],"groupbyRows":["campus.name.string","parent.name.string"],"time_grain_sqla":"P1D","temporal_columns_lookup":{"demandTable.demandSpaceType.actualEnd":true,"demandTable.demandSpaceType.actualStart":true,"demandTable.demandSpaceType.detectionUpdateTime":true},"metrics":["count"],"metricsLayout":"COLUMNS","adhoc_filters":[{"expressionType":"SIMPLE","subject":"demandTable.demandSpaceType.detectionUpdateTime","operator":"TEMPORAL_RANGE","comparator":"today
+  : tomorrow","clause":"WHERE","sqlExpression":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_1qnbg22y8gk_qgxqjvl23u"}],"row_limit":1000,"order_desc":true,"aggregateFunction":"Sum
+  as Fraction of Rows","colTotals":true,"combineMetric":false,"valueFormat":".2%","date_format":"smart_date","rowOrder":"key_a_to_z","colOrder":"key_a_to_z","conditional_formatting":[],"extra_form_data":{},"dashboards":[3,6],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
 cache_timeout: null
 uuid: 076c0723-308d-4cd2-903d-88696d44d329
 version: 1.0.0

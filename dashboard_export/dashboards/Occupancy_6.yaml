@@ -44,7 +44,7 @@ position:
     children: []
     id: CHART-explore-64-1
     meta:
-      chartId: 74
+      chartId: 75
       height: 48
       sliceName: Occupancy Status Realtime
       uuid: 00302320-e887-4d45-b735-6980c78221b3
@@ -61,7 +61,7 @@ position:
     children: []
     id: CHART-explore-65-1
     meta:
-      chartId: 73
+      chartId: 74
       height: 52
       sliceName: Parking Status Realtime
       uuid: 34d8349c-3659-4ae1-b9f6-fde40f5ce61d
@@ -78,7 +78,7 @@ position:
     children: []
     id: CHART-explore-66-1
     meta:
-      chartId: 75
+      chartId: 76
       height: 57
       sliceName: Realtime parking status
       uuid: bf4c65c3-5c7b-471a-9607-0e71a85ff896
@@ -94,7 +94,7 @@ position:
     children: []
     id: CHART-explore-67-1
     meta:
-      chartId: 76
+      chartId: 77
       height: 50
       sliceName: Parking comparison with previous year
       uuid: 3eca4b33-d628-4a7a-b199-20b5cd1dae2a
@@ -110,7 +110,7 @@ position:
     children: []
     id: CHART-explore-68-1
     meta:
-      chartId: 78
+      chartId: 73
       height: 50
       sliceName: Parkings trendline by week last year
       uuid: 4d317319-9747-4561-b165-7aa2a37eddf9
@@ -127,7 +127,7 @@ position:
     children: []
     id: CHART-explore-77-1
     meta:
-      chartId: 77
+      chartId: 78
       height: 52
       sliceName: Parkings by month last year
       uuid: 69c77a95-88a0-42d2-bf0f-0b42058a0434
