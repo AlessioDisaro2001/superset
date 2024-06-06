@@ -26,6 +26,7 @@ x-superset-volumes: &superset-volumes
   - ./superset-frontend:/app/superset-frontend
   - superset_home:/app/superset_home
   - ./tests:/app/tests
+  - ./dashboard_export:/app/dashboard
 
 version: "3.7"
 services:
@@ -202,7 +203,3 @@ volumes:
     external: false
   redis:
     external: false
-
-networks:
-  dymo-net:
-    external: true
