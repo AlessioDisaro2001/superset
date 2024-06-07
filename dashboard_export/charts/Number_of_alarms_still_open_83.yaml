@@ -1,0 +1,24 @@
+slice_name: Number of alarms still open
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 13__table
+  viz_type: big_number_total
+  slice_id: 82
+  metric: count
+  adhoc_filters: []
+  header_font_size: 0.4
+  subheader_font_size: 0.15
+  y_axis_format: SMART_NUMBER
+  time_format: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 7
+  annotation_layers: []
+query_context: null
+cache_timeout: null
+uuid: da6c8b7b-681b-4214-b824-8046d39b4bba
+version: 1.0.0
+dataset_uuid: c58b9be2-2ecb-47d1-b8e6-248c21360030

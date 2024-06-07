@@ -26,6 +26,30 @@ metrics:
     warning_markdown: ''
   warning_text: null
 columns:
+- column_name: latitude
+  verbose_name: latitude
+  is_dttm: false
+  is_active: true
+  type: null
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: JSONExtract("geoJSON", 'geometry', 'coordinates', 'Array(Float64)')[1]
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: longitude
+  verbose_name: longitude
+  is_dttm: false
+  is_active: true
+  type: null
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: JSONExtract("geoJSON", 'geometry', 'coordinates', 'Array(Float64)')[2]
+  description: null
+  python_date_format: null
+  extra: {}
 - column_name: parentEventTimestamp
   verbose_name: null
   is_dttm: true
@@ -111,6 +135,18 @@ columns:
   python_date_format: null
   extra: {}
 - column_name: elementId
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: geoJSON
   verbose_name: null
   is_dttm: false
   is_active: true

@@ -4,7 +4,7 @@ certified_by: null
 certification_details: null
 viz_type: table
 params:
-  datasource: 12__table
+  datasource: 1__table
   viz_type: table
   slice_id: 50
   query_mode: raw

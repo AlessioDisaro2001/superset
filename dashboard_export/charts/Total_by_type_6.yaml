@@ -1,0 +1,36 @@
+slice_name: Total by type
+description: null
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 5__table
+  viz_type: table
+  query_mode: raw
+  groupby: []
+  time_grain_sqla: P1D
+  temporal_columns_lookup: {}
+  all_columns:
+  - occupancy_count
+  - payment_count
+  - alarm_count
+  - event_count
+  percent_metrics: []
+  adhoc_filters: []
+  order_by_cols: []
+  row_limit: 1000
+  server_page_length: 10
+  order_desc: true
+  table_timestamp_format: smart_date
+  show_cell_bars: false
+  color_pn: true
+  conditional_formatting: []
+  extra_form_data: {}
+  dashboards:
+  - 1
+  annotation_layers: []
+query_context: null
+cache_timeout: null
+uuid: 9dc22dbf-3f14-4bc7-9916-6821e9eed4ba
+version: 1.0.0
+dataset_uuid: 7dfda3ac-1c6f-4c03-8430-9b24eefa81ec

@@ -1,0 +1,48 @@
+slice_name: Total Events today
+description: null
+certified_by: null
+certification_details: null
+viz_type: pie
+params:
+  datasource: 10__table
+  viz_type: pie
+  slice_id: 83
+  groupby:
+  - eventCode
+  metric: count
+  adhoc_filters:
+  - clause: WHERE
+    comparator: 'today : tomorrow'
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_uj2aimt7wap_fxwxlrq8i2i
+    isExtra: false
+    isNew: false
+    operator: TEMPORAL_RANGE
+    sqlExpression: null
+    subject: timestamp
+  row_limit: 100
+  sort_by_metric: true
+  color_scheme: supersetColors
+  show_labels_threshold: 5
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  label_type: key_value
+  number_format: SMART_NUMBER
+  date_format: smart_date
+  show_labels: true
+  labels_outside: true
+  label_line: true
+  show_total: true
+  outerRadius: 50
+  donut: true
+  extra_form_data: {}
+  dashboards:
+  - 7
+  annotation_layers: []
+query_context: null
+cache_timeout: null
+uuid: 8af2a008-437a-4def-8df4-0e44722c7ce3
+version: 1.0.0
+dataset_uuid: 44817376-4bdc-46e5-8cf0-08040043cfd7

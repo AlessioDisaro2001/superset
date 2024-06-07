@@ -1,0 +1,56 @@
+slice_name: Grafico 18.0.2
+description: null
+certified_by: null
+certification_details: null
+viz_type: pivot_table_v2
+params:
+  datasource: 4__table
+  viz_type: pivot_table_v2
+  slice_id: 55
+  groupbyColumns:
+  - payment.paymentMethod
+  groupbyRows:
+  - timestamp
+  time_grain_sqla: P1D
+  temporal_columns_lookup:
+    payment.paymentAssignment.assignedRight.plannedUse.estimatedEnd: true
+    payment.paymentAssignment.assignedRight.plannedUse.expiryValidUsagePeriod: true
+    payment.paymentAssignment.assignedRight.plannedUse.estimatedStart: true
+    payment.paymentAssignment.assignedRight.endValidUsagePeriod: true
+    payment.startPeriodCovered: true
+    payment.endPeriodCovered: true
+    timestamp: true
+  metrics:
+  - count
+  - sum(amount)
+  - time paid
+  metricsLayout: COLUMNS
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_p2pt1uj0w49_4sckyr05pp7
+    isExtra: false
+    isNew: false
+    operator: TEMPORAL_RANGE
+    sqlExpression: null
+    subject: timestamp
+  row_limit: 10000
+  order_desc: true
+  aggregateFunction: Sum
+  combineMetric: true
+  valueFormat: SMART_NUMBER
+  currency_format: {}
+  date_format: smart_date
+  rowOrder: key_a_to_z
+  colOrder: key_a_to_z
+  extra_form_data: {}
+  dashboards:
+  - 1
+  annotation_layers: []
+query_context: null
+cache_timeout: null
+uuid: 0adfa904-8d57-4235-9882-0a14d85982af
+version: 1.0.0
+dataset_uuid: fd6c9db1-391c-4ddc-9684-b4e7870ca167

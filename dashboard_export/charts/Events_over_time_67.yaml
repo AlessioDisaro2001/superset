@@ -1,0 +1,76 @@
+slice_name: Events over time
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_line
+params:
+  datasource: 10__table
+  viz_type: echarts_timeseries_line
+  x_axis: timestamp
+  time_grain_sqla: PT1H
+  x_axis_sort_asc: true
+  x_axis_sort_series: name
+  x_axis_sort_series_ascending: true
+  metrics:
+  - count
+  groupby: []
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: timestamp
+    operator: TEMPORAL_RANGE
+    comparator: 'last month : tomorrow'
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_0t9suyeqhki_t0kckwrnm4d
+  - expressionType: SIMPLE
+    subject: eventCode
+    operator: IN
+    operatorId: IN
+    comparator:
+    - ALARM_STARTED
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_dtcrvzchotm_f8oe1jae6tw
+  order_desc: true
+  row_limit: 10000
+  truncate_metric: true
+  show_empty_columns: true
+  comparison_type: values
+  annotation_layers: []
+  forecastEnabled: true
+  forecastPeriods: '24'
+  forecastInterval: 0.8
+  x_axis_title_margin: 15
+  y_axis_title_margin: 15
+  y_axis_title_position: Left
+  sort_series_type: sum
+  color_scheme: supersetColors
+  seriesType: line
+  only_total: true
+  opacity: 0.2
+  markerSize: 6
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  rich_tooltip: true
+  tooltipTimeFormat: smart_date
+  y_axis_format: SMART_NUMBER
+  truncateXAxis: true
+  y_axis_bounds:
+  - null
+  - null
+  extra_form_data: {}
+  dashboards:
+  - 5
+query_context: null
+cache_timeout: null
+uuid: 1396f753-504c-40f5-a2dc-c1dd0aff5343
+version: 1.0.0
+dataset_uuid: 44817376-4bdc-46e5-8cf0-08040043cfd7

@@ -11,7 +11,7 @@ position:
     children: []
     id: CHART-QL2asn7xAk
     meta:
-      chartId: 4
+      chartId: 55
       height: 52
       sliceName: Cities Parking Status Recap
       uuid: a5d96bad-fa4f-4e44-9af9-16611548d32f
@@ -28,7 +28,7 @@ position:
     children: []
     id: CHART-bNG2jFrm4q
     meta:
-      chartId: 53
+      chartId: 56
       height: 104
       sliceName: Last Parking Events Map
       uuid: 6186e656-1ca5-4c0e-8ace-def115105ace
@@ -44,7 +44,7 @@ position:
     children: []
     id: CHART-explore-64-1
     meta:
-      chartId: 56
+      chartId: 58
       height: 48
       sliceName: Occupancy Status Realtime
       uuid: 00302320-e887-4d45-b735-6980c78221b3
@@ -61,7 +61,7 @@ position:
     children: []
     id: CHART-explore-65-1
     meta:
-      chartId: 58
+      chartId: 59
       height: 52
       sliceName: Parking Status Realtime
       uuid: 34d8349c-3659-4ae1-b9f6-fde40f5ce61d
@@ -78,7 +78,7 @@ position:
     children: []
     id: CHART-explore-66-1
     meta:
-      chartId: 68
+      chartId: 64
       height: 57
       sliceName: Realtime parking status
       uuid: bf4c65c3-5c7b-471a-9607-0e71a85ff896
@@ -110,7 +110,7 @@ position:
     children: []
     id: CHART-explore-68-1
     meta:
-      chartId: 65
+      chartId: 57
       height: 50
       sliceName: Parkings trendline by week last year
       uuid: 4d317319-9747-4561-b165-7aa2a37eddf9
@@ -159,7 +159,7 @@ position:
     children: []
     id: CHART-explore-80-1
     meta:
-      chartId: 64
+      chartId: 63
       height: 50
       sliceName: Parkings  infringment by city and day
       uuid: 8c4be1a4-778f-466b-a2ce-1b23bdf9be9a
@@ -173,7 +173,7 @@ position:
     children: []
     id: CHART-reHz5OwO6t
     meta:
-      chartId: 3
+      chartId: 54
       height: 52
       sliceName: Cities Occupancy Status Recap
       uuid: 076c0723-308d-4cd2-903d-88696d44d329
@@ -534,7 +534,6 @@ metadata:
   label_colors: {}
   timed_refresh_immune_slices: []
   cross_filters_enabled: true
-  default_filters: '{}'
   native_filter_configuration:
   - id: NATIVE_FILTER-IeAia-bZN
     controlValues:

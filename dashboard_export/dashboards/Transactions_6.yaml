@@ -11,7 +11,7 @@ position:
     children: []
     id: CHART-explore-71-1
     meta:
-      chartId: 2
+      chartId: 74
       height: 52
       sliceName: Amount by Transaction Method
       uuid: b196bb78-9bf7-4582-b475-a6294d362059
@@ -27,7 +27,7 @@ position:
     children: []
     id: CHART-explore-72-1
     meta:
-      chartId: 72
+      chartId: 76
       height: 52
       sliceName: Total Amount today
       uuid: bcf1d8ca-b50c-465c-89d7-ef02b2f06beb
@@ -43,7 +43,7 @@ position:
     children: []
     id: CHART-explore-73-1
     meta:
-      chartId: 78
+      chartId: 80
       height: 50
       sliceName: Transactions History
       uuid: 327d6858-c438-481c-97d9-65f3aadc2275
@@ -59,7 +59,7 @@ position:
     children: []
     id: CHART-explore-74-1
     meta:
-      chartId: 75
+      chartId: 78
       height: 52
       sliceName: Total Transactions incoming
       uuid: 92fc039a-3803-4268-b823-7e2a98a40235
@@ -75,7 +75,7 @@ position:
     children: []
     id: CHART-explore-75-1
     meta:
-      chartId: 74
+      chartId: 77
       height: 50
       sliceName: Total Transactions by Payment Method
       uuid: f68f2c78-bd75-4400-90b9-8b331e41da42
@@ -92,7 +92,7 @@ position:
     children: []
     id: CHART-explore-76-1
     meta:
-      chartId: 69
+      chartId: 75
       height: 50
       sliceName: This Year and Last Year Transactions Amount
       uuid: b1162e04-8c53-49f9-953c-64c3a8c9851e
@@ -106,7 +106,7 @@ position:
     children: []
     id: CHART-my9tdiF-us
     meta:
-      chartId: 79
+      chartId: 81
       height: 50
       sliceName: Transactions Trend today
       uuid: e8450b09-51bb-4867-b685-be60510cca90
@@ -123,7 +123,7 @@ position:
     children: []
     id: CHART-tZIpmNgzQ2
     meta:
-      chartId: 77
+      chartId: 79
       height: 50
       sliceName: Transactions Amount today
       uuid: bacb49be-dbdb-4acb-817f-029647ec61ed
@@ -412,7 +412,6 @@ metadata:
   label_colors: {}
   timed_refresh_immune_slices: []
   cross_filters_enabled: true
-  default_filters: '{}'
   native_filter_configuration:
   - id: NATIVE_FILTER-q_OIY3TGx
     controlValues:

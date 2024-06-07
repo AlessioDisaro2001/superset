@@ -1,0 +1,48 @@
+slice_name: Count of Events by code last year
+description: null
+certified_by: null
+certification_details: null
+viz_type: pie
+params:
+  datasource: 12__table
+  viz_type: pie
+  groupby:
+  - eventCode
+  metric: count
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: timestamp
+    operator: TEMPORAL_RANGE
+    comparator: 'last year first day : last year next year'
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_lqipouxtdh_nf86dsj4cpc
+  row_limit: 100
+  sort_by_metric: false
+  color_scheme: supersetColors
+  show_labels_threshold: 5
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  label_type: key_percent
+  number_format: SMART_NUMBER
+  date_format: smart_date
+  show_labels: true
+  labels_outside: true
+  label_line: true
+  show_total: true
+  outerRadius: 50
+  donut: true
+  innerRadius: 30
+  extra_form_data: {}
+  dashboards:
+  - 7
+  annotation_layers: []
+query_context: null
+cache_timeout: null
+uuid: 402329d8-9a2f-462a-970b-a82959f901cb
+version: 1.0.0
+dataset_uuid: ac82ea6f-bce2-417c-871f-874f87d570f1

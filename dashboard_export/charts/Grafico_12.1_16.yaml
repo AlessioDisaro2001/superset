@@ -4,7 +4,7 @@ certified_by: null
 certification_details: null
 viz_type: bubble_v2
 params:
-  datasource: 10__table
+  datasource: 4__table
   viz_type: bubble_v2
   slice_id: 10
   entity: campus.name.string

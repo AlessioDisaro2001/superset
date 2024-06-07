@@ -1,0 +1,86 @@
+slice_name: Events Trend Over Time
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_area
+params:
+  datasource: 12__table
+  viz_type: echarts_area
+  slice_id: 57
+  x_axis: timestamp
+  time_grain_sqla: PT1H
+  metrics:
+  - count
+  groupby: []
+  contributionMode: null
+  adhoc_filters:
+  - clause: WHERE
+    comparator:
+    - BATTERY_REPLACEMENT_REQUIRED
+    - LOW_BATTERY
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_2xm5g2rm5r4_goifkyn3ajw
+    isExtra: false
+    isNew: false
+    operator: IN
+    operatorId: IN
+    sqlExpression: null
+    subject: eventCode
+  - clause: WHERE
+    comparator: No filter
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_vcjywd4q8ik_zynv4pxff5p
+    isExtra: true
+    isNew: false
+    operator: TEMPORAL_RANGE
+    sqlExpression: null
+    subject: timestamp
+  row_limit: 10000
+  truncate_metric: true
+  show_empty_columns: true
+  rolling_type: null
+  comparison_type: values
+  annotation_layers: []
+  forecastEnabled: true
+  forecastPeriods: '24'
+  forecastInterval: 0.8
+  forecastSeasonalityYearly: null
+  forecastSeasonalityWeekly: null
+  forecastSeasonalityDaily: true
+  x_axis_title: ''
+  x_axis_title_margin: 15
+  y_axis_title: ''
+  y_axis_title_margin: 15
+  y_axis_title_position: Left
+  sort_series_type: sum
+  color_scheme: presetColors
+  seriesType: line
+  opacity: 0.2
+  stack: Stack
+  only_total: true
+  markerSize: 6
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  xAxisLabelRotation: 0
+  rich_tooltip: true
+  tooltipTimeFormat: smart_date
+  y_axis_format: SMART_NUMBER
+  logAxis: false
+  minorSplitLine: false
+  truncateXAxis: true
+  truncateYAxis: false
+  y_axis_bounds:
+  - null
+  - null
+  extra_form_data: {}
+  dashboards:
+  - 3
+query_context: null
+cache_timeout: null
+uuid: 143dd056-9e09-42c4-beb4-0e679ddeda1c
+version: 1.0.0
+dataset_uuid: ac82ea6f-bce2-417c-871f-874f87d570f1

@@ -1,0 +1,48 @@
+slice_name: Amount by Transaction Method
+description: null
+certified_by: null
+certification_details: null
+viz_type: pie
+params:
+  datasource: 4__table
+  viz_type: pie
+  slice_id: 73
+  groupby:
+  - payment.paymentMethod
+  metric: sum(amount)
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: timestamp
+    operator: TEMPORAL_RANGE
+    comparator: 'today : tomorrow'
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_m3j83hd7oa_eso1pukowc6
+  row_limit: 100
+  sort_by_metric: false
+  color_scheme: supersetColors
+  show_labels_threshold: 5
+  show_legend: true
+  legendType: scroll
+  legendOrientation: bottom
+  label_type: key_value
+  number_format: $,.2f
+  date_format: smart_date
+  show_labels: true
+  labels_outside: true
+  label_line: true
+  show_total: false
+  outerRadius: 70
+  innerRadius: 30
+  extra_form_data: {}
+  dashboards:
+  - 6
+  annotation_layers: []
+query_context: null
+cache_timeout: null
+uuid: b196bb78-9bf7-4582-b475-a6294d362059
+version: 1.0.0
+dataset_uuid: fd6c9db1-391c-4ddc-9684-b4e7870ca167

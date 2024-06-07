@@ -1,0 +1,38 @@
+slice_name: Yesterday
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 4__table
+  viz_type: big_number_total
+  metric:
+    expressionType: SQL
+    sqlExpression: yesterday()
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: yesterday()
+    optionName: metric_h16ji8yki4p_7o91fdwgnxm
+  adhoc_filters:
+  - clause: WHERE
+    subject: timestamp
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    expressionType: SIMPLE
+  header_font_size: 0.4
+  subheader_font_size: 0.15
+  y_axis_format: SMART_NUMBER
+  time_format: '%d %b'
+  force_timestamp_formatting: false
+  conditional_formatting: []
+  extra_form_data: {}
+  dashboards:
+  - 5
+  annotation_layers: []
+query_context: null
+cache_timeout: null
+uuid: 1c580c61-e24a-484d-9d6a-191f4c5cf318
+version: 1.0.0
+dataset_uuid: fd6c9db1-391c-4ddc-9684-b4e7870ca167

@@ -1,0 +1,62 @@
+slice_name: Number of Events
+description: null
+certified_by: null
+certification_details: null
+viz_type: pie
+params:
+  datasource: 12__table
+  viz_type: pie
+  slice_id: 43
+  groupby:
+  - eventCode
+  metric: count
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: timestamp
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_3xzwvsspjs1_q0vzkc9uusn
+  - expressionType: SIMPLE
+    subject: eventCode
+    operator: IN
+    operatorId: IN
+    comparator:
+    - BATTERY_REPLACEMENT_REQUIRED
+    - LOW_BATTERY
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_s22nhousdvp_3ii0bjnbm11
+  row_limit: 100
+  sort_by_metric: true
+  color_scheme: presetColors
+  show_labels_threshold: 5
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  label_type: percent
+  number_format: SMART_NUMBER
+  date_format: smart_date
+  show_labels: true
+  labels_outside: true
+  label_line: true
+  show_total: true
+  outerRadius: 86
+  donut: true
+  innerRadius: 57
+  extra_form_data: {}
+  dashboards:
+  - 1
+  annotation_layers: []
+query_context: null
+cache_timeout: null
+uuid: b3a67288-bf34-48b0-85f5-0a294241a5e0
+version: 1.0.0
+dataset_uuid: ac82ea6f-bce2-417c-871f-874f87d570f1

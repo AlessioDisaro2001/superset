@@ -4,7 +4,7 @@ certified_by: null
 certification_details: null
 viz_type: echarts_area
 params:
-  datasource: 10__table
+  datasource: 4__table
   viz_type: echarts_area
   slice_id: 34
   x_axis: timestamp
