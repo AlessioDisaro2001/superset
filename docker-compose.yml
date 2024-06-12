@@ -17,8 +17,8 @@
 x-superset-image: &superset-image apachesuperset.docker.scarf.sh/apache/superset:${TAG:-latest-dev}
 x-superset-user: &superset-user root
 x-superset-depends-on: &superset-depends-on
-  - db
-  - redis
+  - superset_db
+  - superset_redis
 x-superset-volumes: &superset-volumes
   # /app/pythonpath_docker will be appended to the PYTHONPATH in the final container
   - ./docker:/app/docker
@@ -30,7 +30,7 @@ x-superset-volumes: &superset-volumes
 
 version: "3.7"
 services:
-  nginx:
+  superset_nginx:
     image: nginx:latest
     container_name: superset_nginx
     restart: unless-stopped
@@ -42,7 +42,7 @@ services:
       - ./docker/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
     networks:
       - dymo-net
-  redis:
+  superset_redis:
     image: redis:7
     container_name: superset_cache
     restart: unless-stopped
@@ -53,7 +53,7 @@ services:
     networks:
       - dymo-net
 
-  db:
+  superset_db:
     env_file: docker/.env
     image: postgres:15
     container_name: superset_db
@@ -66,7 +66,7 @@ services:
     networks:
       - dymo-net
 
-  superset:
+  superset_app:
     env_file: docker/.env
     image: *superset-image
     container_name: superset_app
@@ -84,7 +84,7 @@ services:
     networks:
       - dymo-net
 
-  superset-websocket:
+  superset_websocket:
     container_name: superset_websocket
     build: ./superset-websocket
     image: superset-websocket
@@ -117,7 +117,7 @@ services:
     networks:
       - dymo-net
 
-  superset-init:
+  superset_init:
     image: *superset-image
     container_name: superset_init
     command: ["/app/docker/docker-init.sh"]
@@ -132,7 +132,7 @@ services:
     networks:
       - dymo-net
 
-  superset-node:
+  superset_node:
     image: node:16
     container_name: superset_node
     command: ["/app/docker/docker-frontend.sh"]
@@ -144,7 +144,7 @@ services:
     networks:
       - dymo-net
 
-  superset-worker:
+  superset_worker:
     image: *superset-image
     container_name: superset_worker
     command: ["/app/docker/docker-bootstrap.sh", "worker"]
@@ -163,7 +163,7 @@ services:
     networks:
       - dymo-net
 
-  superset-worker-beat:
+  superset_worker_beat:
     image: *superset-image
     container_name: superset_worker_beat
     command: ["/app/docker/docker-bootstrap.sh", "beat"]
@@ -177,7 +177,7 @@ services:
     networks:
       - dymo-net
 
-  superset-tests-worker:
+  superset_tests_worker:
     image: *superset-image
     container_name: superset_tests_worker
     command: ["/app/docker/docker-bootstrap.sh", "worker"]
