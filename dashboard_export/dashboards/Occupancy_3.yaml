@@ -376,158 +376,158 @@ position:
     type: TABS
 metadata:
   chart_configuration:
+    '54':
+      id: 54
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 55
+        - 56
+        - 57
+        - 58
+        - 59
+        - 60
+        - 61
+        - 62
+        - 63
+        - 64
     '55':
       id: 55
       crossFilters:
         scope: global
         chartsInScope:
+        - 54
         - 56
+        - 57
         - 58
+        - 59
+        - 60
+        - 61
+        - 62
+        - 63
         - 64
-        - 65
-        - 66
-        - 67
-        - 68
-        - 77
-        - 79
-        - 80
-    '56':
-      id: 56
+    '58':
+      id: 58
       crossFilters:
         scope: global
         chartsInScope:
+        - 54
         - 55
-        - 58
+        - 56
+        - 57
+        - 59
+        - 60
+        - 61
+        - 62
+        - 63
         - 64
-        - 65
-        - 66
-        - 67
-        - 68
-        - 77
-        - 79
-        - 80
+    '59':
+      id: 59
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 54
+        - 55
+        - 56
+        - 57
+        - 58
+        - 60
+        - 61
+        - 62
+        - 63
+        - 64
+    '60':
+      id: 60
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 54
+        - 55
+        - 56
+        - 57
+        - 58
+        - 59
+        - 61
+        - 62
+        - 63
+        - 64
+    '61':
+      id: 61
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 54
+        - 55
+        - 56
+        - 57
+        - 58
+        - 59
+        - 60
+        - 62
+        - 63
+        - 64
+    '62':
+      id: 62
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 54
+        - 55
+        - 56
+        - 57
+        - 58
+        - 59
+        - 60
+        - 61
+        - 63
+        - 64
+    '63':
+      id: 63
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 54
+        - 55
+        - 56
+        - 57
+        - 58
+        - 59
+        - 60
+        - 61
+        - 62
+        - 64
     '64':
       id: 64
       crossFilters:
         scope: global
         chartsInScope:
+        - 54
         - 55
         - 56
+        - 57
         - 58
-        - 65
-        - 66
-        - 67
-        - 68
-        - 77
-        - 79
-        - 80
-    '65':
-      id: 65
-      crossFilters:
-        scope: global
-        chartsInScope:
-        - 55
-        - 56
-        - 58
-        - 64
-        - 66
-        - 67
-        - 68
-        - 77
-        - 79
-        - 80
-    '66':
-      id: 66
-      crossFilters:
-        scope: global
-        chartsInScope:
-        - 55
-        - 56
-        - 58
-        - 64
-        - 65
-        - 67
-        - 68
-        - 77
-        - 79
-        - 80
-    '67':
-      id: 67
-      crossFilters:
-        scope: global
-        chartsInScope:
-        - 55
-        - 56
-        - 58
-        - 64
-        - 65
-        - 66
-        - 68
-        - 77
-        - 79
-        - 80
-    '77':
-      id: 77
-      crossFilters:
-        scope: global
-        chartsInScope:
-        - 55
-        - 56
-        - 58
-        - 64
-        - 65
-        - 66
-        - 67
-        - 68
-        - 79
-        - 80
-    '79':
-      id: 79
-      crossFilters:
-        scope: global
-        chartsInScope:
-        - 55
-        - 56
-        - 58
-        - 64
-        - 65
-        - 66
-        - 67
-        - 68
-        - 77
-        - 80
-    '80':
-      id: 80
-      crossFilters:
-        scope: global
-        chartsInScope:
-        - 55
-        - 56
-        - 58
-        - 64
-        - 65
-        - 66
-        - 67
-        - 68
-        - 77
-        - 79
+        - 59
+        - 60
+        - 61
+        - 62
+        - 63
   global_chart_configuration:
     scope:
       rootPath:
       - ROOT_ID
       excluded: []
     chartsInScope:
+    - 54
     - 55
     - 56
+    - 57
     - 58
+    - 59
+    - 60
+    - 61
+    - 62
+    - 63
     - 64
-    - 65
-    - 66
-    - 67
-    - 68
-    - 77
-    - 79
-    - 80
   color_scheme: bnbColors
   refresh_frequency: 0
   expanded_slices: {}
@@ -554,15 +554,152 @@ metadata:
     type: NATIVE_FILTER
     description: ''
     chartsInScope:
+    - 54
+    - 55
+    - 56
+    - 57
+    - 58
+    - 59
+    - 60
+    - 61
+    - 62
+    - 63
+    - 64
+    tabsInScope:
+    - TAB-NSa2sOvQo
+    - TAB-Z_ivdX2_Sx
+  - id: NATIVE_FILTER-6ccbyEo7Y
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: City
+    filterType: filter_select
+    targets:
+    - column:
+        name: campus.name.string
+      datasetUuid: e69f1633-5540-4ae7-8808-33bc38ba4541
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded:
+      - 57
+      - 60
+      - 61
+      - 62
+      - 63
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 54
     - 55
     - 56
     - 58
+    - 59
     - 64
-    - 65
-    - 66
-    - 67
     tabsInScope:
     - TAB-Z_ivdX2_Sx
+  - id: NATIVE_FILTER-4CX_hRPtj
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: City
+    filterType: filter_select
+    targets:
+    - column:
+        name: campus.name.string
+      datasetUuid: a0341a26-8dc4-4d64-af4f-4e95a0a77487
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - TAB-NSa2sOvQo
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 57
+    - 60
+    - 61
+    - 62
+    - 63
+    tabsInScope:
+    - TAB-NSa2sOvQo
+  - id: NATIVE_FILTER-cSJwRcsbu
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: Occupancy Indicator
+    filterType: filter_select
+    targets:
+    - column:
+        name: demandTable.demandSpaceType.occupancyLevel.occupancyIndicator
+      datasetUuid: e69f1633-5540-4ae7-8808-33bc38ba4541
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded:
+      - 57
+      - 60
+      - 61
+      - 62
+      - 63
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 54
+    - 55
+    - 56
+    - 58
+    - 59
+    - 64
+    tabsInScope:
+    - TAB-Z_ivdX2_Sx
+  - id: NATIVE_FILTER-mdGVu6gWL
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: Occupancy Indicator
+    filterType: filter_select
+    targets:
+    - column:
+        name: demandTable.demandSpaceType.occupancyLevel.occupancyIndicator
+      datasetUuid: a0341a26-8dc4-4d64-af4f-4e95a0a77487
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - TAB-NSa2sOvQo
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
   shared_label_colors:
     2023-12-03 00:00:00, <NULL>, unregulated: '#5BCACE'
     2023-12-02 00:00:00, <NULL>, unregulated: '#F1826A'

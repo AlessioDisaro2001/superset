@@ -389,14 +389,75 @@ metadata:
     scope:
       rootPath:
       - ROOT_ID
-      excluded:
-      - 83
+      excluded: []
     type: NATIVE_FILTER
     description: ''
     chartsInScope:
-    - 81
+    - 82
     - 83
+    - 84
+    - 85
+    - 86
+    - 87
+    - 88
+    - 89
     tabsInScope:
     - TAB-LyuAfZPC7A
-  default_filters: '{}'
+    - TAB-TMYUL-SZZ
+  - id: NATIVE_FILTER-ehD9TT_-U
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: Alarm Code
+    filterType: filter_select
+    targets:
+    - column:
+        name: alarmCode
+      datasetUuid: 44817376-4bdc-46e5-8cf0-08040043cfd7
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 82
+    - 84
+    - 85
+    - 86
+    tabsInScope:
+    - TAB-LyuAfZPC7A
+    - TAB-TMYUL-SZZ
+  - id: NATIVE_FILTER-0314zTNCk
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: Event Code
+    filterType: filter_select
+    targets:
+    - column:
+        name: eventCode
+      datasetUuid: 44817376-4bdc-46e5-8cf0-08040043cfd7
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
 version: 1.0.0

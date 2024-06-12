@@ -300,104 +300,104 @@ position:
     type: TABS
 metadata:
   chart_configuration:
-    '69':
-      id: 69
+    '74':
+      id: 74
       crossFilters:
         scope: global
         chartsInScope:
-        - 70
-        - 71
-        - 72
-        - 73
-        - 74
         - 75
         - 76
-    '70':
-      id: 70
-      crossFilters:
-        scope: global
-        chartsInScope:
-        - 69
-        - 71
-        - 72
-        - 73
-        - 74
-        - 75
-        - 76
-    '71':
-      id: 71
-      crossFilters:
-        scope: global
-        chartsInScope:
-        - 69
-        - 70
-        - 72
-        - 73
-        - 74
-        - 75
-        - 76
-    '72':
-      id: 72
-      crossFilters:
-        scope: global
-        chartsInScope:
-        - 69
-        - 70
-        - 71
-        - 73
-        - 74
-        - 75
-        - 76
-    '73':
-      id: 73
-      crossFilters:
-        scope: global
-        chartsInScope:
-        - 69
-        - 70
-        - 71
-        - 72
-        - 74
-        - 75
-        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
     '75':
       id: 75
       crossFilters:
         scope: global
         chartsInScope:
-        - 69
-        - 70
-        - 71
-        - 72
-        - 73
         - 74
         - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
     '76':
       id: 76
       crossFilters:
         scope: global
         chartsInScope:
-        - 69
-        - 70
-        - 71
-        - 72
-        - 73
         - 74
         - 75
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+    '77':
+      id: 77
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 74
+        - 75
+        - 76
+        - 78
+        - 79
+        - 80
+        - 81
+    '79':
+      id: 79
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 80
+        - 81
+    '80':
+      id: 80
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 81
+    '81':
+      id: 81
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
   global_chart_configuration:
     scope:
       rootPath:
       - ROOT_ID
       excluded: []
     chartsInScope:
-    - 69
-    - 70
-    - 71
-    - 72
-    - 73
     - 74
     - 75
     - 76
+    - 77
+    - 78
+    - 79
+    - 80
+    - 81
   color_scheme: ''
   refresh_frequency: 0
   shared_label_colors:
@@ -432,8 +432,87 @@ metadata:
     type: NATIVE_FILTER
     description: ''
     chartsInScope:
-    - 69
-    - 70
+    - 74
+    - 75
+    - 76
+    - 77
+    - 78
+    - 79
+    - 80
+    - 81
     tabsInScope:
+    - TAB-ZIS8LlO0m
     - TAB-zxkEdonEzp
+  - id: NATIVE_FILTER-85xH7KLEJ
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: City
+    filterType: filter_select
+    targets:
+    - column:
+        name: campus.name.string
+      datasetUuid: fd6c9db1-391c-4ddc-9684-b4e7870ca167
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
+  - id: NATIVE_FILTER-y5sXfOh1i
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: Issuer
+    filterType: filter_select
+    targets:
+    - column:
+        name: payment.paymentAssignment.assignedRight.rightSpecification.issuer.name
+      datasetUuid: fd6c9db1-391c-4ddc-9684-b4e7870ca167
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
+  - id: NATIVE_FILTER-amwAzzWTv
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: Transaction Method
+    filterType: filter_select
+    targets:
+    - column:
+        name: payment.paymentMethod
+      datasetUuid: fd6c9db1-391c-4ddc-9684-b4e7870ca167
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
 version: 1.0.0
