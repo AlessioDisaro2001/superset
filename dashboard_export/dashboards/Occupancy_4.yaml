@@ -376,158 +376,158 @@ position:
     type: TABS
 metadata:
   chart_configuration:
-    '54':
-      id: 54
+    '3':
+      id: 3
       crossFilters:
         scope: global
         chartsInScope:
-        - 55
-        - 56
-        - 57
+        - 4
         - 58
-        - 59
-        - 60
-        - 61
-        - 62
         - 63
-        - 64
-    '55':
-      id: 55
+        - 65
+        - 66
+        - 68
+        - 69
+        - 70
+        - 71
+        - 75
+    '4':
+      id: 4
       crossFilters:
         scope: global
         chartsInScope:
-        - 54
-        - 56
-        - 57
+        - 3
         - 58
-        - 59
-        - 60
-        - 61
-        - 62
         - 63
-        - 64
-    '58':
-      id: 58
-      crossFilters:
-        scope: global
-        chartsInScope:
-        - 54
-        - 55
-        - 56
-        - 57
-        - 59
-        - 60
-        - 61
-        - 62
-        - 63
-        - 64
-    '59':
-      id: 59
-      crossFilters:
-        scope: global
-        chartsInScope:
-        - 54
-        - 55
-        - 56
-        - 57
-        - 58
-        - 60
-        - 61
-        - 62
-        - 63
-        - 64
-    '60':
-      id: 60
-      crossFilters:
-        scope: global
-        chartsInScope:
-        - 54
-        - 55
-        - 56
-        - 57
-        - 58
-        - 59
-        - 61
-        - 62
-        - 63
-        - 64
-    '61':
-      id: 61
-      crossFilters:
-        scope: global
-        chartsInScope:
-        - 54
-        - 55
-        - 56
-        - 57
-        - 58
-        - 59
-        - 60
-        - 62
-        - 63
-        - 64
-    '62':
-      id: 62
-      crossFilters:
-        scope: global
-        chartsInScope:
-        - 54
-        - 55
-        - 56
-        - 57
-        - 58
-        - 59
-        - 60
-        - 61
-        - 63
-        - 64
+        - 65
+        - 66
+        - 68
+        - 69
+        - 70
+        - 71
+        - 75
     '63':
       id: 63
       crossFilters:
         scope: global
         chartsInScope:
-        - 54
-        - 55
-        - 56
-        - 57
+        - 3
+        - 4
         - 58
-        - 59
-        - 60
-        - 61
-        - 62
-        - 64
-    '64':
-      id: 64
+        - 65
+        - 66
+        - 68
+        - 69
+        - 70
+        - 71
+        - 75
+    '65':
+      id: 65
       crossFilters:
         scope: global
         chartsInScope:
-        - 54
-        - 55
-        - 56
-        - 57
+        - 3
+        - 4
         - 58
-        - 59
-        - 60
-        - 61
-        - 62
         - 63
+        - 66
+        - 68
+        - 69
+        - 70
+        - 71
+        - 75
+    '66':
+      id: 66
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 3
+        - 4
+        - 58
+        - 63
+        - 65
+        - 68
+        - 69
+        - 70
+        - 71
+        - 75
+    '68':
+      id: 68
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 3
+        - 4
+        - 58
+        - 63
+        - 65
+        - 66
+        - 69
+        - 70
+        - 71
+        - 75
+    '70':
+      id: 70
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 3
+        - 4
+        - 58
+        - 63
+        - 65
+        - 66
+        - 68
+        - 69
+        - 71
+        - 75
+    '71':
+      id: 71
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 3
+        - 4
+        - 58
+        - 63
+        - 65
+        - 66
+        - 68
+        - 69
+        - 70
+        - 75
+    '75':
+      id: 75
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 3
+        - 4
+        - 58
+        - 63
+        - 65
+        - 66
+        - 68
+        - 69
+        - 70
+        - 71
   global_chart_configuration:
     scope:
       rootPath:
       - ROOT_ID
       excluded: []
     chartsInScope:
-    - 54
-    - 55
-    - 56
-    - 57
+    - 3
+    - 4
     - 58
-    - 59
-    - 60
-    - 61
-    - 62
     - 63
-    - 64
+    - 65
+    - 66
+    - 68
+    - 69
+    - 70
+    - 71
+    - 75
   color_scheme: bnbColors
   refresh_frequency: 0
   expanded_slices: {}
@@ -554,17 +554,17 @@ metadata:
     type: NATIVE_FILTER
     description: ''
     chartsInScope:
-    - 54
-    - 55
-    - 56
-    - 57
+    - 3
+    - 4
     - 58
-    - 59
-    - 60
-    - 61
-    - 62
     - 63
-    - 64
+    - 65
+    - 66
+    - 68
+    - 69
+    - 70
+    - 71
+    - 75
     tabsInScope:
     - TAB-NSa2sOvQo
     - TAB-Z_ivdX2_Sx
@@ -649,7 +649,7 @@ metadata:
     filterType: filter_select
     targets:
     - column:
-        name: demandTable.demandSpaceType.occupancyLevel.occupancyIndicator
+        name: occupancyIndicator
       datasetUuid: e69f1633-5540-4ae7-8808-33bc38ba4541
     defaultDataMask:
       extraFormData: {}
@@ -668,12 +668,12 @@ metadata:
     type: NATIVE_FILTER
     description: ''
     chartsInScope:
-    - 54
-    - 55
-    - 56
+    - 3
+    - 4
     - 58
-    - 59
-    - 64
+    - 63
+    - 71
+    - 75
     tabsInScope:
     - TAB-Z_ivdX2_Sx
   - id: NATIVE_FILTER-mdGVu6gWL
@@ -687,7 +687,7 @@ metadata:
     filterType: filter_select
     targets:
     - column:
-        name: demandTable.demandSpaceType.occupancyLevel.occupancyIndicator
+        name: occupancyIndicator
       datasetUuid: a0341a26-8dc4-4d64-af4f-4e95a0a77487
     defaultDataMask:
       extraFormData: {}
@@ -700,6 +700,14 @@ metadata:
       excluded: []
     type: NATIVE_FILTER
     description: ''
+    chartsInScope:
+    - 65
+    - 66
+    - 68
+    - 69
+    - 70
+    tabsInScope:
+    - TAB-NSa2sOvQo
   shared_label_colors:
     2023-12-03 00:00:00, <NULL>, unregulated: '#5BCACE'
     2023-12-02 00:00:00, <NULL>, unregulated: '#F1826A'
