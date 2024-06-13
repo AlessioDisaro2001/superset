@@ -1,4 +1,4 @@
-slice_name: Parking Status Recap
+slice_name: Grafico 3.1.2
 description: null
 certified_by: null
 certification_details: null
@@ -6,7 +6,7 @@ viz_type: table
 params:
   datasource: 9__table
   viz_type: table
-  slice_id: 72
+  slice_id: 46
   query_mode: aggregate
   groupby:
   - occupancyIndicator
@@ -54,13 +54,13 @@ params:
   conditional_formatting: []
   extra_form_data: {}
   dashboards:
-  - 5
+  - 3
 query_context: '{"datasource":{"id":9,"type":"table"},"force":false,"queries":[{"filters":[{"col":"demandTable.demandSpaceType.detectionUpdateTime","op":"TEMPORAL_RANGE","val":"No
   filter"},{"col":"occupancyIndicator","op":"NOT IN","val":["vacant","undefined"]}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["occupancyIndicator"],"metrics":["count"],"orderby":[["count",false]],"annotation_layers":[],"row_limit":1000,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[{"operation":"contribution","options":{"columns":["count"],"rename_columns":["%count"]}}]},{"filters":[{"col":"demandTable.demandSpaceType.detectionUpdateTime","op":"TEMPORAL_RANGE","val":"No
-  filter"},{"col":"occupancyIndicator","op":"NOT IN","val":["vacant","undefined"]}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":["count"],"annotation_layers":[],"row_limit":0,"row_offset":0,"series_limit":0,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[]}],"form_data":{"datasource":"9__table","viz_type":"table","slice_id":72,"query_mode":"aggregate","groupby":["occupancyIndicator"],"temporal_columns_lookup":{"demandTable.demandSpaceType.actualEnd":true,"demandTable.demandSpaceType.actualStart":true,"demandTable.demandSpaceType.detectionUpdateTime":true},"metrics":["count"],"percent_metrics":["count"],"adhoc_filters":[{"expressionType":"SIMPLE","subject":"demandTable.demandSpaceType.detectionUpdateTime","operator":"TEMPORAL_RANGE","comparator":"No
+  filter"},{"col":"occupancyIndicator","op":"NOT IN","val":["vacant","undefined"]}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":["count"],"annotation_layers":[],"row_limit":0,"row_offset":0,"series_limit":0,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[]}],"form_data":{"datasource":"9__table","viz_type":"table","slice_id":46,"query_mode":"aggregate","groupby":["occupancyIndicator"],"temporal_columns_lookup":{"demandTable.demandSpaceType.actualEnd":true,"demandTable.demandSpaceType.actualStart":true,"demandTable.demandSpaceType.detectionUpdateTime":true},"metrics":["count"],"percent_metrics":["count"],"adhoc_filters":[{"expressionType":"SIMPLE","subject":"demandTable.demandSpaceType.detectionUpdateTime","operator":"TEMPORAL_RANGE","comparator":"No
   filter","clause":"WHERE","sqlExpression":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_0w7au4xi4b6b_x5cj256kx9j"},{"expressionType":"SIMPLE","subject":"occupancyIndicator","operator":"NOT
-  IN","operatorId":"NOT_IN","comparator":["vacant","undefined"],"clause":"WHERE","sqlExpression":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_80aj1b4dmk_krj7cv3hmw"}],"row_limit":1000,"order_desc":true,"show_totals":true,"table_timestamp_format":"smart_date","show_cell_bars":false,"color_pn":true,"column_config":{"%count":{"d3SmallNumberFormat":".2%"}},"conditional_formatting":[],"extra_form_data":{},"dashboards":[5],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+  IN","operatorId":"NOT_IN","comparator":["vacant","undefined"],"clause":"WHERE","sqlExpression":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_80aj1b4dmk_krj7cv3hmw"}],"row_limit":1000,"order_desc":true,"show_totals":true,"table_timestamp_format":"smart_date","show_cell_bars":false,"color_pn":true,"column_config":{"%count":{"d3SmallNumberFormat":".2%"}},"conditional_formatting":[],"extra_form_data":{},"dashboards":[3],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
 cache_timeout: null
-uuid: 15f89240-8074-497e-848b-d5be3111ffad
+uuid: 83ab0a52-3f73-4173-ad74-26260e1dc2b7
 version: 1.0.0
 dataset_uuid: e69f1633-5540-4ae7-8808-33bc38ba4541

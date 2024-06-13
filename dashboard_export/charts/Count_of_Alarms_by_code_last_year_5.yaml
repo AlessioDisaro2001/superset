@@ -1,0 +1,61 @@
+slice_name: Count of Alarms by code last year
+description: null
+certified_by: null
+certification_details: null
+viz_type: pie
+params:
+  datasource: 1__table
+  viz_type: pie
+  slice_id: 85
+  groupby:
+  - alarmCode
+  metric: count
+  adhoc_filters:
+  - clause: WHERE
+    comparator: 'last year first day : last year next year'
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_5bo095y9yov_yyamh7y3wps
+    isExtra: false
+    isNew: false
+    operator: TEMPORAL_RANGE
+    sqlExpression: null
+    subject: timestamp
+  - clause: WHERE
+    comparator:
+    - ALARM_STARTED
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_do2kk4khncv_ygc3u1uh9h
+    isExtra: false
+    isNew: false
+    operator: IN
+    operatorId: IN
+    sqlExpression: null
+    subject: eventCode
+  row_limit: 100
+  sort_by_metric: true
+  color_scheme: supersetColors
+  show_labels_threshold: 5
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  label_type: key_percent
+  number_format: SMART_NUMBER
+  date_format: smart_date
+  show_labels: true
+  labels_outside: true
+  label_line: true
+  show_total: true
+  outerRadius: 50
+  donut: true
+  innerRadius: 30
+  extra_form_data: {}
+  dashboards:
+  - 7
+  annotation_layers: []
+query_context: null
+cache_timeout: null
+uuid: 317b2910-4065-4da2-967c-527721763398
+version: 1.0.0
+dataset_uuid: 44817376-4bdc-46e5-8cf0-08040043cfd7

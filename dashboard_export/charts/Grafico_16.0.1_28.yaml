@@ -1,0 +1,33 @@
+slice_name: Grafico 16.0.1
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 5__table
+  viz_type: big_number_total
+  metric: sum(amount)
+  adhoc_filters:
+  - clause: WHERE
+    subject: timestamp
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    expressionType: SIMPLE
+  subheader: Total Amount
+  header_font_size: 0.3
+  subheader_font_size: 0.125
+  y_axis_format: ',.3f'
+  currency_format:
+    symbolPosition: prefix
+    symbol: USD
+  time_format: smart_date
+  conditional_formatting: []
+  extra_form_data: {}
+  dashboards:
+  - 1
+  annotation_layers: []
+query_context: null
+cache_timeout: null
+uuid: 0dac0aba-fad4-4e9d-ad8f-ee42b31a2231
+version: 1.0.0
+dataset_uuid: fd6c9db1-391c-4ddc-9684-b4e7870ca167

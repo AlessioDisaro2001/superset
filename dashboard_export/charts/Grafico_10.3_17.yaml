@@ -1,0 +1,45 @@
+slice_name: Grafico 10.3
+description: null
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 10__table
+  viz_type: table
+  query_mode: aggregate
+  groupby:
+  - isExpired
+  time_grain_sqla: P1D
+  temporal_columns_lookup:
+    demandTable.demandSpaceType.detectionUpdateTime: true
+  metrics:
+  - count
+  all_columns: []
+  percent_metrics:
+  - count
+  adhoc_filters:
+  - clause: WHERE
+    subject: demandTable.demandSpaceType.detectionUpdateTime
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    expressionType: SIMPLE
+  order_by_cols: []
+  row_limit: 10000
+  server_page_length: 10
+  order_desc: true
+  table_timestamp_format: smart_date
+  show_cell_bars: false
+  color_pn: true
+  column_config:
+    '%count':
+      d3SmallNumberFormat: .2%
+  conditional_formatting: []
+  extra_form_data: {}
+  dashboards:
+  - 5
+  annotation_layers: []
+query_context: null
+cache_timeout: null
+uuid: 4e96ee5e-f69a-4f78-9d5a-23071751506b
+version: 1.0.0
+dataset_uuid: c0474cc0-ed32-4dbb-ad1e-e7214f6c7218

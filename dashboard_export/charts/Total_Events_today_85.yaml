@@ -1,20 +1,25 @@
-slice_name: Revenue by Payment Method
+slice_name: Total Events today
 description: null
 certified_by: null
 certification_details: null
 viz_type: pie
 params:
-  datasource: 5__table
+  datasource: 1__table
   viz_type: pie
-  slice_id: 77
+  slice_id: 83
   groupby:
-  - payment.paymentMethod
-  metric: sum(amount)
+  - eventCode
+  metric: count
   adhoc_filters:
   - clause: WHERE
-    comparator: No filter
+    comparator: 'today : tomorrow'
+    datasourceWarning: false
     expressionType: SIMPLE
+    filterOptionName: filter_uj2aimt7wap_fxwxlrq8i2i
+    isExtra: false
+    isNew: false
     operator: TEMPORAL_RANGE
+    sqlExpression: null
     subject: timestamp
   row_limit: 100
   sort_by_metric: true
@@ -23,24 +28,21 @@ params:
   show_legend: true
   legendType: scroll
   legendOrientation: top
-  label_type: key_percent
+  label_type: key_value
   number_format: SMART_NUMBER
-  currency_format:
-    symbol: USD
-    symbolPosition: prefix
   date_format: smart_date
   show_labels: true
   labels_outside: true
   label_line: true
-  show_total: false
-  outerRadius: 70
-  innerRadius: 30
+  show_total: true
+  outerRadius: 50
+  donut: true
   extra_form_data: {}
   dashboards:
-  - 6
+  - 7
   annotation_layers: []
 query_context: null
 cache_timeout: null
-uuid: f68f2c78-bd75-4400-90b9-8b331e41da42
+uuid: 8af2a008-437a-4def-8df4-0e44722c7ce3
 version: 1.0.0
-dataset_uuid: fd6c9db1-391c-4ddc-9684-b4e7870ca167
+dataset_uuid: 44817376-4bdc-46e5-8cf0-08040043cfd7

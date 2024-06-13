@@ -1,4 +1,4 @@
-slice_name: Revenue by Payment Method
+slice_name: Revenue by Transaction Method
 description: null
 certified_by: null
 certification_details: null
@@ -6,28 +6,30 @@ viz_type: pie
 params:
   datasource: 5__table
   viz_type: pie
-  slice_id: 77
+  slice_id: 74
   groupby:
   - payment.paymentMethod
   metric: sum(amount)
   adhoc_filters:
   - clause: WHERE
-    comparator: No filter
+    comparator: 'today : tomorrow'
+    datasourceWarning: false
     expressionType: SIMPLE
+    filterOptionName: filter_m3j83hd7oa_eso1pukowc6
+    isExtra: false
+    isNew: false
     operator: TEMPORAL_RANGE
+    sqlExpression: null
     subject: timestamp
   row_limit: 100
-  sort_by_metric: true
+  sort_by_metric: false
   color_scheme: supersetColors
   show_labels_threshold: 5
   show_legend: true
   legendType: scroll
-  legendOrientation: top
-  label_type: key_percent
-  number_format: SMART_NUMBER
-  currency_format:
-    symbol: USD
-    symbolPosition: prefix
+  legendOrientation: bottom
+  label_type: key_value
+  number_format: $,.2f
   date_format: smart_date
   show_labels: true
   labels_outside: true
@@ -41,6 +43,6 @@ params:
   annotation_layers: []
 query_context: null
 cache_timeout: null
-uuid: f68f2c78-bd75-4400-90b9-8b331e41da42
+uuid: b196bb78-9bf7-4582-b475-a6294d362059
 version: 1.0.0
 dataset_uuid: fd6c9db1-391c-4ddc-9684-b4e7870ca167

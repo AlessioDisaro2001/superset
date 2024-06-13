@@ -11,7 +11,7 @@ position:
     children: []
     id: CHART-CL7PbcMtyl
     meta:
-      chartId: 71
+      chartId: 64
       height: 37
       sliceName: Occupancy Status Recap
       uuid: fded56e1-6067-4e16-93fd-ceb391dc2f14
@@ -28,7 +28,7 @@ position:
     children: []
     id: CHART-TIdUfGLJFT
     meta:
-      chartId: 69
+      chartId: 11
       height: 50
       sliceName: Events Trend Over Time
       uuid: 143dd056-9e09-42c4-beb4-0e679ddeda1c
@@ -44,7 +44,7 @@ position:
     children: []
     id: CHART-dq0U1uaNEj
     meta:
-      chartId: 68
+      chartId: 2
       height: 50
       sliceName: Amount by Payment Method
       uuid: 4ce0b025-2dac-4ebd-b649-39333a545316
@@ -61,7 +61,7 @@ position:
     children: []
     id: CHART-explore-41-1
     meta:
-      chartId: 55
+      chartId: 4
       height: 50
       sliceName: Cities Parking Status Recap
       uuid: a5d96bad-fa4f-4e44-9af9-16611548d32f
@@ -78,7 +78,7 @@ position:
     children: []
     id: CHART-explore-43-1
     meta:
-      chartId: 70
+      chartId: 61
       height: 50
       sliceName: Number of Events
       uuid: b3a67288-bf34-48b0-85f5-0a294241a5e0
@@ -95,7 +95,7 @@ position:
     children: []
     id: CHART-explore-63-1
     meta:
-      chartId: 65
+      chartId: 82
       height: 50
       sliceName: Total Amount by Payment Method
       uuid: 133d95fb-5772-44e4-a42f-a2577534d14a
@@ -126,7 +126,7 @@ position:
     children: []
     id: CHART-nt-ScWyKAK
     meta:
-      chartId: 54
+      chartId: 3
       height: 50
       sliceName: Cities Occupancy Status Recap
       uuid: 076c0723-308d-4cd2-903d-88696d44d329
@@ -143,7 +143,7 @@ position:
     children: []
     id: CHART-vtk50v8z76
     meta:
-      chartId: 56
+      chartId: 58
       height: 88
       sliceName: Last Parking Events Map
       uuid: 6186e656-1ca5-4c0e-8ace-def115105ace
@@ -160,7 +160,7 @@ position:
     children: []
     id: CHART-wK7m_2mCO5
     meta:
-      chartId: 73
+      chartId: 74
       height: 50
       sliceName: Payment Trends Over Time
       uuid: 465f69d6-019c-429e-8018-f514e26924d5

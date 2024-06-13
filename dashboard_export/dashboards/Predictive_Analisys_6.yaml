@@ -1,0 +1,317 @@
+dashboard_title: Predictive Analisys
+description: null
+css: ''
+slug: null
+certified_by: ''
+certification_details: ''
+published: false
+uuid: 3399cd62-801a-4c7c-b9f5-9433dc66e56a
+position:
+  CHART-95V-Rva3w_:
+    children: []
+    id: CHART-95V-Rva3w_
+    meta:
+      chartId: 82
+      height: 86
+      sliceName: Total Amount by Payment Method
+      uuid: 133d95fb-5772-44e4-a42f-a2577534d14a
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-5XkCG_WBwA
+    - TAB-cr7Wj0xWv_
+    - ROW-MNvRqkBZDL
+    type: CHART
+  CHART-JPPF39WW:
+    children: []
+    id: CHART-JPPF39WW
+    meta:
+      chartId: 10
+      height: 86
+      sliceName: Events over time
+      uuid: 1396f753-504c-40f5-a2dc-c1dd0aff5343
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-N-T8BKQJH9
+    type: CHART
+  CHART-explore-78-1:
+    children: []
+    id: CHART-explore-78-1
+    meta:
+      chartId: 67
+      height: 86
+      sliceName: Parkings over time
+      uuid: a712063f-a06b-4fa6-a93e-0d63a2772770
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-5XkCG_WBwA
+    - TAB-i5cCJCXFG
+    - ROW-1XbUCKjau
+    type: CHART
+  DASHBOARD_VERSION_KEY: v2
+  GRID_ID:
+    children:
+    - TABS-5XkCG_WBwA
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: Predictive Analisys
+    type: HEADER
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-1XbUCKjau:
+    children:
+    - CHART-explore-78-1
+    id: ROW-1XbUCKjau
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-5XkCG_WBwA
+    - TAB-i5cCJCXFG
+    type: ROW
+  ROW-MNvRqkBZDL:
+    children:
+    - CHART-95V-Rva3w_
+    id: ROW-MNvRqkBZDL
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-5XkCG_WBwA
+    - TAB-cr7Wj0xWv_
+    type: ROW
+  ROW-eacWoMFUL:
+    children:
+    - CHART-JPPF39WW
+    id: ROW-eacWoMFUL
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-5XkCG_WBwA
+    - TAB--ib15R0hw
+    type: ROW
+  TAB--ib15R0hw:
+    children:
+    - ROW-eacWoMFUL
+    id: TAB--ib15R0hw
+    meta:
+      defaultText: Tab title
+      placeholder: Tab title
+      text: Events
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-5XkCG_WBwA
+    type: TAB
+  TAB-cr7Wj0xWv_:
+    children:
+    - ROW-MNvRqkBZDL
+    id: TAB-cr7Wj0xWv_
+    meta:
+      defaultText: Tab title
+      placeholder: Tab title
+      text: Payment
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-5XkCG_WBwA
+    type: TAB
+  TAB-i5cCJCXFG:
+    children:
+    - ROW-1XbUCKjau
+    id: TAB-i5cCJCXFG
+    meta:
+      defaultText: Tab title
+      placeholder: Tab title
+      text: Occupancy
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-5XkCG_WBwA
+    type: TAB
+  TABS-5XkCG_WBwA:
+    children:
+    - TAB-cr7Wj0xWv_
+    - TAB-i5cCJCXFG
+    - TAB--ib15R0hw
+    id: TABS-5XkCG_WBwA
+    meta: {}
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: TABS
+metadata:
+  chart_configuration:
+    '65':
+      id: 65
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 66
+        - 67
+    '66':
+      id: 66
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 65
+        - 67
+    '67':
+      id: 67
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 65
+        - 66
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope:
+    - 65
+    - 66
+    - 67
+  color_scheme: ''
+  refresh_frequency: 0
+  shared_label_colors:
+    COUNT(*)__yhat_upper: '#1FA8C9'
+    COUNT(*)__yhat: '#5AC189'
+    count: '#666666'
+    COUNT(*)__yhat_lower: '#FCC700'
+  color_scheme_domain: []
+  expanded_slices: {}
+  label_colors: {}
+  timed_refresh_immune_slices: []
+  cross_filters_enabled: true
+  native_filter_configuration:
+  - id: NATIVE_FILTER-1DY2G1eNB
+    controlValues:
+      enableEmptyFilter: false
+    name: Time Range
+    filterType: filter_time
+    targets:
+    - {}
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 65
+    - 66
+    - 67
+    tabsInScope:
+    - TAB--ib15R0hw
+    - TAB-cr7Wj0xWv_
+    - TAB-i5cCJCXFG
+  - id: NATIVE_FILTER-1W3ft9tnT
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: Payment Method
+    filterType: filter_select
+    targets:
+    - column:
+        name: payment.paymentMethod
+      datasetUuid: fd6c9db1-391c-4ddc-9684-b4e7870ca167
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded:
+      - 67
+      - 10
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 65
+    tabsInScope:
+    - TAB-cr7Wj0xWv_
+  - id: NATIVE_FILTER-3nCK_Tz9d
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: City
+    filterType: filter_select
+    targets:
+    - column:
+        name: campus.name.string
+      datasetUuid: a0341a26-8dc4-4d64-af4f-4e95a0a77487
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded:
+      - 82
+      - 10
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 66
+    tabsInScope:
+    - TAB-i5cCJCXFG
+  - id: NATIVE_FILTER-zXeAZx6E9
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: Alarm Code
+    filterType: filter_select
+    targets:
+    - column:
+        name: alarmCode
+      datasetUuid: 44817376-4bdc-46e5-8cf0-08040043cfd7
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded:
+      - 82
+      - 67
+    type: NATIVE_FILTER
+    description: ''
+version: 1.0.0

@@ -1,0 +1,32 @@
+slice_name: Total Events
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 12__table
+  viz_type: big_number_total
+  slice_id: 60
+  metric:
+    expressionType: SQL
+    sqlExpression: MAX(occupancy_count + payment_count + alarm_count + event_count)
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: MAX(occupancy_count + payment_count + alarm_count + event_count)
+    optionName: metric_6khashkwubl_iztnbq50r1h
+  adhoc_filters: []
+  header_font_size: 0.4
+  subheader_font_size: 0.15
+  y_axis_format: SMART_NUMBER
+  time_format: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 1
+  annotation_layers: []
+query_context: null
+cache_timeout: null
+uuid: 220e6b12-2758-48b9-b3e3-f1a677cc805a
+version: 1.0.0
+dataset_uuid: 7dfda3ac-1c6f-4c03-8430-9b24eefa81ec

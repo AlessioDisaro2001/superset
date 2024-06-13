@@ -1,4 +1,4 @@
-slice_name: Revenue by Payment Method
+slice_name: Grafico 15.0
 description: null
 certified_by: null
 certification_details: null
@@ -6,16 +6,21 @@ viz_type: pie
 params:
   datasource: 5__table
   viz_type: pie
-  slice_id: 77
+  slice_id: 51
   groupby:
   - payment.paymentMethod
   metric: sum(amount)
   adhoc_filters:
-  - clause: WHERE
-    comparator: No filter
-    expressionType: SIMPLE
-    operator: TEMPORAL_RANGE
+  - expressionType: SIMPLE
     subject: timestamp
+    operator: TEMPORAL_RANGE
+    comparator: 'this monday : this sunday'
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_j7dkj1hhfz_ld8yxaqd09n
   row_limit: 100
   sort_by_metric: true
   color_scheme: supersetColors
@@ -24,23 +29,24 @@ params:
   legendType: scroll
   legendOrientation: top
   label_type: key_percent
-  number_format: SMART_NUMBER
+  number_format: ',.2f'
   currency_format:
-    symbol: USD
     symbolPosition: prefix
+    symbol: USD
   date_format: smart_date
   show_labels: true
   labels_outside: true
   label_line: true
   show_total: false
   outerRadius: 70
+  donut: true
   innerRadius: 30
   extra_form_data: {}
   dashboards:
-  - 6
+  - 1
   annotation_layers: []
 query_context: null
 cache_timeout: null
-uuid: f68f2c78-bd75-4400-90b9-8b331e41da42
+uuid: a6e5ae42-ffd4-4136-9955-7e0ab29cfb8f
 version: 1.0.0
 dataset_uuid: fd6c9db1-391c-4ddc-9684-b4e7870ca167

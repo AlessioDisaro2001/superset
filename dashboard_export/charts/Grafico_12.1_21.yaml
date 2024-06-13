@@ -1,0 +1,78 @@
+slice_name: Grafico 12.1
+description: null
+certified_by: null
+certification_details: null
+viz_type: bubble_v2
+params:
+  datasource: 5__table
+  viz_type: bubble_v2
+  slice_id: 10
+  entity: campus.name.string
+  x:
+    aggregate: COUNT_DISTINCT
+    column:
+      advanced_data_type: null
+      changed_on: '2024-02-23T09:57:20.340276'
+      column_name: supplementalEquipment.id
+      created_on: '2024-02-23T09:57:20.340249'
+      description: null
+      expression: null
+      extra: '{}'
+      filterable: true
+      groupby: true
+      id: 34
+      is_active: true
+      is_dttm: false
+      python_date_format: null
+      type: STRING
+      type_generic: 1
+      uuid: cb0dabd8-10be-49a9-8aca-ba2b78cf206b
+      verbose_name: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    hasCustomLabel: false
+    label: COUNT_DISTINCT(supplementalEquipment.id)
+    optionName: metric_06fq7n2kwsb_nngly4cl67f
+    sqlExpression: null
+  y: sum(amount)
+  adhoc_filters:
+  - clause: WHERE
+    comparator: 'today : tomorrow'
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_49p5cilx7yk_4oo32q51km8
+    isExtra: false
+    isNew: false
+    operator: TEMPORAL_RANGE
+    sqlExpression: null
+    subject: timestamp
+  size: count(transaction)
+  order_desc: true
+  row_limit: 10000
+  color_scheme: supersetColors
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  max_bubble_size: '25'
+  tooltipSizeFormat: SMART_NUMBER
+  opacity: 0.6
+  x_axis_label: Meters
+  xAxisLabelRotation: 0
+  x_axis_title_margin: 30
+  xAxisFormat: SMART_NUMBER
+  y_axis_title_margin: auto
+  y_axis_format: $,.2f
+  truncateXAxis: false
+  truncateYAxis: true
+  y_axis_bounds:
+  - null
+  - null
+  extra_form_data: {}
+  dashboards:
+  - 1
+  annotation_layers: []
+query_context: null
+cache_timeout: null
+uuid: 0794cca8-5a69-441d-b0ec-b1053a28097a
+version: 1.0.0
+dataset_uuid: fd6c9db1-391c-4ddc-9684-b4e7870ca167

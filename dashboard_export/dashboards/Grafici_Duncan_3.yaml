@@ -1,0 +1,3814 @@
+dashboard_title: Grafici Duncan
+description: null
+css: ''
+slug: null
+certified_by: ''
+certification_details: ''
+published: false
+uuid: 534fe072-eab6-4d17-9d9f-7c0d23d56d99
+position:
+  CHART--VkH9Z9nY9:
+    children: []
+    id: CHART--VkH9Z9nY9
+    meta:
+      chartId: 31
+      height: 50
+      sliceName: Grafico 16.1
+      uuid: 4371fbd2-580c-42d3-a1e8-17df66e9e6b4
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-XSLdaJdRK
+    - ROW-h_3l7vv4v
+    type: CHART
+  CHART-3YYfb3We9w:
+    children: []
+    id: CHART-3YYfb3We9w
+    meta:
+      chartId: 22
+      height: 75
+      sliceName: Grafico 12.2
+      uuid: 224c6738-2281-401b-8d70-763072e7494b
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-WeB93oEmO
+    - ROW-TtVVJfdutJ
+    type: CHART
+  CHART-3dmBIFF1rf:
+    children: []
+    id: CHART-3dmBIFF1rf
+    meta:
+      chartId: 12
+      height: 78
+      sliceName: Grafico 10.0.1
+      uuid: a6b3adae-e5f2-463b-ae6b-074ef2992312
+      width: 7
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-HFbLgUfrk
+    - ROW-ocKW6RZLJj
+    type: CHART
+  CHART-EKX6DQ41:
+    children: []
+    id: CHART-EKX6DQ41
+    meta:
+      chartId: 29
+      height: 50
+      sliceName: Grafico 16.0.2
+      uuid: d34bf5d1-0858-43f6-8e38-65bace884caa
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-XSLdaJdRK
+    - ROW-kLrFZ4jDk
+    type: CHART
+  CHART-F8tgHtE6vh:
+    children: []
+    id: CHART-F8tgHtE6vh
+    meta:
+      chartId: 81
+      height: 16
+      sliceName: Today
+      uuid: 6ae8f59a-16c3-48a1-b5bb-337e98d374e0
+      width: 9
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-HFbLgUfrk
+    - ROW-LSoMpxinDo
+    type: CHART
+  CHART-IoGdkFwqGC:
+    children: []
+    id: CHART-IoGdkFwqGC
+    meta:
+      chartId: 46
+      height: 34
+      sliceName: Grafico 3.1.2
+      uuid: 83ab0a52-3f73-4173-ad74-26260e1dc2b7
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-Ipg3NSoM_9
+    - ROW-iCHn59bJnG
+    - COLUMN-BZKGjpplBh
+    type: CHART
+  CHART-KdE71CqT2L:
+    children: []
+    id: CHART-KdE71CqT2L
+    meta:
+      chartId: 39
+      height: 50
+      sliceName: Grafico 17.3
+      uuid: ef4ee7cd-506e-4e70-9110-d40a61aa9aaa
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-1x-D0qYUX
+    - ROW-blfhdbymDa
+    - COLUMN-e3Gn4O3kpV
+    type: CHART
+  CHART-LwD-CiGlAf:
+    children: []
+    id: CHART-LwD-CiGlAf
+    meta:
+      chartId: 44
+      height: 75
+      sliceName: Grafico 3.0
+      uuid: 170e64e9-d4f8-4de6-a107-fa3ab4ebe032
+      width: 8
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-Ipg3NSoM_9
+    - ROW-iCHn59bJnG
+    type: CHART
+  CHART-M1iTT2VDJd:
+    children: []
+    id: CHART-M1iTT2VDJd
+    meta:
+      chartId: 18
+      height: 54
+      sliceName: Grafico 10.4
+      uuid: 5eadc016-d8f4-4f9b-92ad-8501558de127
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-HFbLgUfrk
+    - ROW-3ZKX-t_Mw
+    - COLUMN-9cVAuHwCYZ
+    type: CHART
+  CHART-MXro0ToMgK:
+    children: []
+    id: CHART-MXro0ToMgK
+    meta:
+      chartId: 14
+      height: 35
+      sliceName: Grafico 10.0.3
+      uuid: 64888ffb-24c4-4732-830f-2857e9a23d45
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-HFbLgUfrk
+    - ROW-ocKW6RZLJj
+    - COLUMN-sdPNb9E7so
+    type: CHART
+  CHART-NNSDQCuAeT:
+    children: []
+    id: CHART-NNSDQCuAeT
+    meta:
+      chartId: 16
+      height: 36
+      sliceName: Grafico 10.0.5
+      uuid: 0c57f152-1111-4448-adae-32c82f7b8622
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-HFbLgUfrk
+    - ROW-ocKW6RZLJj
+    - COLUMN-HzVdHXQEjl
+    type: CHART
+  CHART-NV19Vs6eZH:
+    children: []
+    id: CHART-NV19Vs6eZH
+    meta:
+      chartId: 45
+      height: 33
+      sliceName: Grafico 3.1.1
+      uuid: 95ca1ff9-d29d-443d-a90f-2a9a04deee79
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-Ipg3NSoM_9
+    - ROW-iCHn59bJnG
+    - COLUMN-BZKGjpplBh
+    type: CHART
+  CHART-Pj3wgZV_8r:
+    children: []
+    id: CHART-Pj3wgZV_8r
+    meta:
+      chartId: 23
+      height: 75
+      sliceName: Grafico 14.0
+      uuid: 65d4ac3b-6948-4e6f-8261-c5aaaf40a5ef
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-a03rg4ymu
+    - ROW-PVdHGCFUS7
+    type: CHART
+  CHART-S3D9kIhPBB:
+    children: []
+    id: CHART-S3D9kIhPBB
+    meta:
+      chartId: 49
+      height: 50
+      sliceName: Grafico 5.0.1
+      uuid: 92cc06a0-0197-4ce9-8ac0-6b9438a1a6c3
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-krrlTBVn-
+    - ROW-kbwWvpt1V
+    - COLUMN-yj9GGeHl88
+    type: CHART
+  CHART-YvXLG3hwF0:
+    children: []
+    id: CHART-YvXLG3hwF0
+    meta:
+      chartId: 47
+      height: 50
+      sliceName: Grafico 3.1.3
+      uuid: 7952dde1-bc18-4291-8625-7375a3f8a68e
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-Ipg3NSoM_9
+    - ROW-N4JCw94dq8
+    type: CHART
+  CHART-a8jOPC3xAr:
+    children: []
+    id: CHART-a8jOPC3xAr
+    meta:
+      chartId: 54
+      height: 50
+      sliceName: Grafico 6.2
+      uuid: 4d6d9d4d-94fb-4f2e-bbe1-2e0013265790
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-CCgaR0JuU
+    - ROW-OGFNfPt3S7
+    - COLUMN-Q1Xum-OJcs
+    type: CHART
+  CHART-dAxbyw-LjG:
+    children: []
+    id: CHART-dAxbyw-LjG
+    meta:
+      chartId: 28
+      height: 50
+      sliceName: Grafico 16.0.1
+      uuid: 0dac0aba-fad4-4e9d-ad8f-ee42b31a2231
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-XSLdaJdRK
+    - ROW-h_3l7vv4v
+    type: CHART
+  CHART-errWBGq0-M:
+    children: []
+    id: CHART-errWBGq0-M
+    meta:
+      chartId: 19
+      height: 50
+      sliceName: Grafico 10.5
+      uuid: 3b36baf9-1fdd-468a-9558-2225664f83c6
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-HFbLgUfrk
+    - ROW-KDyqacMsn0
+    type: CHART
+  CHART-explore-28-1:
+    children: []
+    id: CHART-explore-28-1
+    meta:
+      chartId: 32
+      height: 50
+      sliceName: Grafico 16.2
+      uuid: 174e525b-5c72-414e-9940-b20ca7b08ced
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-XSLdaJdRK
+    - ROW-kLrFZ4jDk
+    type: CHART
+  CHART-explore-29-1:
+    children: []
+    id: CHART-explore-29-1
+    meta:
+      chartId: 33
+      height: 50
+      sliceName: Grafico 16.3
+      uuid: 172b7658-9e24-4161-a845-6cc1d8ba3ee7
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-XSLdaJdRK
+    - ROW-kLrFZ4jDk
+    type: CHART
+  CHART-explore-30-1:
+    children: []
+    id: CHART-explore-30-1
+    meta:
+      chartId: 34
+      height: 50
+      sliceName: Grafico 16.4
+      uuid: 43a5e06d-4a33-4584-b471-bfc4898deab6
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-XSLdaJdRK
+    - ROW-Z7aMbHjLZ
+    type: CHART
+  CHART-explore-38-1:
+    children: []
+    id: CHART-explore-38-1
+    meta:
+      chartId: 37
+      height: 50
+      sliceName: Grafico 17.1
+      uuid: 85bca249-d594-4cb5-b46b-e0f4e0c33bf8
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-1x-D0qYUX
+    - ROW-BRc1ZbLMss
+    - COLUMN-3l4gWCn2Ve
+    type: CHART
+  CHART-explore-39-1:
+    children: []
+    id: CHART-explore-39-1
+    meta:
+      chartId: 38
+      height: 50
+      sliceName: Grafico 17.2
+      uuid: 9bc55974-0274-4165-920f-957e717f329d
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-1x-D0qYUX
+    - ROW-blfhdbymDa
+    - COLUMN-1ungr5s0Kk
+    type: CHART
+  CHART-explore-41-1:
+    children: []
+    id: CHART-explore-41-1
+    meta:
+      chartId: 40
+      height: 50
+      sliceName: Grafico 17.4
+      uuid: e8e57114-111e-4752-ac79-ed94510e6db9
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-1x-D0qYUX
+    - ROW-toZNNqxeA2
+    - COLUMN-rtgyNHQDrL
+    type: CHART
+  CHART-explore-43-1:
+    children: []
+    id: CHART-explore-43-1
+    meta:
+      chartId: 30
+      height: 50
+      sliceName: Grafico 16.0
+      uuid: d81dbc22-93ca-4173-ac55-827904d97e66
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-XSLdaJdRK
+    - ROW-h_3l7vv4v
+    type: CHART
+  CHART-explore-47-1:
+    children: []
+    id: CHART-explore-47-1
+    meta:
+      chartId: 51
+      height: 50
+      sliceName: Grafico 5.2
+      uuid: 5df9cda7-a01f-472d-8071-e6c1ae11793d
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-krrlTBVn-
+    - ROW-kbwWvpt1V
+    - COLUMN-O139xMAXHh
+    type: CHART
+  CHART-explore-48-1:
+    children: []
+    id: CHART-explore-48-1
+    meta:
+      chartId: 50
+      height: 50
+      sliceName: Grafico 5.1
+      uuid: 20815a40-8882-4908-ae92-425462ce96f6
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-krrlTBVn-
+    - ROW-kbwWvpt1V
+    - COLUMN-QGr_iuhfQg
+    type: CHART
+  CHART-explore-49-1:
+    children: []
+    id: CHART-explore-49-1
+    meta:
+      chartId: 56
+      height: 61
+      sliceName: Grafico 8.0
+      uuid: 68055e62-ac86-42aa-b57c-4ab491c0fe15
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-LLBDgg8Pz
+    - ROW-L21JlEHkQ
+    type: CHART
+  CHART-explore-51-1:
+    children: []
+    id: CHART-explore-51-1
+    meta:
+      chartId: 24
+      height: 50
+      sliceName: Grafico 15.0
+      uuid: a6e5ae42-ffd4-4136-9955-7e0ab29cfb8f
+      width: 5
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-T-6BQO_2h
+    - ROW-yL7ra_xLd
+    type: CHART
+  CHART-explore-52-1:
+    children: []
+    id: CHART-explore-52-1
+    meta:
+      chartId: 25
+      height: 50
+      sliceName: Grafico 15.1
+      uuid: 4ba8bb40-df1c-4a5b-a05e-8d83a910186d
+      width: 7
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-T-6BQO_2h
+    - ROW-yL7ra_xLd
+    type: CHART
+  CHART-explore-53-1:
+    children: []
+    id: CHART-explore-53-1
+    meta:
+      chartId: 26
+      height: 50
+      sliceName: Grafico 15.2
+      uuid: 37088ada-2b65-4479-96c1-d0db7cc6e411
+      width: 5
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-T-6BQO_2h
+    - ROW-J-oK9iLvv
+    type: CHART
+  CHART-explore-54-1:
+    children: []
+    id: CHART-explore-54-1
+    meta:
+      chartId: 27
+      height: 50
+      sliceName: Grafico 15.3
+      uuid: 397068ad-6cdd-4830-b73a-bee4004a1aab
+      width: 7
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-T-6BQO_2h
+    - ROW-J-oK9iLvv
+    type: CHART
+  CHART-explore-56-1:
+    children: []
+    id: CHART-explore-56-1
+    meta:
+      chartId: 42
+      height: 41
+      sliceName: Grafico 18.0.2
+      uuid: 2f04e48b-c25f-4e35-b0c7-021e9e93c066
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-DatmT4X3VU
+    type: CHART
+  CHART-hDzaQNi65G:
+    children: []
+    id: CHART-hDzaQNi65G
+    meta:
+      chartId: 48
+      height: 50
+      sliceName: Grafico 3.1.4
+      uuid: ac3e4f6c-533d-4c2d-b0bc-076dc4cd98b8
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-Ipg3NSoM_9
+    - ROW-N4JCw94dq8
+    type: CHART
+  CHART-mCu7HX23bP:
+    children: []
+    id: CHART-mCu7HX23bP
+    meta:
+      chartId: 52
+      height: 50
+      sliceName: Grafico 6.0
+      uuid: be3de25f-86e1-48b6-b59f-8d3d300d3bee
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-CCgaR0JuU
+    - ROW-vF-V02cYC
+    - COLUMN-OH64HAIOEA
+    type: CHART
+  CHART-n5kJPeEvnm:
+    children: []
+    id: CHART-n5kJPeEvnm
+    meta:
+      chartId: 17
+      height: 19
+      sliceName: Grafico 10.3
+      uuid: 4e96ee5e-f69a-4f78-9d5a-23071751506b
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-HFbLgUfrk
+    - ROW-3ZKX-t_Mw
+    - COLUMN-9cVAuHwCYZ
+    type: CHART
+  CHART-nnKz6nJzFa:
+    children: []
+    id: CHART-nnKz6nJzFa
+    meta:
+      chartId: 41
+      height: 50
+      sliceName: Grafico 17.5
+      uuid: b7333028-5ebe-499a-a7a5-595c36f32233
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-1x-D0qYUX
+    - ROW-toZNNqxeA2
+    - COLUMN-g7IH_-uKyr
+    type: CHART
+  CHART-nri6rfB1F7:
+    children: []
+    id: CHART-nri6rfB1F7
+    meta:
+      chartId: 20
+      height: 79
+      sliceName: Grafico 10.6
+      uuid: 9c99433a-b61c-4fd8-8e94-639b58a3faec
+      width: 5
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-HFbLgUfrk
+    - ROW-3ZKX-t_Mw
+    type: CHART
+  CHART-nyt9Uj8mli:
+    children: []
+    id: CHART-nyt9Uj8mli
+    meta:
+      chartId: 36
+      height: 50
+      sliceName: Grafico 17.0
+      uuid: 14d3a7c8-039e-40b3-9a10-0e31ef7f1572
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-1x-D0qYUX
+    - ROW-BRc1ZbLMss
+    - COLUMN-G4aBCpqBI2
+    type: CHART
+  CHART-onjHSvPFrs:
+    children: []
+    id: CHART-onjHSvPFrs
+    meta:
+      chartId: 21
+      height: 74
+      sliceName: Grafico 12.1
+      uuid: 0794cca8-5a69-441d-b0ec-b1053a28097a
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-WeB93oEmO
+    - ROW-TtVVJfdutJ
+    type: CHART
+  CHART-pO1ASMfamW:
+    children: []
+    id: CHART-pO1ASMfamW
+    meta:
+      chartId: 15
+      height: 36
+      sliceName: Grafico 10.0.4
+      uuid: e7c016ae-29a3-490b-8312-c023029e4cb0
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-HFbLgUfrk
+    - ROW-ocKW6RZLJj
+    - COLUMN-HzVdHXQEjl
+    type: CHART
+  CHART-pYRq_YkNdB:
+    children: []
+    id: CHART-pYRq_YkNdB
+    meta:
+      chartId: 13
+      height: 37
+      sliceName: Grafico 10.0.2
+      uuid: 6d79b8d6-94f7-4c34-a95a-9aa530d42070
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-HFbLgUfrk
+    - ROW-ocKW6RZLJj
+    - COLUMN-sdPNb9E7so
+    type: CHART
+  CHART-qBEczGeWvl:
+    children: []
+    id: CHART-qBEczGeWvl
+    meta:
+      chartId: 89
+      height: 16
+      sliceName: Yesterday
+      uuid: 1c580c61-e24a-484d-9d6a-191f4c5cf318
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-HFbLgUfrk
+    - ROW-LSoMpxinDo
+    type: CHART
+  CHART-sbeG5LyoLk:
+    children: []
+    id: CHART-sbeG5LyoLk
+    meta:
+      chartId: 43
+      height: 43
+      sliceName: Grafico 18.0.1
+      uuid: 0adfa904-8d57-4235-9882-0a14d85982af
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-y87NGSDkNA
+    type: CHART
+  CHART-tKJZMKF9Fs:
+    children: []
+    id: CHART-tKJZMKF9Fs
+    meta:
+      chartId: 53
+      height: 50
+      sliceName: Grafico 6.1
+      uuid: 6dbb00d3-c21f-4b68-8f4b-37d94e784609
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-CCgaR0JuU
+    - ROW-vF-V02cYC
+    - COLUMN-Od0V1Ja-Lh
+    type: CHART
+  CHART-zEnpqdYwQF:
+    children: []
+    id: CHART-zEnpqdYwQF
+    meta:
+      chartId: 35
+      height: 50
+      sliceName: Grafico 16.5
+      uuid: 7ae676b2-c1e8-4ef3-bcdd-7fe1e3d6b30d
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-XSLdaJdRK
+    - ROW-Z7aMbHjLZ
+    type: CHART
+  CHART-zzExczcsdo:
+    children: []
+    id: CHART-zzExczcsdo
+    meta:
+      chartId: 55
+      height: 68
+      sliceName: Grafico 7.0
+      uuid: 711e5428-501f-49a1-9c7d-f28ede0273dc
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-kuKIxr-cK
+    - ROW-JQ2rPGDzAI
+    type: CHART
+  COLUMN-1ungr5s0Kk:
+    children:
+    - CHART-explore-39-1
+    id: COLUMN-1ungr5s0Kk
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-1x-D0qYUX
+    - ROW-blfhdbymDa
+    type: COLUMN
+  COLUMN-3l4gWCn2Ve:
+    children:
+    - CHART-explore-38-1
+    id: COLUMN-3l4gWCn2Ve
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-1x-D0qYUX
+    - ROW-BRc1ZbLMss
+    type: COLUMN
+  COLUMN-9cVAuHwCYZ:
+    children:
+    - CHART-n5kJPeEvnm
+    - CHART-M1iTT2VDJd
+    id: COLUMN-9cVAuHwCYZ
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 7
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-HFbLgUfrk
+    - ROW-3ZKX-t_Mw
+    type: COLUMN
+  COLUMN-BZKGjpplBh:
+    children:
+    - CHART-NV19Vs6eZH
+    - CHART-IoGdkFwqGC
+    id: COLUMN-BZKGjpplBh
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-Ipg3NSoM_9
+    - ROW-iCHn59bJnG
+    type: COLUMN
+  COLUMN-G4aBCpqBI2:
+    children:
+    - CHART-nyt9Uj8mli
+    id: COLUMN-G4aBCpqBI2
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-1x-D0qYUX
+    - ROW-BRc1ZbLMss
+    type: COLUMN
+  COLUMN-HzVdHXQEjl:
+    children:
+    - CHART-pO1ASMfamW
+    - CHART-NNSDQCuAeT
+    id: COLUMN-HzVdHXQEjl
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-HFbLgUfrk
+    - ROW-ocKW6RZLJj
+    type: COLUMN
+  COLUMN-O139xMAXHh:
+    children:
+    - CHART-explore-47-1
+    id: COLUMN-O139xMAXHh
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-krrlTBVn-
+    - ROW-kbwWvpt1V
+    type: COLUMN
+  COLUMN-OH64HAIOEA:
+    children:
+    - CHART-mCu7HX23bP
+    id: COLUMN-OH64HAIOEA
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-CCgaR0JuU
+    - ROW-vF-V02cYC
+    type: COLUMN
+  COLUMN-Od0V1Ja-Lh:
+    children:
+    - CHART-tKJZMKF9Fs
+    id: COLUMN-Od0V1Ja-Lh
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-CCgaR0JuU
+    - ROW-vF-V02cYC
+    type: COLUMN
+  COLUMN-Q1Xum-OJcs:
+    children:
+    - CHART-a8jOPC3xAr
+    id: COLUMN-Q1Xum-OJcs
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-CCgaR0JuU
+    - ROW-OGFNfPt3S7
+    type: COLUMN
+  COLUMN-QGr_iuhfQg:
+    children:
+    - CHART-explore-48-1
+    id: COLUMN-QGr_iuhfQg
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-krrlTBVn-
+    - ROW-kbwWvpt1V
+    type: COLUMN
+  COLUMN-e3Gn4O3kpV:
+    children:
+    - CHART-KdE71CqT2L
+    id: COLUMN-e3Gn4O3kpV
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-1x-D0qYUX
+    - ROW-blfhdbymDa
+    type: COLUMN
+  COLUMN-g7IH_-uKyr:
+    children:
+    - CHART-nnKz6nJzFa
+    id: COLUMN-g7IH_-uKyr
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-1x-D0qYUX
+    - ROW-toZNNqxeA2
+    type: COLUMN
+  COLUMN-rtgyNHQDrL:
+    children:
+    - CHART-explore-41-1
+    id: COLUMN-rtgyNHQDrL
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-1x-D0qYUX
+    - ROW-toZNNqxeA2
+    type: COLUMN
+  COLUMN-sdPNb9E7so:
+    children:
+    - CHART-pYRq_YkNdB
+    - CHART-MXro0ToMgK
+    id: COLUMN-sdPNb9E7so
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-HFbLgUfrk
+    - ROW-ocKW6RZLJj
+    type: COLUMN
+  COLUMN-yj9GGeHl88:
+    children:
+    - CHART-S3D9kIhPBB
+    id: COLUMN-yj9GGeHl88
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-krrlTBVn-
+    - ROW-kbwWvpt1V
+    type: COLUMN
+  DASHBOARD_VERSION_KEY: v2
+  GRID_ID:
+    children:
+    - TABS-662uWE_ATd
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: Grafici Duncan
+    type: HEADER
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-0xD5wIwfR:
+    children:
+    - CHART-explore-31-1
+    - CHART-explore-32-1
+    id: ROW-0xD5wIwfR
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-WeB93oEmO
+    type: ROW
+  ROW-0zM4xQHpuA:
+    children:
+    - CHART-explore-35-1
+    id: ROW-0zM4xQHpuA
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-kuKIxr-cK
+    type: ROW
+  ROW-3ZKX-t_Mw:
+    children:
+    - COLUMN-9cVAuHwCYZ
+    - CHART-nri6rfB1F7
+    id: ROW-3ZKX-t_Mw
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-HFbLgUfrk
+    type: ROW
+  ROW-8Zp1nlj7Q:
+    children:
+    - CHART-sbeG5LyoLk
+    id: ROW-8Zp1nlj7Q
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-BRc1ZbLMss:
+    children:
+    - COLUMN-G4aBCpqBI2
+    - COLUMN-3l4gWCn2Ve
+    id: ROW-BRc1ZbLMss
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-1x-D0qYUX
+    type: ROW
+  ROW-J-oK9iLvv:
+    children:
+    - CHART-explore-53-1
+    - CHART-explore-54-1
+    id: ROW-J-oK9iLvv
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-T-6BQO_2h
+    type: ROW
+  ROW-JQ2rPGDzAI:
+    children:
+    - CHART-zzExczcsdo
+    id: ROW-JQ2rPGDzAI
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-kuKIxr-cK
+    type: ROW
+  ROW-KDyqacMsn0:
+    children:
+    - CHART-errWBGq0-M
+    id: ROW-KDyqacMsn0
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-HFbLgUfrk
+    type: ROW
+  ROW-L21JlEHkQ:
+    children:
+    - CHART-explore-49-1
+    id: ROW-L21JlEHkQ
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-LLBDgg8Pz
+    type: ROW
+  ROW-LSoMpxinDo:
+    children:
+    - CHART-F8tgHtE6vh
+    - CHART-qBEczGeWvl
+    id: ROW-LSoMpxinDo
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-HFbLgUfrk
+    type: ROW
+  ROW-N4JCw94dq8:
+    children:
+    - CHART-YvXLG3hwF0
+    - CHART-hDzaQNi65G
+    id: ROW-N4JCw94dq8
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-Ipg3NSoM_9
+    type: ROW
+  ROW-OGFNfPt3S7:
+    children:
+    - COLUMN-Q1Xum-OJcs
+    id: ROW-OGFNfPt3S7
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-CCgaR0JuU
+    type: ROW
+  ROW-PVdHGCFUS7:
+    children:
+    - CHART-Pj3wgZV_8r
+    id: ROW-PVdHGCFUS7
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-a03rg4ymu
+    type: ROW
+  ROW-TtVVJfdutJ:
+    children:
+    - CHART-onjHSvPFrs
+    - CHART-3YYfb3We9w
+    id: ROW-TtVVJfdutJ
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-WeB93oEmO
+    type: ROW
+  ROW-Z7aMbHjLZ:
+    children:
+    - CHART-explore-30-1
+    - CHART-zEnpqdYwQF
+    id: ROW-Z7aMbHjLZ
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-XSLdaJdRK
+    type: ROW
+  ROW-blfhdbymDa:
+    children:
+    - COLUMN-1ungr5s0Kk
+    - COLUMN-e3Gn4O3kpV
+    id: ROW-blfhdbymDa
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-1x-D0qYUX
+    type: ROW
+  ROW-d3dH3Q_ol:
+    children:
+    - CHART-explore-56-1
+    id: ROW-d3dH3Q_ol
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-tgt9He7dc
+    type: ROW
+  ROW-h_3l7vv4v:
+    children:
+    - CHART-explore-43-1
+    - CHART-explore-26-1
+    - CHART-explore-25-1
+    - CHART--VkH9Z9nY9
+    - CHART-dAxbyw-LjG
+    id: ROW-h_3l7vv4v
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-XSLdaJdRK
+    type: ROW
+  ROW-iCHn59bJnG:
+    children:
+    - CHART-LwD-CiGlAf
+    - COLUMN-BZKGjpplBh
+    id: ROW-iCHn59bJnG
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-Ipg3NSoM_9
+    type: ROW
+  ROW-kLrFZ4jDk:
+    children:
+    - CHART-EKX6DQ41
+    - CHART-explore-28-1
+    - CHART-explore-29-1
+    id: ROW-kLrFZ4jDk
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-XSLdaJdRK
+    type: ROW
+  ROW-kbwWvpt1V:
+    children:
+    - COLUMN-yj9GGeHl88
+    - COLUMN-O139xMAXHh
+    - COLUMN-QGr_iuhfQg
+    id: ROW-kbwWvpt1V
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-krrlTBVn-
+    type: ROW
+  ROW-ocKW6RZLJj:
+    children:
+    - COLUMN-HzVdHXQEjl
+    - CHART-3dmBIFF1rf
+    - COLUMN-sdPNb9E7so
+    id: ROW-ocKW6RZLJj
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-HFbLgUfrk
+    type: ROW
+  ROW-toZNNqxeA2:
+    children:
+    - COLUMN-rtgyNHQDrL
+    - CHART-explore-42-1
+    - COLUMN-g7IH_-uKyr
+    id: ROW-toZNNqxeA2
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-1x-D0qYUX
+    type: ROW
+  ROW-vF-V02cYC:
+    children:
+    - COLUMN-OH64HAIOEA
+    - COLUMN-Od0V1Ja-Lh
+    id: ROW-vF-V02cYC
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-CCgaR0JuU
+    type: ROW
+  ROW-x3h5aPS_h:
+    children:
+    - CHART-explore-37-1
+    id: ROW-x3h5aPS_h
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-krrlTBVn-
+    type: ROW
+  ROW-yL7ra_xLd:
+    children:
+    - CHART-explore-51-1
+    - CHART-explore-52-1
+    id: ROW-yL7ra_xLd
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    - TAB-T-6BQO_2h
+    type: ROW
+  TAB-1x-D0qYUX:
+    children:
+    - ROW-BRc1ZbLMss
+    - ROW-blfhdbymDa
+    - ROW-toZNNqxeA2
+    id: TAB-1x-D0qYUX
+    meta:
+      defaultText: Tab title
+      placeholder: Tab title
+      text: Grafici 17.X
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    type: TAB
+  TAB-CCgaR0JuU:
+    children:
+    - ROW-vF-V02cYC
+    - ROW-OGFNfPt3S7
+    id: TAB-CCgaR0JuU
+    meta:
+      defaultText: Tab title
+      placeholder: Tab title
+      text: Grafici 6.X
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    type: TAB
+  TAB-HFbLgUfrk:
+    children:
+    - ROW-LSoMpxinDo
+    - ROW-ocKW6RZLJj
+    - ROW-3ZKX-t_Mw
+    - ROW-KDyqacMsn0
+    id: TAB-HFbLgUfrk
+    meta:
+      defaultText: Tab title
+      placeholder: Tab title
+      text: Grafici 10.X
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    type: TAB
+  TAB-Ipg3NSoM_9:
+    children:
+    - ROW-iCHn59bJnG
+    - ROW-N4JCw94dq8
+    id: TAB-Ipg3NSoM_9
+    meta:
+      defaultText: Tab title
+      placeholder: Tab title
+      text: Grafici 3.X
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    type: TAB
+  TAB-LLBDgg8Pz:
+    children:
+    - ROW-L21JlEHkQ
+    id: TAB-LLBDgg8Pz
+    meta:
+      defaultText: Tab title
+      placeholder: Tab title
+      text: Grafici 8.X
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    type: TAB
+  TAB-T-6BQO_2h:
+    children:
+    - ROW-yL7ra_xLd
+    - ROW-J-oK9iLvv
+    id: TAB-T-6BQO_2h
+    meta:
+      defaultText: Tab title
+      placeholder: Tab title
+      text: Grafici 15.X
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    type: TAB
+  TAB-WeB93oEmO:
+    children:
+    - ROW-TtVVJfdutJ
+    - ROW-0xD5wIwfR
+    id: TAB-WeB93oEmO
+    meta:
+      defaultText: Tab title
+      placeholder: Tab title
+      text: Grafici 12.X
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    type: TAB
+  TAB-XSLdaJdRK:
+    children:
+    - ROW-h_3l7vv4v
+    - ROW-kLrFZ4jDk
+    - ROW-Z7aMbHjLZ
+    id: TAB-XSLdaJdRK
+    meta:
+      defaultText: Tab title
+      placeholder: Tab title
+      text: Grafici 16.X
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    type: TAB
+  TAB-a03rg4ymu:
+    children:
+    - ROW-PVdHGCFUS7
+    id: TAB-a03rg4ymu
+    meta:
+      defaultText: Tab title
+      placeholder: Tab title
+      text: Grafici 14.X
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    type: TAB
+  TAB-krrlTBVn-:
+    children:
+    - ROW-kbwWvpt1V
+    - ROW-x3h5aPS_h
+    id: TAB-krrlTBVn-
+    meta:
+      defaultText: Tab title
+      placeholder: Tab title
+      text: Grafici 5.X
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    type: TAB
+  TAB-kuKIxr-cK:
+    children:
+    - ROW-JQ2rPGDzAI
+    - ROW-0zM4xQHpuA
+    id: TAB-kuKIxr-cK
+    meta:
+      defaultText: Tab title
+      placeholder: Tab title
+      text: Grafici 7.X
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    type: TAB
+  TAB-tgt9He7dc:
+    children:
+    - ROW-d3dH3Q_ol
+    - ROW-8Zp1nlj7Q
+    id: TAB-tgt9He7dc
+    meta:
+      defaultText: Tab title
+      placeholder: Tab title
+      text: Grafici 18.X
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-662uWE_ATd
+    type: TAB
+  TABS-662uWE_ATd:
+    children:
+    - TAB-Ipg3NSoM_9
+    - TAB-krrlTBVn-
+    - TAB-CCgaR0JuU
+    - TAB-kuKIxr-cK
+    - TAB-LLBDgg8Pz
+    - TAB-HFbLgUfrk
+    - TAB-WeB93oEmO
+    - TAB-a03rg4ymu
+    - TAB-T-6BQO_2h
+    - TAB-XSLdaJdRK
+    - TAB-1x-D0qYUX
+    - TAB-tgt9He7dc
+    id: TABS-662uWE_ATd
+    meta: {}
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: TABS
+metadata:
+  chart_configuration:
+    '5':
+      id: 5
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+    '10':
+      id: 10
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+    '11':
+      id: 11
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+    '12':
+      id: 12
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+    '13':
+      id: 13
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+    '14':
+      id: 14
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+    '15':
+      id: 15
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+    '16':
+      id: 16
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+    '19':
+      id: 19
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+    '20':
+      id: 20
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+    '21':
+      id: 21
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+    '22':
+      id: 22
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+    '23':
+      id: 23
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+    '24':
+      id: 24
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+    '25':
+      id: 25
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+    '26':
+      id: 26
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+    '27':
+      id: 27
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+    '28':
+      id: 28
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+    '29':
+      id: 29
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+    '30':
+      id: 30
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+    '32':
+      id: 32
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+    '33':
+      id: 33
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+    '34':
+      id: 34
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+    '35':
+      id: 35
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+    '36':
+      id: 36
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+    '37':
+      id: 37
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+    '38':
+      id: 38
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+    '39':
+      id: 39
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 40
+        - 41
+        - 42
+        - 43
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+    '40':
+      id: 40
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 41
+        - 42
+        - 43
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+    '41':
+      id: 41
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 42
+        - 43
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+    '42':
+      id: 42
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 43
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+    '43':
+      id: 43
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+    '51':
+      id: 51
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 49
+        - 50
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+    '52':
+      id: 52
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 49
+        - 50
+        - 51
+        - 53
+        - 54
+        - 55
+        - 56
+    '53':
+      id: 53
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 49
+        - 50
+        - 51
+        - 52
+        - 54
+        - 55
+        - 56
+    '54':
+      id: 54
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 55
+        - 56
+    '55':
+      id: 55
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 56
+    '56':
+      id: 56
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope:
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+    - 27
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32
+    - 33
+    - 34
+    - 35
+    - 36
+    - 37
+    - 38
+    - 39
+    - 40
+    - 41
+    - 42
+    - 43
+    - 49
+    - 50
+    - 51
+    - 52
+    - 53
+    - 54
+    - 55
+    - 56
+  color_scheme: supersetColors
+  refresh_frequency: 0
+  expanded_slices: {}
+  label_colors: {}
+  timed_refresh_immune_slices: []
+  cross_filters_enabled: true
+  stagger_refresh: true
+  native_filter_configuration:
+  - id: NATIVE_FILTER-E2Fevz0Ms
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: Campus
+    filterType: filter_select
+    targets:
+    - column:
+        name: campus.name.string
+      datasetUuid: e69f1633-5540-4ae7-8808-33bc38ba4541
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - TAB-Ipg3NSoM_9
+      excluded:
+      - 44
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 32
+    - 33
+    - 34
+    - 35
+    tabsInScope:
+    - TAB-Ipg3NSoM_9
+  - id: NATIVE_FILTER-NK5MBElTz
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: Province
+    filterType: filter_select
+    targets:
+    - column:
+        name: province
+      datasetUuid: d1267dd7-4fd1-46ad-9265-5f909aefbe1e
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - TAB-krrlTBVn-
+      - TAB-CCgaR0JuU
+      - TAB-kuKIxr-cK
+      - TAB-LLBDgg8Pz
+      - TAB-1x-D0qYUX
+      excluded:
+      - 39
+      - 54
+      - 37
+      - 38
+      - 40
+      - 52
+      - 41
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 24
+    - 35
+    - 36
+    - 37
+    - 39
+    - 41
+    - 42
+    - 50
+    tabsInScope:
+    - TAB-1x-D0qYUX
+    - TAB-CCgaR0JuU
+    - TAB-LLBDgg8Pz
+    - TAB-krrlTBVn-
+    - TAB-kuKIxr-cK
+    - TAB-a03rg4ymu
+  - id: NATIVE_FILTER-NGSGsbUXS
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: City
+    filterType: filter_select
+    targets:
+    - column:
+        name: city
+      datasetUuid: d1267dd7-4fd1-46ad-9265-5f909aefbe1e
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds:
+    - NATIVE_FILTER-NK5MBElTz
+    scope:
+      rootPath:
+      - TAB-krrlTBVn-
+      - TAB-CCgaR0JuU
+      - TAB-kuKIxr-cK
+      - TAB-LLBDgg8Pz
+      - TAB-1x-D0qYUX
+      excluded:
+      - 39
+      - 54
+      - 37
+      - 38
+      - 40
+      - 52
+      - 41
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 24
+    - 35
+    - 36
+    - 37
+    - 39
+    - 41
+    - 42
+    - 50
+    tabsInScope:
+    - TAB-1x-D0qYUX
+    - TAB-CCgaR0JuU
+    - TAB-LLBDgg8Pz
+    - TAB-krrlTBVn-
+    - TAB-kuKIxr-cK
+    - TAB-a03rg4ymu
+  - id: NATIVE_FILTER-JkYhUPiI_
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: Asset
+    filterType: filter_select
+    targets:
+    - column:
+        name: type
+      datasetUuid: d1267dd7-4fd1-46ad-9265-5f909aefbe1e
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - TAB-krrlTBVn-
+      - TAB-CCgaR0JuU
+      - TAB-kuKIxr-cK
+      - TAB-LLBDgg8Pz
+      - TAB-1x-D0qYUX
+      excluded:
+      - 39
+      - 54
+      - 37
+      - 38
+      - 40
+      - 52
+      - 41
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 24
+    - 35
+    - 36
+    - 37
+    - 39
+    - 41
+    - 42
+    - 50
+    tabsInScope:
+    - TAB-1x-D0qYUX
+    - TAB-CCgaR0JuU
+    - TAB-LLBDgg8Pz
+    - TAB-krrlTBVn-
+    - TAB-kuKIxr-cK
+    - TAB-a03rg4ymu
+  - id: NATIVE_FILTER-ItTIxcJQv
+    controlValues:
+      enableEmptyFilter: true
+    name: Time Period
+    filterType: filter_time
+    targets:
+    - {}
+    defaultDataMask:
+      extraFormData:
+        time_range: 'today : tomorrow'
+      filterState:
+        value: 'today : tomorrow'
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - TAB-kuKIxr-cK
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 39
+    tabsInScope:
+    - TAB-kuKIxr-cK
+  - id: NATIVE_FILTER-4mHi7qkiJ
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: City
+    filterType: filter_select
+    targets:
+    - column:
+        name: city
+      datasetUuid: 781c0a1a-f9a9-430d-b0fa-6c74e15df9bd
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - TAB-a03rg4ymu
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 16
+    - 51
+    - 52
+    - 53
+    - 54
+    tabsInScope:
+    - TAB-T-6BQO_2h
+    - TAB-a03rg4ymu
+  shared_label_colors: {}
+  color_scheme_domain:
+  - '#1FA8C9'
+  - '#454E7C'
+  - '#5AC189'
+  - '#FF7F44'
+  - '#666666'
+  - '#E04355'
+  - '#FCC700'
+  - '#A868B7'
+  - '#3CCCCB'
+  - '#A38F79'
+  - '#8FD3E4'
+  - '#A1A6BD'
+  - '#ACE1C4'
+  - '#FEC0A1'
+  - '#B2B2B2'
+  - '#EFA1AA'
+  - '#FDE380'
+  - '#D3B3DA'
+  - '#9EE5E5'
+  - '#D1C6BC'
+version: 1.0.0

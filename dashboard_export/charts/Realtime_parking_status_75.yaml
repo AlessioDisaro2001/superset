@@ -1,0 +1,66 @@
+slice_name: Realtime parking status
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_bar
+params:
+  datasource: 9__table
+  viz_type: echarts_timeseries_bar
+  slice_id: 75
+  x_axis: demandTable.demandSpaceType.detectionUpdateTime
+  time_grain_sqla: PT1H
+  metrics:
+  - count
+  groupby:
+  - occupancyIndicator
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_oldi7pmsp3q_50icdn7xofm
+    isExtra: false
+    isNew: false
+    operator: TEMPORAL_RANGE
+    sqlExpression: null
+    subject: demandTable.demandSpaceType.detectionUpdateTime
+  - clause: WHERE
+    comparator: 'today : tomorrow'
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_5wghy12qwv3_36okccw14rv
+    isExtra: false
+    isNew: false
+    operator: TEMPORAL_RANGE
+    operatorId: TEMPORAL_RANGE
+    sqlExpression: null
+    subject: demandTable.demandSpaceType.detectionUpdateTime
+  row_limit: 10000
+  truncate_metric: true
+  show_empty_columns: true
+  comparison_type: values
+  annotation_layers: []
+  forecastPeriods: 10
+  forecastInterval: 0.8
+  orientation: vertical
+  sort_series_type: sum
+  color_scheme: bnbColors
+  stack: null
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  truncateXAxis: true
+  rich_tooltip: true
+  tooltipTimeFormat: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 4
+query_context: '{"datasource":{"id":9,"type":"table"},"force":false,"queries":[{"filters":[{"col":"demandTable.demandSpaceType.detectionUpdateTime","op":"TEMPORAL_RANGE","val":"No
+  filter"},{"col":"demandTable.demandSpaceType.detectionUpdateTime","op":"TEMPORAL_RANGE","val":"today
+  : tomorrow"}],"extras":{"time_grain_sqla":"PT1H","having":"","where":""},"applied_time_extras":{},"columns":[{"timeGrain":"PT1H","columnType":"BASE_AXIS","sqlExpression":"demandTable.demandSpaceType.detectionUpdateTime","label":"demandTable.demandSpaceType.detectionUpdateTime","expressionType":"SQL"},"occupancyIndicator"],"metrics":["count"],"orderby":[["count",false]],"annotation_layers":[],"row_limit":10000,"series_columns":["occupancyIndicator"],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"time_offsets":[],"post_processing":[{"operation":"pivot","options":{"index":["demandTable.demandSpaceType.detectionUpdateTime"],"columns":["occupancyIndicator"],"aggregates":{"count":{"operator":"mean"}},"drop_missing_columns":false}},{"operation":"rename","options":{"columns":{"count":null},"level":0,"inplace":true}},{"operation":"flatten"}]}],"form_data":{"datasource":"9__table","viz_type":"echarts_timeseries_bar","slice_id":75,"x_axis":"demandTable.demandSpaceType.detectionUpdateTime","time_grain_sqla":"PT1H","metrics":["count"],"groupby":["occupancyIndicator"],"adhoc_filters":[{"clause":"WHERE","comparator":"No
+  filter","datasourceWarning":false,"expressionType":"SIMPLE","filterOptionName":"filter_oldi7pmsp3q_50icdn7xofm","isExtra":false,"isNew":false,"operator":"TEMPORAL_RANGE","sqlExpression":null,"subject":"demandTable.demandSpaceType.detectionUpdateTime"},{"clause":"WHERE","comparator":"today
+  : tomorrow","datasourceWarning":false,"expressionType":"SIMPLE","filterOptionName":"filter_5wghy12qwv3_36okccw14rv","isExtra":false,"isNew":false,"operator":"TEMPORAL_RANGE","operatorId":"TEMPORAL_RANGE","sqlExpression":null,"subject":"demandTable.demandSpaceType.detectionUpdateTime"}],"row_limit":10000,"truncate_metric":true,"show_empty_columns":true,"comparison_type":"values","annotation_layers":[],"forecastPeriods":10,"forecastInterval":0.8,"orientation":"vertical","sort_series_type":"sum","color_scheme":"bnbColors","stack":null,"show_legend":true,"legendType":"scroll","legendOrientation":"top","truncateXAxis":true,"rich_tooltip":true,"tooltipTimeFormat":"smart_date","extra_form_data":{},"dashboards":[4],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: bf4c65c3-5c7b-471a-9607-0e71a85ff896
+version: 1.0.0
+dataset_uuid: e69f1633-5540-4ae7-8808-33bc38ba4541

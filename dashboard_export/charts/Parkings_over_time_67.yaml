@@ -1,0 +1,77 @@
+slice_name: Parkings over time
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_line
+params:
+  datasource: 4__table
+  viz_type: echarts_timeseries_line
+  slice_id: 66
+  x_axis: demandTable.demandSpaceType.detectionUpdateTime
+  time_grain_sqla: PT1H
+  x_axis_sort_asc: true
+  x_axis_sort_series: name
+  x_axis_sort_series_ascending: true
+  metrics:
+  - count
+  groupby: []
+  adhoc_filters:
+  - clause: WHERE
+    comparator: 'last month : tomorrow'
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_6c2ii6jcqqw_qt7gqd8n8nb
+    isExtra: false
+    isNew: false
+    operator: TEMPORAL_RANGE
+    sqlExpression: null
+    subject: demandTable.demandSpaceType.detectionUpdateTime
+  - clause: WHERE
+    comparator:
+    - occupied
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_kh6j62gue1o_vytyq1jycxd
+    isExtra: false
+    isNew: false
+    operator: IN
+    operatorId: IN
+    sqlExpression: null
+    subject: isOccupied
+  order_desc: true
+  row_limit: 10000
+  truncate_metric: true
+  show_empty_columns: true
+  comparison_type: values
+  annotation_layers: []
+  forecastEnabled: true
+  forecastPeriods: '96'
+  forecastInterval: 0.8
+  x_axis_title_margin: 15
+  y_axis_title_margin: 15
+  y_axis_title_position: Left
+  sort_series_type: sum
+  color_scheme: supersetColors
+  seriesType: line
+  only_total: true
+  opacity: 0.2
+  markerSize: 6
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  rich_tooltip: true
+  tooltipTimeFormat: smart_date
+  y_axis_format: SMART_NUMBER
+  truncateXAxis: true
+  y_axis_bounds:
+  - null
+  - null
+  extra_form_data: {}
+  dashboards:
+  - 4
+query_context: null
+cache_timeout: null
+uuid: a712063f-a06b-4fa6-a93e-0d63a2772770
+version: 1.0.0
+dataset_uuid: a0341a26-8dc4-4d64-af4f-4e95a0a77487

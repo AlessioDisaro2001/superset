@@ -1,39 +1,42 @@
-slice_name: Revenue by Payment Method
+slice_name: Occupancy Status Realtime
 description: null
 certified_by: null
 certification_details: null
 viz_type: pie
 params:
-  datasource: 5__table
+  datasource: 9__table
   viz_type: pie
-  slice_id: 77
+  slice_id: 75
   groupby:
-  - payment.paymentMethod
-  metric: sum(amount)
+  - isOccupied
+  metric: count
   adhoc_filters:
-  - clause: WHERE
-    comparator: No filter
-    expressionType: SIMPLE
+  - expressionType: SIMPLE
+    subject: demandTable.demandSpaceType.detectionUpdateTime
     operator: TEMPORAL_RANGE
-    subject: timestamp
+    comparator: 'today : tomorrow'
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_0w7au4xi4b6b_x5cj256kx9j
   row_limit: 100
   sort_by_metric: true
-  color_scheme: supersetColors
+  color_scheme: bnbColors
   show_labels_threshold: 5
   show_legend: true
   legendType: scroll
   legendOrientation: top
   label_type: key_percent
   number_format: SMART_NUMBER
-  currency_format:
-    symbol: USD
-    symbolPosition: prefix
   date_format: smart_date
   show_labels: true
   labels_outside: true
   label_line: true
-  show_total: false
-  outerRadius: 70
+  show_total: true
+  outerRadius: 51
+  donut: true
   innerRadius: 30
   extra_form_data: {}
   dashboards:
@@ -41,6 +44,6 @@ params:
   annotation_layers: []
 query_context: null
 cache_timeout: null
-uuid: f68f2c78-bd75-4400-90b9-8b331e41da42
+uuid: 00302320-e887-4d45-b735-6980c78221b3
 version: 1.0.0
-dataset_uuid: fd6c9db1-391c-4ddc-9684-b4e7870ca167
+dataset_uuid: e69f1633-5540-4ae7-8808-33bc38ba4541

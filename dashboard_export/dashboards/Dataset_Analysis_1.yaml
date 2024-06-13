@@ -11,7 +11,7 @@ position:
     children: []
     id: CHART-explore-57-1
     meta:
-      chartId: 3
+      chartId: 62
       height: 59
       sliceName: Occupancy Analysis
       uuid: a48e9f65-ea9a-49f8-8492-191828139c09
@@ -27,7 +27,7 @@ position:
     children: []
     id: CHART-explore-58-1
     meta:
-      chartId: 4
+      chartId: 73
       height: 60
       sliceName: Payment Analysis
       uuid: ad865f2c-f54d-40d4-ae19-9a90ff911f96
@@ -43,7 +43,7 @@ position:
     children: []
     id: CHART-explore-59-1
     meta:
-      chartId: 1
+      chartId: 9
       height: 60
       sliceName: Events Analysis
       uuid: 715522c8-0e48-49b6-988a-b3af71547a70
@@ -59,7 +59,7 @@ position:
     children: []
     id: CHART-explore-61-1
     meta:
-      chartId: 2
+      chartId: 57
       height: 31
       sliceName: Involved Spaces
       uuid: 3e8aa052-19ea-47bf-99f9-28348bc2fc7e
@@ -76,7 +76,7 @@ position:
     children: []
     id: CHART-explore-62-1
     meta:
-      chartId: 6
+      chartId: 83
       height: 19
       sliceName: Total by type
       uuid: 9dc22dbf-3f14-4bc7-9916-6821e9eed4ba
@@ -90,7 +90,7 @@ position:
     children: []
     id: CHART-mG2a6K1xaC
     meta:
-      chartId: 5
+      chartId: 84
       height: 26
       sliceName: Total Events
       uuid: 220e6b12-2758-48b9-b3e3-f1a677cc805a
@@ -256,8 +256,8 @@ metadata:
       rootPath:
       - ROOT_ID
       excluded:
-      - 2
-      - 5
+      - 57
+      - 84
     type: NATIVE_FILTER
     description: ''
     chartsInScope:
