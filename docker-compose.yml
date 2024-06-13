@@ -31,6 +31,7 @@ x-superset-volumes: &superset-volumes
 version: "3.7"
 services:
   superset_nginx:
+    profiles: [ dymo, superset ]
     image: nginx:latest
     container_name: superset_nginx
     restart: unless-stopped
@@ -43,6 +44,7 @@ services:
     networks:
       - dymo-net
   superset_redis:
+    profiles: [ dymo, superset ]
     image: redis:7
     container_name: superset_cache
     restart: unless-stopped
@@ -54,6 +56,7 @@ services:
       - dymo-net
 
   superset_db:
+    profiles: [ dymo, superset ]
     env_file: docker/.env
     image: postgres:15
     container_name: superset_db
@@ -67,6 +70,7 @@ services:
       - dymo-net
 
   superset_app:
+    profiles: [ dymo, superset ]
     env_file: docker/.env
     image: *superset-image
     container_name: superset_app
@@ -85,6 +89,7 @@ services:
       - dymo-net
 
   superset_websocket:
+    profiles: [ dymo, superset ]
     container_name: superset_websocket
     build: ./superset-websocket
     image: superset-websocket
@@ -111,13 +116,14 @@ services:
       - ./docker/superset-websocket/config.json:/home/superset-websocket/config.json
     environment:
       - PORT=8080
-      - REDIS_HOST=redis
+      - REDIS_HOST=superset_redis
       - REDIS_PORT=6379
       - REDIS_SSL=false
     networks:
       - dymo-net
 
   superset_init:
+    profiles: [ dymo, superset ]
     image: *superset-image
     container_name: superset_init
     command: ["/app/docker/docker-init.sh"]
@@ -133,6 +139,7 @@ services:
       - dymo-net
 
   superset_node:
+    profiles: [ dymo, superset ]
     image: node:16
     container_name: superset_node
     command: ["/app/docker/docker-frontend.sh"]
@@ -145,6 +152,7 @@ services:
       - dymo-net
 
   superset_worker:
+    profiles: [ dymo, superset ]
     image: *superset-image
     container_name: superset_worker
     command: ["/app/docker/docker-bootstrap.sh", "worker"]
@@ -164,6 +172,7 @@ services:
       - dymo-net
 
   superset_worker_beat:
+    profiles: [ dymo, superset ]
     image: *superset-image
     container_name: superset_worker_beat
     command: ["/app/docker/docker-bootstrap.sh", "beat"]
