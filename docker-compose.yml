@@ -93,7 +93,7 @@ services:
     extra_hosts:
       - "host.docker.internal:host-gateway"
     depends_on:
-      - redis
+      - superset_redis
     # Mount everything in superset-websocket into container and
     # then exclude node_modules and dist with bogus volume mount.
     # This is necessary because host and container need to have
@@ -177,24 +177,24 @@ services:
     networks:
       - dymo-net
 
-  superset_tests_worker:
-    image: *superset-image
-    container_name: superset_tests_worker
-    command: ["/app/docker/docker-bootstrap.sh", "worker"]
-    env_file: docker/.env
-    environment:
-      DATABASE_HOST: db
-      DATABASE_DB: test
-      REDIS_CELERY_DB: 2
-      REDIS_RESULTS_DB: 3
-      REDIS_HOST: redis
-    depends_on: *superset-depends-on
-    user: *superset-user
-    volumes: *superset-volumes
-    healthcheck:
-      test: ["CMD-SHELL", "celery inspect ping -A superset.tasks.celery_app:app -d celery@$$HOSTNAME"]
-    networks:
-      - dymo-net
+#  superset_tests_worker:
+#    image: *superset-image
+#    container_name: superset_tests_worker
+#    command: ["/app/docker/docker-bootstrap.sh", "worker"]
+#    env_file: docker/.env
+#    environment:
+#      DATABASE_HOST: db
+#      DATABASE_DB: test
+#      REDIS_CELERY_DB: 2
+#      REDIS_RESULTS_DB: 3
+#      REDIS_HOST: redis
+#    depends_on: *superset-depends-on
+#    user: *superset-user
+#    volumes: *superset-volumes
+#    healthcheck:
+#      test: ["CMD-SHELL", "celery inspect ping -A superset.tasks.celery_app:app -d celery@$$HOSTNAME"]
+#    networks:
+#      - dymo-net
 
 volumes:
   superset_home:
