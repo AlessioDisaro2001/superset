@@ -34,7 +34,7 @@ intended for use with local development.
 
 ### Local overrides
 
-In order to override configuration settings locally, simply make a copy of [`./docker/pythonpath_dev/superset_config_local.example`](./pythonpath_dev/superset_config_local.example)
+In order to override configuration settings locally, simply make a copy of [`./docker/pythonpath_dev/superset_config_local.example`](./pythonpath_dev/superset_config_docker.py)
 into `./docker/pythonpath_dev/superset_config_docker.py` (git ignored) and fill in your overrides.
 
 ### Local packages

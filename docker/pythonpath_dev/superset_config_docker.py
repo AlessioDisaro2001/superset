@@ -23,5 +23,17 @@
 # superset/config.py
 #
 
-SQLALCHEMY_DATABASE_URI = "postgresql+psycopg2://pguser:pgpwd@some.host/superset"
-SQLALCHEMY_ECHO = True
+# SQLALCHEMY_DATABASE_URI = "postgresql+psycopg2://pguser:pgpwd@some.host/superset"
+# SQLALCHEMY_ECHO = True
+
+from logging.handlers import RotatingFileHandler
+import logging
+
+LOG_LEVEL = 'DEBUG'
+LOG_FORMAT = '%(asctime)s:%(levelname)s:%(name)s:%(message)s'
+SUPERSET_LOG_DIR = '/app/superset/log/superset.log'
+
+handler = RotatingFileHandler(SUPERSET_LOG_DIR, maxBytes=10000000, backupCount=5)
+handler.setLevel(LOG_LEVEL)
+handler.setFormatter(logging.Formatter(LOG_FORMAT))
+logging.getLogger().addHandler(handler)
