@@ -1,5 +1,5 @@
 database_name: ClickHouse Connect (Superset)
-sqlalchemy_uri: clickhousedb://clickhouse/default
+sqlalchemy_uri: clickhousedb://admin:passDymo@clickhouse/default
 cache_timeout: null
 expose_in_sqllab: true
 allow_run_async: false
