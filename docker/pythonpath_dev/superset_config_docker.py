@@ -83,9 +83,9 @@ SMTP_PORT = 587 # your port, e.g. 587
 SMTP_STARTTLS = True
 SMTP_SSL_SERVER_AUTH = True # If you're using an SMTP server with a valid certificate
 SMTP_SSL = False
-SMTP_USER = "akiba.amvyt@gmail.com" # use the empty string "" if using an unauthenticated SMTP server
-SMTP_PASSWORD = "nbqg uahy syfn xaym" # use the empty string "" if using an unauthenticated SMTP server
-SMTP_MAIL_FROM = "noreply@akiba.amvyt.com"
+SMTP_USER = "..." # use the empty string "" if using an unauthenticated SMTP server
+SMTP_PASSWORD = "..." # use the empty string "" if using an unauthenticated SMTP server
+SMTP_MAIL_FROM = "noreply@....com"
 EMAIL_REPORTS_SUBJECT_PREFIX = "[Superset] " # optional - overwrites default value in config.py of "[Report] "
 
 # This is for internal use, you can keep http
