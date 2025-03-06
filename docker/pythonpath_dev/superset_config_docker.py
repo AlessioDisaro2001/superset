@@ -42,7 +42,8 @@ logging.getLogger().addHandler(handler)
 ALERT_REPORTS_NOTIFICATION_DRY_RUN = False
 
 FEATURE_FLAGS = {
-    "ALERT_REPORTS": True
+    "ALERT_REPORTS": True,
+    "ALLOW_FULL_CSV_EXPORT": True
 }
 
 REDIS_HOST = "superset_cache"
