@@ -123,7 +123,8 @@ const buildQuery: BuildQuery<TableChartFormData> = (
 
     const moreProps: Partial<QueryObject> = {};
     const ownState = options?.ownState ?? {};
-    if (formDataCopy.server_pagination) {
+//     if (formDataCopy.server_pagination) {
+    if (formData?.isFull !== true && formDataCopy.server_pagination) {
       moreProps.row_limit =
         ownState.pageSize ?? formDataCopy.server_page_length;
       moreProps.row_offset =
