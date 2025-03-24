@@ -43,7 +43,8 @@ ALERT_REPORTS_NOTIFICATION_DRY_RUN = False
 
 FEATURE_FLAGS = {
     "ALERT_REPORTS": True,
-    "ALLOW_FULL_CSV_EXPORT": True
+    "ALLOW_FULL_CSV_EXPORT": True,
+    "EMBEDDED_SUPERSET": True
 }
 
 REDIS_HOST = "superset_cache"
@@ -98,3 +99,23 @@ WEBDRIVER_BASEURL_USER_FRIENDLY = "http://localhost:8088"
 # Value should be an integer
 # ALERT_MINIMUM_INTERVAL = int(timedelta(minutes=10).total_seconds())
 # REPORT_MINIMUM_INTERVAL = int(timedelta(minutes=5).total_seconds())
+
+
+GUEST_ROLE_NAME = "Gamma"
+GUEST_TOKEN_JWT_SECRET = 'CHANGE-ME'
+GUEST_TOKEN_JWT_ALGO = 'HS256'
+GUEST_TOKEN_JWT_EXP_SECONDS = 9000
+
+WTF_CSRF_ENABLED = False
+ENABLE_CORS = True
+CORS_OPTIONS = {
+    "resources": "*",
+    "supports_credentials": True,
+    "allow_headers": ["*"],
+    "origins": ["*"]
+}
+
+HTTP_HEADERS = {'Content-Security-Policy': "frame-ancestors *"}
+OVERRIDE_HTTP_HEADERS = {'Content-Security-Policy': "frame-ancestors *"}
+
+TALISMAN_ENABLED = False
