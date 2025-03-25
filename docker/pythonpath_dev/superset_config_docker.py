@@ -44,7 +44,8 @@ ALERT_REPORTS_NOTIFICATION_DRY_RUN = False
 FEATURE_FLAGS = {
     "ALERT_REPORTS": True,
     "ALLOW_FULL_CSV_EXPORT": True,
-    "EMBEDDED_SUPERSET": True
+    "EMBEDDED_SUPERSET": True,
+    "DASHBOARD_RBAC": True
 }
 
 REDIS_HOST = "superset_cache"
@@ -106,7 +107,7 @@ GUEST_TOKEN_JWT_SECRET = 'CHANGE-ME'
 GUEST_TOKEN_JWT_ALGO = 'HS256'
 GUEST_TOKEN_JWT_EXP_SECONDS = 9000
 
-WTF_CSRF_ENABLED = False
+WTF_CSRF_ENABLED = True
 ENABLE_CORS = True
 CORS_OPTIONS = {
     "resources": "*",
@@ -118,4 +119,63 @@ CORS_OPTIONS = {
 HTTP_HEADERS = {'Content-Security-Policy': "frame-ancestors *"}
 OVERRIDE_HTTP_HEADERS = {'Content-Security-Policy': "frame-ancestors *"}
 
-TALISMAN_ENABLED = False
+TALISMAN_ENABLED = True
+TALISMAN_CONFIG = {
+    "content_security_policy": {
+        "frame-ancestors": ["*"],
+        "base-uri": ["'self'"],
+        "default-src": ["'self'"],
+        "img-src": [
+            "'self'",
+            "blob:",
+            "data:",
+            "https://apachesuperset.gateway.scarf.sh",
+            "https://static.scarf.sh/",
+        ],
+        "worker-src": ["'self'", "blob:"],
+        "connect-src": [
+            "'self'",
+            "https://api.mapbox.com",
+            "https://events.mapbox.com",
+        ],
+        "object-src": "'none'",
+        "style-src": [
+            "'self'",
+            "'unsafe-inline'",
+        ],
+        "script-src": ["'self'", "'strict-dynamic'"],
+    },
+    "content_security_policy_nonce_in": ["script-src"],
+    "force_https": False,
+    "session_cookie_secure": False,
+}
+# React requires `eval` to work correctly in dev mode
+TALISMAN_DEV_CONFIG = {
+    "content_security_policy": {
+        "frame-ancestors": ["*"],
+        "base-uri": ["'self'"],
+        "default-src": ["'self'"],
+        "img-src": [
+            "'self'",
+            "blob:",
+            "data:",
+            "https://apachesuperset.gateway.scarf.sh",
+            "https://static.scarf.sh/",
+        ],
+        "worker-src": ["'self'", "blob:"],
+        "connect-src": [
+            "'self'",
+            "https://api.mapbox.com",
+            "https://events.mapbox.com",
+        ],
+        "object-src": "'none'",
+        "style-src": [
+            "'self'",
+            "'unsafe-inline'",
+        ],
+        "script-src": ["'self'", "'unsafe-inline'", "'unsafe-eval'"],
+    },
+    "content_security_policy_nonce_in": ["script-src"],
+    "force_https": False,
+    "session_cookie_secure": False,
+}
