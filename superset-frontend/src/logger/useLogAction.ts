@@ -16,30 +16,25 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-import React, { useEffect } from 'react';
+
+import { useCallback } from 'react';
 import { useDispatch } from 'react-redux';
-import { setStashFormData } from 'src/explore/actions/exploreActions';
-import useEffectEvent from 'src/hooks/useEffectEvent';
+import { logEvent } from 'src/logger/actions';
 
-type Props = {
-  shouldStash: boolean;
-  fieldNames: ReadonlyArray<string>;
-};
-
-const StashFormDataContainer: React.FC<Props> = ({
-  shouldStash,
-  fieldNames,
-  children,
-}) => {
+export default function useLogAction(staticEventData: Record<string, any>) {
   const dispatch = useDispatch();
-  const onVisibleUpdate = useEffectEvent((shouldStash: boolean) =>
-    dispatch(setStashFormData(shouldStash, fieldNames)),
+  const logAction = useCallback<typeof logEvent>(
+    (type, payload) =>
+      dispatch(
+        logEvent(type, {
+          payload: {
+            ...staticEventData,
+            ...payload,
+          },
+        }),
+      ),
+    [staticEventData, dispatch],
   );
-  useEffect(() => {
-    onVisibleUpdate(shouldStash);
-  }, [shouldStash, onVisibleUpdate]);
 
-  return <>{children}</>;
-};
-
-export default StashFormDataContainer;
+  return logAction;
+}

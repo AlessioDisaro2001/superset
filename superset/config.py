@@ -64,6 +64,7 @@ logger = logging.getLogger(__name__)
 
 if TYPE_CHECKING:
     from flask_appbuilder.security.sqla import models
+    from sqlglot import Dialect, Dialects
 
     from superset.connectors.sqla.models import SqlaTable
     from superset.models.core import Database
@@ -231,6 +232,10 @@ SQLALCHEMY_CUSTOM_PASSWORD_STORE = None
 SQLALCHEMY_ENCRYPTED_FIELD_TYPE_ADAPTER = (  # pylint: disable=invalid-name
     SQLAlchemyUtilsAdapter
 )
+
+# Extends the default SQLGlot dialects with additional dialects
+SQLGLOT_DIALECTS_EXTENSIONS: dict[str, Dialects | type[Dialect]] = {}
+
 # The limit of queries fetched for query search
 QUERY_SEARCH_LIMIT = 1000
 
@@ -1202,6 +1207,15 @@ DASHBOARD_TEMPLATE_ID = None
 # Note that the returned uri and params are passed directly to sqlalchemy's
 # as such `create_engine(url, **params)`
 DB_CONNECTION_MUTATOR = None
+
+# A set of disallowed SQL functions per engine. This is used to restrict the use of
+# unsafe SQL functions in SQL Lab and Charts. The keys of the dictionary are the engine
+# names, and the values are sets of disallowed functions.
+DISALLOWED_SQL_FUNCTIONS: dict[str, set[str]] = {
+    "postgresql": {"version", "query_to_xml", "inet_server_addr", "inet_client_addr"},
+    "clickhouse": {"url"},
+    "mysql": {"version"},
+}
 
 
 # A function that intercepts the SQL to be executed and can alter it.
