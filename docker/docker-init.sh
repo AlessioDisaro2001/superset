@@ -22,11 +22,16 @@ set -e
 #
 /app/docker/docker-bootstrap.sh
 
+STEP_CNT=3
+
 if [ "$SUPERSET_LOAD_EXAMPLES" = "yes" ]; then
-    STEP_CNT=4
-else
-    STEP_CNT=3
+    STEP_CNT=$((STEP_CNT + 1))
 fi
+if [ "$IMPORT_DASHBOARDS" = "yes" ]; then
+    STEP_CNT=$((STEP_CNT + 1))
+fi
+
+CURRENT_STP=1
 
 echo_step() {
 cat <<EOF
@@ -44,12 +49,13 @@ if [ "$CYPRESS_CONFIG" == "true" ]; then
     export SUPERSET__SQLALCHEMY_DATABASE_URI=postgresql+psycopg2://superset:superset@db:5432/superset_cypress
 fi
 # Initialize the database
-echo_step "1" "Starting" "Applying DB migrations"
+echo_step "${CURRENT_STP}" "Starting" "Applying DB migrations"
 superset db upgrade
-echo_step "1" "Complete" "Applying DB migrations"
+echo_step "${CURRENT_STP}" "Complete" "Applying DB migrations"
+CURRENT_STP=$((CURRENT_STP + 1))
 
 # Create an admin user
-echo_step "2" "Starting" "Setting up admin user ( admin / $ADMIN_PASSWORD )"
+echo_step "${CURRENT_STP}" "Starting" "Setting up admin user ( admin / $ADMIN_PASSWORD )"
 if [ "$CYPRESS_CONFIG" == "true" ]; then
     superset load_test_users
 else
@@ -60,20 +66,33 @@ else
         --firstname Superset \
         --lastname Admin
 fi
-echo_step "2" "Complete" "Setting up admin user"
+echo_step "${CURRENT_STP}" "Complete" "Setting up admin user"
+CURRENT_STP=$((CURRENT_STP + 1))
+
 # Create default roles and permissions
-echo_step "3" "Starting" "Setting up roles and perms"
+echo_step "${CURRENT_STP}" "Starting" "Setting up roles and perms"
 superset init
-echo_step "3" "Complete" "Setting up roles and perms"
+echo_step "${CURRENT_STP}" "Complete" "Setting up roles and perms"
+CURRENT_STP=$((CURRENT_STP + 1))
 
 if [ "$SUPERSET_LOAD_EXAMPLES" = "yes" ]; then
     # Load some data to play with
-    echo_step "4" "Starting" "Loading examples"
+    echo_step "${CURRENT_STP}" "Starting" "Loading examples"
     # If Cypress run which consumes superset_test_config – load required data for tests
     if [ "$CYPRESS_CONFIG" == "true" ]; then
         superset load_examples --load-test-data
     else
         superset load_examples
     fi
-    echo_step "4" "Complete" "Loading examples"
+    echo_step "${CURRENT_STP}" "Complete" "Loading examples"
+    CURRENT_STP=$((CURRENT_STP + 1))
+fi
+
+if [ "$IMPORT_DASHBOARDS" = "yes" ]; then
+    echo_step "${CURRENT_STP}" "Starting" "Importing dashboards"
+    apt update && apt install -y zip
+    zip -2 -r dashboards.zip ./dashboard
+    chown superset:superset dashboards.zip
+    superset import-dashboards -p dashboards.zip -u admin
+    echo_step "${CURRENT_STP}" "Complete" "Importing dashboards"
 fi
