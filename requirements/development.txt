@@ -195,11 +195,11 @@ flask==2.3.3
     #   flask-sqlalchemy
     #   flask-testing
     #   flask-wtf
-flask-appbuilder==4.8.1
+flask-appbuilder==5.0.0
     # via
     #   -c requirements/base.txt
     #   apache-superset
-flask-babel==2.0.0
+flask-babel==3.1.0
     # via
     #   -c requirements/base.txt
     #   flask-appbuilder
@@ -313,6 +313,7 @@ greenlet==3.1.1
     #   apache-superset
     #   gevent
     #   shillelagh
+    #   sqlalchemy
 grpcio==1.71.0
     # via
     #   apache-superset
@@ -510,7 +511,7 @@ packaging==25.0
     #   pytest
     #   shillelagh
     #   sqlalchemy-bigquery
-pandas==2.0.3
+pandas==2.1.4
     # via
     #   -c requirements/base.txt
     #   apache-superset
@@ -804,7 +805,7 @@ sqlalchemy-utils==0.38.3
     #   -c requirements/base.txt
     #   apache-superset
     #   flask-appbuilder
-sqlglot==27.3.0
+sqlglot==27.15.2
     # via
     #   -c requirements/base.txt
     #   apache-superset
