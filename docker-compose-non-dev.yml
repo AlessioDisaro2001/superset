@@ -28,6 +28,7 @@ x-superset-volumes:
   &superset-volumes # /app/pythonpath_docker will be appended to the PYTHONPATH in the final container
   - ./docker:/app/docker
   - superset_home:/app/superset_home
+  - ./dashboard_export:/app/dashboard
 
 x-common-build: &common-build
   context: .
@@ -39,9 +40,12 @@ services:
   redis:
     image: redis:7
     container_name: superset_cache
+    profiles: [ dymo, superset ]
     restart: unless-stopped
     volumes:
       - redis:/data
+    networks:
+      - dymo-net
 
   db:
     env_file:
@@ -51,10 +55,13 @@ services:
         required: false
     image: postgres:16
     container_name: superset_db
+    profiles: [ dymo, superset ]
     restart: unless-stopped
     volumes:
       - db_home:/var/lib/postgresql/data
       - ./docker/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
+    networks:
+      - dymo-net
 
   superset:
     env_file:
@@ -65,6 +72,7 @@ services:
     build:
       <<: *common-build
     container_name: superset_app
+    profiles: [ dymo, superset ]
     command: ["/app/docker/docker-bootstrap.sh", "app-gunicorn"]
     user: "root"
     restart: unless-stopped
@@ -74,9 +82,12 @@ services:
       superset-init:
         condition: service_completed_successfully
     volumes: *superset-volumes
+    networks:
+      - dymo-net
 
   superset-init:
     container_name: superset_init
+    profiles: [ dymo, superset ]
     build:
       <<: *common-build
     command: ["/app/docker/docker-init.sh"]
@@ -94,11 +105,14 @@ services:
     volumes: *superset-volumes
     healthcheck:
       disable: true
+    networks:
+      - dymo-net
 
   superset-worker:
     build:
       <<: *common-build
     container_name: superset_worker
+    profiles: [ dymo, superset ]
     command: ["/app/docker/docker-bootstrap.sh", "worker"]
     env_file:
       - path: docker/.env # default
@@ -117,11 +131,14 @@ services:
           "CMD-SHELL",
           "celery -A superset.tasks.celery_app:app inspect ping -d celery@$$HOSTNAME",
         ]
+    networks:
+      - dymo-net
 
   superset-worker-beat:
     build:
       <<: *common-build
     container_name: superset_worker_beat
+    profiles: [ dymo, superset ]
     command: ["/app/docker/docker-bootstrap.sh", "beat"]
     env_file:
       - path: docker/.env # default
@@ -136,6 +153,8 @@ services:
     volumes: *superset-volumes
     healthcheck:
       disable: true
+    networks:
+      - dymo-net
 
 volumes:
   superset_home:
