@@ -71,6 +71,9 @@ def _prophet_fit_and_predict(  # pylint: disable=too-many-arguments
     )
     if df["ds"].dt.tz:
         df["ds"] = df["ds"].dt.tz_convert(None)
+    
+    df["ds"] = df["ds"].astype("datetime64[ns]")
+    
     model.fit(df)
     future = model.make_future_dataframe(periods=periods, freq=freq)
     forecast = model.predict(future)[["ds", "yhat", "yhat_lower", "yhat_upper"]]
